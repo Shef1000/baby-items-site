@@ -120,18 +120,6 @@ const items = {
   ],
   addOns: [
     {
-      id: "diaper-backpack",
-      name: "Saint Laurent Le 5 A 7 (Luxury Carry)",
-      category: "Daily Carry",
-      priority: "Must",
-      price: 3600,
-      purchased: false,
-      image: "https://saint-laurent.dam.kering.com/m/2bd8c50907587c56/eCom-713938AAAUQ1000_A.jpg?v=4",
-      why: "Luxury carry option with enough room for bottles, diapers, and essentials.",
-      notes: "Official first-party luxury option (not second-hand).",
-      url: "https://www.ysl.com/en-us/pr/shopping-saint-laurent-le-5-a-7-supple-in-grained-leather-713938AAAUQ1000.html"
-    },
-    {
       id: "burberry-diaper-bag",
       name: "Burberry Norwich Check Diaper Bag",
       category: "Daily Carry",
@@ -214,18 +202,6 @@ const items = {
       ]
     },
     {
-      id: "simba-sterilizer",
-      name: "Simba UDI H1 Sterilizer",
-      category: "Feeding",
-      priority: "Must",
-      price: 180,
-      purchased: false,
-      image: "https://www.simba.com.tw/wp-content/uploads/2022/08/S606F.jpg",
-      why: "High-capacity steam dry sterilizer for daily bottle and pump-part cleaning.",
-      notes: "Official Simba product page and image.",
-      url: "https://www.simba.com.tw/product/s606f/"
-    },
-    {
       id: "ollie-swaddle-2pack",
       name: "The Ollie Swaddle x2",
       category: "Sleep",
@@ -236,177 +212,6 @@ const items = {
       why: "Easy fit and quick diaper access; two gives one in use + one in laundry.",
       notes: "Counted as quantity two in the budget total.",
       url: "https://theollieworld.com/products/the-ollie-swaddle"
-    }
-  ],
-  momsList: [
-    {
-      id: "nyssa-postpartum-kit",
-      name: "Nyssa Essential Postpartum Kit",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 150,
-      purchased: false,
-      image: "https://nyssacare.com/cdn/shop/files/EPK_-_Black_Needs_Re-organizing_55e6d4a5-ca42-4326-a001-7273ca84b2fc_1200x1200.png?v=1775660489",
-      why: "Best premium one-box recovery setup: underwear, bralette, peri bottle, pads, and reusable heat/cold therapy.",
-      notes: "Best for vaginal or C-section recovery. Higher price is justified if you want reusable, targeted relief instead of only disposables.",
-      url: "https://nyssacare.com/products/go-fourth-deluxe-postpartum-recovery-kit"
-    },
-    {
-      id: "nyssa-fourthwear-underwear",
-      name: "Nyssa FourthWear Recovery Underwear",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 39,
-      purchased: false,
-      image: "https://nyssacare.com/cdn/shop/products/FWu_front_withIHpack_1800x2160_new_1200x1200.jpg?v=1730609390",
-      why: "The single most useful upgrade over hospital mesh: soft underwear with 360-degree pockets for ice or heat.",
-      notes: "Best for moms who want hands-free perineal, lower-back, or C-section-area comfort. Buy extra pairs if laundry will be slow.",
-      url: "https://nyssacare.com/products/fourthwear-underwear"
-    },
-    {
-      id: "lansinoh-recovery-essentials",
-      name: "Lansinoh Postpartum Recovery Essentials",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 40,
-      purchased: false,
-      image: "https://lansinoh.com/cdn/shop/files/48_b0e33700-39a7-44f4-b6c3-98865de84dfd.jpg?v=1712681046",
-      why: "A clean, practical bathroom-recovery kit with a wash bottle, herbal spray, and hot/cold therapy.",
-      notes: "Best value companion to the Nyssa kit. Not the fanciest item, but it covers the high-frequency bathroom routine.",
-      url: "https://lansinoh.com/products/postpartum-recovery-essentials"
-    },
-    {
-      id: "belly-bandit-upsie-belly",
-      name: "Belly Bandit Upsie Belly Support Belt",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 60,
-      purchased: false,
-      image: "https://bellybandit.com/cdn/shop/files/belly-bandit-upsie-belly-black-2400X3680-03_1024x1024.jpg?v=1740502197",
-      why: "High-utility maternity support for back, hip, and belly strain before birth.",
-      notes: "Best for third-trimester walking, errands, and nesting days. Product page shows 4.75 rating and includes a hot/cold gel pack.",
-      url: "https://bellybandit.com/products/upsie-belly"
-    },
-    {
-      id: "silverettes",
-      name: "Silverette Nursing Cups",
-      category: "Mom Feeding",
-      priority: "Must",
-      price: 70,
-      purchased: true,
-      image:
-        "https://silveretteusa.com/cdn/shop/files/37c1b22d59e214d67f59cf957ad479377e3e253f_1.jpg?v=1764866452",
-      why: "Reusable silver nursing cups for sore-nipple protection during the hardest early breastfeeding window.",
-      notes: "Best for breastfeeding moms. Product page shows 4.7 rating from 204 reviews; skip if formula-feeding from day one.",
-      url: "https://silveretteusa.com/products/silverette-nursing-cups"
-    },
-    {
-      id: "bodily-do-anything-bra",
-      name: "Bodily Do Anything Bra",
-      category: "Mom Feeding",
-      priority: "Must",
-      price: 58,
-      purchased: false,
-      image: "https://itsbodily.com/cdn/shop/products/The-Do-Anything-Bra-hands-free-pump-bra-nursing-bra-best-pump-bra-luxury-soft-non-toxic-3.jpg?v=1762463838&width=1946",
-      why: "Premium nursing and pumping bra that feels like real clothing instead of bulky pump gear.",
-      notes: "Best for moms who will nurse and pump. Bodily shows 4.3 stars from about 1.5k reviews; Forbes also picked it as a top nursing bra.",
-      url: "https://itsbodily.com/products/the-do-anything-bra?variant=39712002080865"
-    },
-    {
-      id: "kindred-bravely-sublime-bra",
-      name: "Kindred Bravely Sublime Pumping & Nursing Bra",
-      category: "Mom Feeding",
-      priority: "Must",
-      price: 55,
-      purchased: false,
-      image: "https://www.kindredbravely.com/cdn/shop/files/sublime-hands-free-pumping-nursing-bra-evryday-lounge-jogger-black-Ionna-k5-21536-1500x1875-3808281.png?v=1766515155&width=1946",
-      why: "More structured, size-inclusive pumping bra with strong review volume and hands-free flange support.",
-      notes: "Best for larger cup sizes or anyone who wants more support than the Bodily bra. Kindred page shows 4.7k+ reviews.",
-      url: "https://www.kindredbravely.com/products/hands-free-pumping-nursing-bra-black"
-    },
-    {
-      id: "earthmama-nipple-butter",
-      name: "Earth Mama Organic Nipple Butter",
-      category: "Mom Feeding",
-      priority: "Must",
-      price: 14,
-      purchased: false,
-      image: "https://earthmamaorganics.com/cdn/shop/files/10-232_NippleButter_2oz_front-14jar-11_w2e_shadow_web.jpg?v=1760726291",
-      why: "Small, inexpensive item that gets used constantly when nipples are tender from nursing or pumping.",
-      notes: "Best paired with Silverette cups. Cheap enough to keep even on a premium list because use frequency is high.",
-      url: "https://earthmamaorganics.com/products/organic-nipple-butter"
-    },
-    {
-      id: "earthmama-perineal-spray",
-      name: "Earth Mama Herbal Perineal Spray",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 16,
-      purchased: false,
-      image: "https://earthmamaorganics.com/cdn/shop/files/10-254_PerinealSpray_4oz_front-14_shadow_web.jpg?v=1725655571",
-      why: "Fast-use spray for tender bathroom trips when a full soak is unrealistic.",
-      notes: "Best for vaginal delivery recovery. Keep near the toilet with pads and peri bottle.",
-      url: "https://earthmamaorganics.com/products/herbal-perineal-spray"
-    },
-    {
-      id: "earthmama-sitz-bath",
-      name: "Earth Mama Organic Herbal Sitz Bath",
-      category: "Mom Recovery",
-      priority: "Must",
-      price: 15,
-      purchased: false,
-      image: "https://earthmamaorganics.com/cdn/shop/files/10-254_SitzBath_6ct_front_shadow_web.jpg?v=1764184000",
-      why: "Low-cost perineal recovery add-on for sitz baths or pad-soaks after birth.",
-      notes: "Best for moms expecting vaginal soreness. Confirm with your clinician if you have stitches or C-section limits.",
-      url: "https://earthmamaorganics.com/products/organic-herbal-sitz-bath"
-    },
-    {
-      id: "elvie-pump-double",
-      name: "Elvie Wearable Breast Pump - Double",
-      category: "Mom Feeding",
-      priority: "Nice",
-      price: 385,
-      purchased: false,
-      image: "https://elvie.com/cdn/shop/files/IMD_UK_Pump-Double_Web_Hero_1200x1200_V2.jpg?v=1767622983&width=1024",
-      why: "Premium freedom item for pumping during work calls, errands, chores, or toddler care.",
-      notes: "Best as a convenience or secondary pump. Babylist shows 3.8 stars from 1.6k+ reviews, so buy for mobility, not universal output.",
-      url: "https://www.babylist.com/gp/elvie-hands-free-wearable-electric-breast-pump/15262/243311"
-    },
-    {
-      id: "baby-brezza-bottle-washer-pro",
-      name: "Baby Brezza Bottle Washer Pro",
-      category: "Mom Time Saver",
-      priority: "Must",
-      price: 300,
-      purchased: false,
-      image: "https://babybrezza.com/cdn/shop/files/BWP_classic.webp?v=1770152040",
-      why: "The premium time-saver if bottles or pump parts will be daily life: washes, sterilizes, and dries.",
-      notes: "Best for pumping or bottle-feeding families. Babylist shows 4.5 stars from 7k+ reviews; caveat is counter space and detergent tablets.",
-      url: "https://www.babylist.com/gp/baby-brezza-bottle-washer-pro/44961/2200477"
-    },
-    {
-      id: "tushy-classic-bidet",
-      name: "TUSHY Classic 3.0 Bidet",
-      category: "Mom Recovery",
-      priority: "Nice",
-      price: 129,
-      purchased: false,
-      image: "https://hellotushy.com/cdn/shop/files/TUSHY_Classic_3.0_White_Bamboo_Knob.jpg?v=1777921099",
-      why: "Bathroom comfort upgrade for postpartum cleanup when wiping is uncomfortable.",
-      notes: "Best if installation is easy in your bathroom. Not a medical item, but high daily utility during recovery.",
-      url: "https://hellotushy.com/products/classic-affordable-bidet"
-    },
-    {
-      id: "cozy-earth-bamboo-pajamas",
-      name: "Cozy Earth Bamboo Pajama Set",
-      category: "Mom Comfort",
-      priority: "Nice",
-      price: 148,
-      purchased: false,
-      image: "https://slimages.macysassets.com/is/image/MCY/products/7/optimized/25572687_fpx.tif",
-      why: "Premium recovery uniform: breathable, soft, and polished enough for visitors or hospital photos.",
-      notes: "Best for hot sleepers and long recovery days. Reviews praise softness and temperature regulation; skip if you prefer nursing-specific clips.",
-      url: "https://www.macys.com/shop/product/cozy-earth-womens-long-sleeve-stretch-knit-viscose-from-bamboo-pajama-set?ID=16775269"
     }
   ],
   cautions: [
@@ -605,7 +410,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
 }
 
 function refreshSummary() {
-  const allTrackable = [...items.corePicks, ...items.addOns, ...items.momsList];
+  const allTrackable = [...items.corePicks, ...items.addOns];
 
   allTrackable.forEach((item) => {
     if (isPurchased(item)) {
@@ -648,8 +453,7 @@ function setFilter(filterValue) {
 }
 
 renderItems("corePicks", "corePicks");
-renderItems("addOns", "addOns");
-renderItems("momsList", "momsList", false, "mom");
+renderItems("addOns", "corePicks");
 renderItems("cautions", "cautions", true, "caution");
 migrateLegacySelections();
 saveState();
@@ -674,7 +478,7 @@ copyBtn.addEventListener("click", async () => {
 const resetBtn = document.getElementById("resetBtn");
 resetBtn.addEventListener("click", () => {
   selected.clear();
-  [...items.corePicks, ...items.addOns, ...items.momsList].forEach((item) => {
+  [...items.corePicks, ...items.addOns].forEach((item) => {
     if (isPurchased(item)) {
       selected.add(item.id);
     }
