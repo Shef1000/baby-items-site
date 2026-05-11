@@ -252,24 +252,6 @@ const items = {
       url: "https://baby2baby.org/goldenstatestart/"
     },
     {
-      id: "california-wic",
-      name: "California WIC",
-      category: "Food + Feeding",
-      status: "Apply",
-      why: "WIC supports pregnant and postpartum parents, infants, and children under 5 with nutrition help and feeding support.",
-      notes: "You may qualify if you live in California, have low-to-medium income or receive Medi-Cal, CalWORKs, or CalFresh, and are pregnant, recently postpartum, or caring for a child under 5.",
-      url: "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/HowCanIGetWIC.aspx"
-    },
-    {
-      id: "wic-breastfeeding-support",
-      name: "No-Cost WIC Breastfeeding Support",
-      category: "Feeding",
-      status: "Ask WIC",
-      why: "Many WIC offices offer no-cost breastfeeding help through lactation consultants, peer counselors, and feeding resources.",
-      notes: "Useful even if feeding is mixed breastmilk and formula. Ask your local WIC office what support and supplies are available.",
-      url: "https://myfamily.wic.ca.gov/NutritionHealth/BreastfeedingSupport"
-    },
-    {
       id: "paid-family-leave",
       name: "Paid Family Leave Bonding Pay",
       category: "Income",
@@ -277,33 +259,6 @@ const items = {
       why: "Eligible California workers can receive short-term wage replacement while bonding with a new child.",
       notes: "EDD lists up to 8 weeks in a 12-month period, with benefit payments based on prior wages. PFL pays benefits but does not by itself protect your job.",
       url: "https://edd.ca.gov/paidfamilyleave/"
-    },
-    {
-      id: "medi-cal-pregnancy",
-      name: "Medi-Cal Pregnancy + Baby Coverage",
-      category: "Health",
-      status: "Apply",
-      why: "Pregnancy Medi-Cal options can cover prenatal care, delivery, postpartum care, dental, mental health, and other medically necessary care.",
-      notes: "DHCS says babies can be on Medi-Cal for two years after birth. MCAP may help middle-income families who do not qualify for no-cost Medi-Cal.",
-      url: "https://www.dhcs.ca.gov/Medi-Cal/Pages/benefits.aspx"
-    },
-    {
-      id: "calfresh-food-benefits",
-      name: "CalFresh Monthly Food Benefits",
-      category: "Food",
-      status: "Apply",
-      why: "CalFresh provides monthly food benefits on an EBT card for eligible low-income individuals and families.",
-      notes: "Benefits can be used at grocery stores and farmers markets that accept EBT. Amount depends on household size, income, and expenses.",
-      url: "https://cdss.ca.gov/inforesources/calfresh"
-    },
-    {
-      id: "calworks-child-care",
-      name: "CalWORKs Cash Aid + Child Care",
-      category: "Cash + Care",
-      status: "County",
-      why: "CalWORKs can provide monthly cash aid and services for eligible families, including help with essentials.",
-      notes: "Current or former CalWORKs cash aid recipients may also qualify for child care assistance while working or participating in county-approved activities.",
-      url: "https://www.cdss.ca.gov/CalWORKS"
     }
   ]
 };
