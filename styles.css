@@ -253,7 +253,8 @@ h2 {
   gap: 1rem;
 }
 
-.item-card {
+.item-card,
+.benefit-card {
   background: var(--bg-soft);
   border: 1px solid var(--line);
   border-radius: 1rem;
@@ -302,7 +303,8 @@ h2 {
 }
 
 .category,
-.priority {
+.priority,
+.benefit-status {
   font-size: 0.74rem;
   font-weight: 800;
   padding: 0.28rem 0.53rem;
@@ -329,7 +331,13 @@ h2 {
   color: #ffffff;
 }
 
-.item-card h3 {
+.benefit-status {
+  background: #fff0bf;
+  color: #604300;
+}
+
+.item-card h3,
+.benefit-card h3 {
   font-size: 1.25rem;
 }
 
@@ -445,6 +453,20 @@ h2 {
 
 .bundle-checkout-btn.is-hidden {
   display: none;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+}
+
+.benefit-card .notes {
+  background: #f3f8ee;
 }
 
 footer {

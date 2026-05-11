@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260505-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260511-1" />
   </head>
   <body>
     <div class="bg-cloud bg-cloud-1" aria-hidden="true"></div>
@@ -35,6 +35,7 @@
     <main class="content" id="list">
       <section class="view-tabs" aria-label="List tabs">
         <button class="view-tab-btn is-active" data-view="babyView" type="button">Baby List</button>
+        <button class="view-tab-btn" data-view="benefitsView" type="button">Free Benefits</button>
         <button class="view-tab-btn" data-view="cautionView" type="button">Skip / Use Carefully</button>
       </section>
 
@@ -66,6 +67,13 @@
         </section>
       </section>
 
+      <section class="view-panel" id="benefitsView">
+        <section>
+          <h2>Free Benefits - California</h2>
+          <div class="benefit-grid" id="freeBenefits"></div>
+        </section>
+      </section>
+
       <section class="view-panel" id="cautionView">
         <section>
           <h2>Skip / Use Carefully</h2>
@@ -79,7 +87,7 @@
         Safe sleep: babies should sleep on a firm, flat surface with no pillows,
         loungers, or loose bedding.
       </p>
-      <p>Updated: May 5, 2026</p>
+      <p>Updated: May 11, 2026</p>
     </footer>
 
     <template id="itemTemplate">
@@ -105,6 +113,19 @@
           <ul class="item-links-list"></ul>
         </details>
         <button class="bundle-checkout-btn" type="button">Checkout Bundle</button>
+      </article>
+    </template>
+
+    <template id="benefitTemplate">
+      <article class="benefit-card">
+        <div class="card-top">
+          <span class="category"></span>
+          <span class="benefit-status"></span>
+        </div>
+        <h3></h3>
+        <p class="why"></p>
+        <p class="notes"></p>
+        <a class="primary-link" target="_blank" rel="noopener noreferrer">Check benefit</a>
       </article>
     </template>
 
