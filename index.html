@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Registry Shortlist</title>
+    <meta
+      name="description"
+      content="A practical, high-quality baby registry shortlist with priorities and budget estimates."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260505-1" />
+  </head>
+  <body>
+    <div class="bg-cloud bg-cloud-1" aria-hidden="true"></div>
+    <div class="bg-cloud bg-cloud-2" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow">Baby Boy Registry</p>
+      <h1>Useful, High-Quality Baby Items</h1>
+      <p class="subtitle">
+        Prioritized shortlist with estimated prices, purchased tracking, and product photos.
+      </p>
+      <div class="hero-actions">
+        <button id="copyBtn" class="btn-primary">Copy Page Link</button>
+        <button id="resetBtn" class="btn-secondary" type="button">Reset Checks</button>
+      </div>
+    </header>
+
+    <main class="content" id="list">
+      <section class="view-tabs" aria-label="List tabs">
+        <button class="view-tab-btn is-active" data-view="babyView" type="button">Baby List</button>
+        <button class="view-tab-btn" data-view="momView" type="button">Mom's List</button>
+        <button class="view-tab-btn" data-view="cautionView" type="button">Skip / Use Carefully</button>
+      </section>
+
+      <section class="view-panel is-active" id="babyView">
+        <section class="summary-grid" aria-label="Registry summary">
+          <article class="summary-card">
+            <p class="summary-label">Selected Items</p>
+            <p class="summary-value" id="selectedCount">0</p>
+          </article>
+          <article class="summary-card">
+            <p class="summary-label">Selected Budget</p>
+            <p class="summary-value" id="selectedBudget">$0</p>
+          </article>
+          <article class="summary-card">
+            <p class="summary-label">Must-Have Remaining</p>
+            <p class="summary-value" id="mustRemaining">0</p>
+          </article>
+        </section>
+
+        <section class="filters" aria-label="Filters">
+          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="Must" type="button">Must-Have</button>
+          <button class="filter-btn" data-filter="Nice" type="button">Nice-to-Have</button>
+        </section>
+
+        <section>
+          <h2>Core Picks</h2>
+          <div class="card-grid" id="corePicks"></div>
+        </section>
+
+        <section>
+          <h2>Useful Add-Ons</h2>
+          <div class="card-grid" id="addOns"></div>
+        </section>
+      </section>
+
+      <section class="view-panel" id="momView">
+        <section>
+          <h2>Mom's List</h2>
+          <div class="card-grid" id="momsList"></div>
+        </section>
+      </section>
+
+      <section class="view-panel" id="cautionView">
+        <section>
+          <h2>Skip / Use Carefully</h2>
+          <div class="card-grid" id="cautions"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Safe sleep: babies should sleep on a firm, flat surface with no pillows,
+        loungers, or loose bedding.
+      </p>
+      <p>Updated: May 5, 2026</p>
+    </footer>
+
+    <template id="itemTemplate">
+      <article class="item-card">
+        <img class="item-image" alt="Product image" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="card-top">
+          <span class="category"></span>
+          <span class="priority"></span>
+        </div>
+        <h3></h3>
+        <p class="why"></p>
+        <p class="notes"></p>
+        <div class="card-bottom">
+          <p class="price"></p>
+          <label class="check-wrap">
+            <input class="item-check" type="checkbox" />
+            <span class="check-label">Added</span>
+          </label>
+        </div>
+        <a class="primary-link" target="_blank" rel="noopener noreferrer">Open item</a>
+        <details class="item-links">
+          <summary class="link">Open item links</summary>
+          <ul class="item-links-list"></ul>
+        </details>
+        <button class="bundle-checkout-btn" type="button">Checkout Bundle</button>
+      </article>
+    </template>
+
+    <script src="./script.js?v=20260505-1"></script>
+  </body>
+</html>
