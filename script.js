@@ -66,17 +66,17 @@ const items = {
       url: "https://www.ergobaby.com/products/3-in-1-evolve-bouncer"
     },
     {
-      id: "joolz-aer",
-      name: "Joolz Aer+",
+      id: "cybex-egazelle-s-stormy-blue",
+      name: "Cybex e-Gazelle S - Stormy Blue",
       category: "Stroller",
       priority: "Must",
-      price: 449,
+      price: 1199.95,
       purchased: false,
       image:
-        "https://www.joolz.com/dw/image/v2/BDLK_PRD/on/demandware.static/-/Sites-joolz-master/default/dw6fe14555/zoom_1200x1800/WP/310117_joolz_Aerplus_navyblue_sp_01.png?sw=650&sh=650&sm=fit",
-      why: "Excellent for city walking + travel: very light, compact fold, one-hand use.",
-      notes: "Add newborn setup if needed in early months.",
-      url: "https://www.joolz.com/us/en/lightweight-stroller/440101.html"
+        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dw18d4ed53/images/products/10103386/cyb_24_int_y270_e-gazelles_shopper_seata_tpe_srbl_18f142702ddd9f70.jpeg",
+      why: "Electric-assist stroller with uphill and uneven-surface support, rocking mode, and 20+ configurations.",
+      notes: "Stormy Blue with Taupe Frame. Seat unit is suitable from 3 months to 50 lb; use from birth requires Gazelle S Cot or infant car seat, sold separately.",
+      url: "https://www.cybex-online.com/en/us/p/10103386.html"
     },
     {
       id: "nuna-pipa-rx",
