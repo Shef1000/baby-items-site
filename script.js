@@ -29,16 +29,16 @@ const items = {
       url: "https://cradlewise.com/product/smart-crib/"
     },
     {
-      id: "babyletto-crib",
-      name: "Babyletto Hudson 3-in-1 Crib",
+      id: "babyletto-yuzu-8-in-1-light-sage",
+      name: "Babyletto Yuzu 8-in-1 Convertible Crib - Light Sage",
       category: "Sleep",
       priority: "Must",
-      price: 499,
+      price: 699,
       purchased: false,
-      image: "https://babyletto.com/cdn/shop/files/babyletto_pogo_NL_hi-res_4178_2.jpg?v=1771529894",
-      why: "Solid second crib option with long use and non-smart simplicity.",
-      notes: "Great as the primary nursery crib alongside your purchased Cradlewise.",
-      url: "https://babyletto.com/products/hudson-3-in-1-convertible-crib"
+      image: "https://babyletto.com/cdn/shop/files/gjcg0us9qgjbofdmqyyh_grande.jpg",
+      why: "Long-use 8-in-1 crib system that starts as a bassinet and converts through multiple crib and toddler stages.",
+      notes: "Light Sage variant with All-Stages conversion kits included. Good flexible sleep setup alongside your purchased Cradlewise.",
+      url: "https://babyletto.com/products/yuzu-8-in-1-convertible-crib-with-all-stages-r-conversion-kits?variant=41415651721270"
     },
     {
       id: "newton-mattress",
