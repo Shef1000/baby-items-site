@@ -79,17 +79,17 @@ const items = {
       url: "https://www.cybex-online.com/en/us/p/10103386.html"
     },
     {
-      id: "nuna-pipa-rx",
-      name: "Nuna PIPA rx Infant Car Seat",
+      id: "cybex-cloud-g-pro-stormy-blue",
+      name: "Cybex Cloud G Pro with Load Leg Base",
       category: "Transport",
       priority: "Must",
-      price: 550,
+      price: 599.95,
       purchased: false,
       image:
-        "https://nunababy.com/media/catalog/product/N/u/Nuna_PIPARX_Caviar_Angle_US_web_8daa.png?optimize=high&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
-      why: "Lightweight infant car seat to pair with stroller and rideshare/taxi use.",
-      notes: "Good split setup: lightweight stroller plus separate car seat.",
-      url: "https://nunababy.com/usa/pipa-rx-infant-car-seat-with-relx-base"
+        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dw22c372f5/images/products/10107220/cyb_25_us_y090_cloudgpro_albe_canopy_recline_19560fc2cdce7170.jpeg",
+      why: "Cybex infant seat with 45% more recline outside the vehicle, load leg base, SensorSafe, and stroller travel-system compatibility.",
+      notes: "Stormy Blue is available from Cybex. Fits babies from 4-30 lb and up to 32 in; Cybex says its infant seats work with Cybex strollers using the stroller adapters.",
+      url: "https://www.cybex-online.com/en/us/p/cs-go-cloud-g-pro-sensorsafe-3.html"
     },
     {
       id: "tripp-trapp",
