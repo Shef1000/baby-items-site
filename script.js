@@ -80,16 +80,16 @@ const items = {
     },
     {
       id: "cybex-cloud-g-pro-stormy-blue",
-      name: "Cybex Cloud G Pro with Load Leg Base",
+      name: "Cybex Cloud G Pro with Load Leg Base - Stormy Blue",
       category: "Transport",
       priority: "Must",
       price: 599.95,
       purchased: false,
       image:
-        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dw22c372f5/images/products/10107220/cyb_25_us_y090_cloudgpro_albe_canopy_recline_19560fc2cdce7170.jpeg",
+        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dwa9327d17/images/products/10107214/cyb_25_us_y090_cloudgpro_srbl_canopy_recline_198991f60ab57c70.jpeg",
       why: "Cybex infant seat with 45% more recline outside the vehicle, load leg base, SensorSafe, and stroller travel-system compatibility.",
-      notes: "Stormy Blue is available from Cybex. Fits babies from 4-30 lb and up to 32 in; Cybex says its infant seats work with Cybex strollers using the stroller adapters.",
-      url: "https://www.cybex-online.com/en/us/p/cs-go-cloud-g-pro-sensorsafe-3.html"
+      notes: "Stormy Blue variant, product code 525000605. Fits babies from 4-30 lb and up to 32 in; Cybex says its infant seats work with Cybex strollers using the stroller adapters.",
+      url: "https://www.cybex-online.com/en/us/p/10107214.html"
     },
     {
       id: "tripp-trapp",
