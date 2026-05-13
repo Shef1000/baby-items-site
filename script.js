@@ -53,17 +53,31 @@ const items = {
       url: "https://www.newtonbaby.com/products/newton-crib-mattress"
     },
     {
-      id: "ergobaby-evolve",
-      name: "Ergobaby Evolve 3-in-1 Bouncer",
+      id: "babybjorn-bouncer-toy-bundle",
+      name: "BabyBjorn Bouncer Balance Soft + Toys Bundle",
       category: "Bouncer",
       priority: "Must",
-      price: 199,
+      price: 360,
       purchased: false,
       image:
-        "https://ergobaby.com/cdn/shop/files/EVLBNCLTGRY_ergobaby_bouncer_evolve_ltgry_1.webp?v=1776781038&width=1200",
-      why: "Useful from newborn stage into toddler mode. Durable and fold-flat.",
-      notes: "Range is roughly 5.5-29 lb across modes.",
-      url: "https://www.ergobaby.com/products/3-in-1-evolve-bouncer"
+        "https://a.storyblok.com/f/187315/1800x2728/f25ee3d4e9/us-005270-bouncer-balance-soft-lightsage-gray-woven-jersey-product-babybjorn-01-1.png",
+      why: "Ergonomic natural-rocking bouncer in Light Sage/Gray woven jersey, paired with BabyBjorn toy bars for play.",
+      notes: "Bundle budget includes the $229.99 bouncer plus two $64.99 toy bars. Bouncer supports 8-29 lb and converts from bouncer to child chair.",
+      url: "https://www.babybjorn.com/products/baby-bouncers/bouncer-balance-soft/light-sage-gray-woven-jersey-light-gray/",
+      links: [
+        {
+          label: "Bouncer Balance Soft - Light Sage/Gray",
+          url: "https://www.babybjorn.com/products/baby-bouncers/bouncer-balance-soft/light-sage-gray-woven-jersey-light-gray/"
+        },
+        {
+          label: "Toy for Bouncer - Googly eyes Pastel",
+          url: "https://www.babybjorn.com/products/baby-bouncers/accessories-baby-bouncer/toy-for-bouncer-googly-eyes/pastel/"
+        },
+        {
+          label: "Toy for Bouncer - Soft friends Neutrals",
+          url: "https://www.babybjorn.com/products/baby-bouncers/accessories-baby-bouncer/toy-for-bouncer-soft-friends/neutrals/"
+        }
+      ]
     },
     {
       id: "cybex-egazelle-s-stormy-blue",
