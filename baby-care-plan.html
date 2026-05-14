@@ -10,7 +10,7 @@
     />
     <style>
       :root {
-        --bg: #f3f7fb;
+        --bg: #f7ead6;
         --panel: #ffffff;
         --panel-soft: #f8fbff;
         --text: #182333;
@@ -33,9 +33,9 @@
         margin: 0;
         color: var(--text);
         background:
-          radial-gradient(circle at 10% 0%, #ffffff 0, transparent 34rem),
-          radial-gradient(circle at 90% 6%, #fff3d5 0, transparent 28rem),
-          linear-gradient(180deg, #eef6ff 0%, var(--bg) 100%);
+          radial-gradient(circle at 10% 0%, #fffaf1 0, transparent 34rem),
+          radial-gradient(circle at 90% 6%, #f2d8aa 0, transparent 28rem),
+          linear-gradient(180deg, #fbf2e3 0%, var(--bg) 100%);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
           "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
         line-height: 1.55;
@@ -153,27 +153,9 @@
         transition: width 180ms ease;
       }
 
-      .tabs,
-      .filters {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 18px 0;
-      }
-
-      .tab.is-active,
-      .filter.is-active {
-        border-color: var(--accent);
-        background: var(--accent-soft);
-        color: #174d9e;
-      }
-
       .panel {
-        display: none;
-      }
-
-      .panel.is-active {
         display: block;
+        margin-top: 34px;
       }
 
       .section-kicker {
@@ -334,10 +316,6 @@
         color: #40536a;
       }
 
-      .resource-card.is-hidden {
-        display: none;
-      }
-
       .rules {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -403,7 +381,6 @@
           </p>
         </div>
         <div class="toolbar">
-          <a class="button-link" href="./index.html">Baby Registry</a>
           <button id="languageBtn" type="button">English</button>
           <button id="resetBtn" class="primary" type="button">重置进度</button>
         </div>
@@ -419,16 +396,8 @@
         </div>
       </section>
 
-      <nav class="tabs" aria-label="页面导航">
-        <button class="tab is-active" data-panel="careModel" type="button">6个月分工</button>
-        <button class="tab" data-panel="bookedClasses" type="button">UCSF已报名</button>
-        <button class="tab" data-panel="trainingLibrary" type="button">课程详情</button>
-        <button class="tab" data-panel="nonNegotiables" type="button">安全红线</button>
-        <button class="tab" data-panel="chinaDeploy" type="button">中国部署</button>
-      </nav>
-
       <main>
-        <section class="panel is-active" id="careModel">
+        <section class="panel" id="careModel">
           <p class="section-kicker">Care model</p>
           <h2>出生后6个月简单分工</h2>
           <div class="outsourcing">
@@ -547,12 +516,6 @@
           <p class="lead">
             中文资源和英文资源分开列出。已删除 Stanford Digital Medic 中文链接，因为 Mandarin Chinese 页面目前主要显示 COVID 内容，不适合当母婴课程。YouTube 资源可打开字幕或自动翻译中文；中国大陆网络环境下，YouTube 本身可能无法直接访问。
           </p>
-          <div class="filters" aria-label="课程筛选">
-            <button class="filter is-active" data-filter="all" type="button">全部</button>
-            <button class="filter" data-filter="中文资源" type="button">中文资源</button>
-            <button class="filter" data-filter="英文资源" type="button">英文资源</button>
-            <button class="filter" data-filter="必修" type="button">必修</button>
-          </div>
           <div class="grid">
             <article class="card course-card resource-card" data-id="ucsf-great-expectations" data-tags="英文资源 必修">
               <div class="card-top"><div class="chips"><span class="chip">英文资源</span><span class="chip required">必修</span></div><label class="check"><input type="checkbox" class="tracker" /> <span>待完成</span></label></div>
@@ -595,7 +558,7 @@
               <h3>用户指定 Bilibili 中文育儿视频</h3>
               <dl><dt>谁该看</dt><dd>奶奶必看；妈妈爸爸可看后统一规则。</dd><dt>建议时间</dt><dd>奶奶来之前完成。</dd></dl>
               <p>中文平台视频，适合奶奶直接观看。</p>
-              <div class="summary-box">看完后要用本网站安全红线复核：睡眠、喂养、急救、药物和偏方不能按经验随意改。</div>
+              <div class="summary-box">看完后要用家里统一规则复核：睡眠、喂养、急救、药物和偏方不能按经验随意改。</div>
               <p><a href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer">打开链接</a></p>
             </article>
 
@@ -652,19 +615,6 @@
               <div class="summary-box">帮助父母用一致、可持续的方法应对新生儿阶段，而不是靠临时情绪反应。</div>
               <p><a href="https://www.triplep-parenting.com/" target="_blank" rel="noopener noreferrer">打开链接</a></p>
             </article>
-          </div>
-        </section>
-
-        <section class="panel" id="nonNegotiables">
-          <p class="section-kicker">Non-negotiables</p>
-          <h2>奶奶版冰箱安全红线</h2>
-          <div class="rules">
-            <article class="rule"><p>宝宝每次睡觉都仰睡，睡在自己的 crib/bassinet，不和大人同床。</p></article>
-            <article class="rule"><p>床里只放 fitted sheet；不放枕头、毯子、毛绒玩具、防撞围、睡姿固定器。</p></article>
-            <article class="rule"><p>不让宝宝在沙发、摇椅、成人床、趴在大人身上睡觉。</p></article>
-            <article class="rule"><p>不喂水、蜂蜜、中药、偏方；药物必须问儿科医生。</p></article>
-            <article class="rule"><p>新生儿发烧、呼吸异常、明显嗜睡、喂不进去、嘴唇发紫，按儿科医生/急救路径处理。</p></article>
-            <article class="rule"><p>照顾宝宝前洗手；不亲宝宝脸和手；生病的人不抱宝宝。</p></article>
           </div>
         </section>
 
@@ -737,28 +687,6 @@
         saved.clear();
         save();
         updateProgress();
-      });
-
-      document.querySelectorAll(".tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".tab").forEach((node) => node.classList.remove("is-active"));
-          tab.classList.add("is-active");
-          document.querySelectorAll(".panel").forEach((panel) => {
-            panel.classList.toggle("is-active", panel.id === tab.dataset.panel);
-          });
-        });
-      });
-
-      document.querySelectorAll(".filter").forEach((filter) => {
-        filter.addEventListener("click", () => {
-          document.querySelectorAll(".filter").forEach((node) => node.classList.remove("is-active"));
-          filter.classList.add("is-active");
-          const value = filter.dataset.filter;
-          document.querySelectorAll(".resource-card").forEach((card) => {
-            const tags = card.dataset.tags || "";
-            card.classList.toggle("is-hidden", value !== "all" && !tags.includes(value));
-          });
-        });
       });
 
       let english = false;
