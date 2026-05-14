@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baby Care Plan | 妈妈爸爸奶奶育儿照护计划</title>
+  <meta name="description" content="A bilingual baby-care course hub with 6-month weekly plan and progress tracking for mother, father, and grandmother." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">Mother · Father · Grandmother</p>
+        <h1 data-i18n="title">妈妈爸爸奶奶宝宝照护计划</h1>
+        <p class="subtitle" data-i18n="subtitle">6个月分工、课程清单、每周计划与进度追踪</p>
+      </div>
+      <div class="header-actions">
+        <button id="langToggle" class="pill-btn" type="button">English</button>
+        <button id="resetProgress" class="ghost-btn" type="button" data-i18n="reset">重置进度</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid" aria-label="Summary cards">
+      <article class="card stat-card">
+        <span class="stat" id="courseProgress">0%</span>
+        <span data-i18n="courseProgressLabel">课程完成度</span>
+      </article>
+      <article class="card stat-card">
+        <span class="stat" id="weekProgress">0%</span>
+        <span data-i18n="weekProgressLabel">每周计划完成度</span>
+      </article>
+      <article class="card stat-card">
+        <span class="stat">26</span>
+        <span data-i18n="weeksLabel">出生后周计划</span>
+      </article>
+    </section>
+
+    <nav class="tabs" aria-label="Page sections">
+      <a href="#roles" data-i18n="tabRoles">6个月分工</a>
+      <a href="#courses" data-i18n="tabCourses">课程详情</a>
+      <a href="#weekly" data-i18n="tabWeekly">每周计划</a>
+      <a href="#safety" data-i18n="tabSafety">安全红线</a>
+      <a href="#deployment" data-i18n="tabDeploy">中国部署</a>
+    </nav>
+
+    <section id="roles" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="rolesEyebrow">Care model</p>
+        <h2 data-i18n="rolesTitle">出生后6个月简单分工</h2>
+      </div>
+      <div class="card notice">
+        <h3 data-i18n="outsourcingTitle">家务外包/自动化边界</h3>
+        <ul>
+          <li data-i18n="outsourceFood">大人的饭有订阅送餐；月子餐可以另外订；爸爸公司包午餐和晚餐。</li>
+          <li data-i18n="outsourceGrocery">买菜主要靠配送；临时缺东西楼下5分钟有超市。</li>
+          <li data-i18n="outsourceLaundry">公寓有公共洗衣房，随时下去洗；奶瓶用自动清洗消毒机器。</li>
+          <li data-i18n="outsourceCleaning">家里有扫地机器人和吸尘器；需要时可以请清洁工。</li>
+          <li data-i18n="outsourceTransport">出门不用开车，可以坐 Waymo 或打车。</li>
+        </ul>
+      </div>
+      <div id="roleCards" class="role-grid"></div>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="coursesEyebrow">Training library</p>
+        <h2 data-i18n="coursesTitle">课程详情</h2>
+        <p data-i18n="coursesNote" class="muted">中文资源和英文资源分开列出。YouTube 资源可打开字幕或自动翻译中文；在中国大陆网络环境下，YouTube 链接本身可能无法直接访问。</p>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">全部</button>
+        <button class="filter" type="button" data-filter="zh" data-i18n="filterZh">中文资源</button>
+        <button class="filter" type="button" data-filter="en" data-i18n="filterEn">英文资源</button>
+        <button class="filter" type="button" data-filter="required" data-i18n="filterReq">必修</button>
+      </div>
+      <div id="courseList" class="course-list"></div>
+    </section>
+
+    <section id="weekly" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="weeklyEyebrow">After birth</p>
+        <h2 data-i18n="weeklyTitle">出生后6个月每周计划</h2>
+        <p class="muted" data-i18n="weeklyNote">这是家庭运行计划，不替代儿科医生、OB、IBCLC或急救建议。</p>
+      </div>
+      <div id="weeklyPlan" class="week-list"></div>
+    </section>
+
+    <section id="safety" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="safetyEyebrow">Non-negotiables</p>
+        <h2 data-i18n="safetyTitle">奶奶版冰箱安全红线</h2>
+      </div>
+      <div id="safetyList" class="safety-grid"></div>
+    </section>
+
+    <section id="deployment" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Static website</p>
+        <h2 data-i18n="deployTitle">中国可访问部署建议</h2>
+      </div>
+      <div class="card">
+        <ol class="deploy-list">
+          <li data-i18n="deploy1">最稳妥：上传整个文件夹到阿里云 OSS、腾讯云 COS 或华为云 OBS 的静态网站托管。</li>
+          <li data-i18n="deploy2">只需要三个核心文件：index.html、styles.css、app.js；不依赖外部字体、外部 JS 或嵌入视频。</li>
+          <li data-i18n="deploy3">如果用中国大陆服务器/对象存储并绑定自有域名，通常需要做 ICP 备案。</li>
+          <li data-i18n="deploy4">课程视频不要嵌入页面，保持为普通链接；这样网站本身在中国更稳，外部平台可用性单独处理。</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">进度只保存在当前浏览器本地，不上传。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
