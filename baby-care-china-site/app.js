@@ -3,13 +3,15 @@ const state = {
   filter: 'all'
 };
 
+const UCSF_INFO_URL = 'https://www.ucsfhealth.org/patients-visitors/support-services/great-expectations-pregnancy-classes';
+
 const i18n = {
   zh: {
     title: '妈妈爸爸奶奶宝宝照护计划',
-    subtitle: '6个月分工、课程详情与完成进度追踪',
+    subtitle: '6个月分工、UCSF已报名课程、课程详情与完成进度追踪',
     reset: '重置进度',
     courseProgressLabel: '课程完成度',
-    tabRoles: '6个月分工', tabCourses: '课程详情', tabSafety: '安全红线', tabDeploy: '中国部署',
+    tabRoles: '6个月分工', tabEnrolled: 'UCSF已报名', tabCourses: '课程详情', tabSafety: '安全红线', tabDeploy: '中国部署',
     rolesEyebrow: 'Care model', rolesTitle: '出生后6个月简单分工',
     outsourcingTitle: '家务外包/自动化边界',
     outsourceFood: '大人的饭有订阅送餐；月子餐可以另外订；爸爸公司包午餐和晚餐。',
@@ -17,6 +19,8 @@ const i18n = {
     outsourceLaundry: '公寓有公共洗衣房，随时下去洗；奶瓶用自动清洗消毒机器。',
     outsourceCleaning: '家里有扫地机器人和吸尘器；需要时可以请清洁工。',
     outsourceTransport: '出门不用开车，可以坐 Waymo 或打车。',
+    enrolledEyebrow: 'Booked classes', enrolledTitle: 'UCSF 已报名课程',
+    enrolledNote: '这些是妈妈和爸爸已经报名的 UCSF 线下课程，按日期排序。',
     coursesEyebrow: 'Training library', coursesTitle: '课程详情',
     coursesNote: '中文资源和英文资源分开列出。已删除 Stanford Digital Medic 中文链接，因为 Mandarin Chinese 页面目前主要显示 COVID 内容，不适合当母婴课程。YouTube 资源可打开字幕或自动翻译中文；中国大陆网络环境下，YouTube 本身可能无法直接访问。',
     filterAll: '全部', filterZh: '中文资源', filterEn: '英文资源', filterReq: '必修',
@@ -27,14 +31,15 @@ const i18n = {
     deploy3: '如果用中国大陆服务器/对象存储并绑定自有域名，通常需要做 ICP 备案。',
     deploy4: '课程视频不要嵌入页面，保持为普通链接；这样网站本身在中国更稳，外部平台可用性单独处理。',
     footer: '进度只保存在当前浏览器本地，不上传。',
-    who: '谁该看', time: '建议时间', summary: '概要', takeaway: '课程总结', open: '打开链接', done: '已完成', required: '必修', optional: '选修', tbd: '链接待定'
+    who: '谁该看', time: '建议时间', summary: '概要', takeaway: '课程总结', open: '打开链接', done: '已完成', required: '必修', optional: '选修', tbd: '链接待定',
+    date: '日期', hours: '时间', location: '地点', attendees: '人数', status: '状态', classType: '类型'
   },
   en: {
     title: 'Baby Care Plan for Mother, Father, and Grandmother',
-    subtitle: '6-month roles, course details, and completion tracking',
+    subtitle: '6-month roles, enrolled UCSF classes, course details, and completion tracking',
     reset: 'Reset progress',
     courseProgressLabel: 'Course progress',
-    tabRoles: '6-Month Roles', tabCourses: 'Course Details', tabSafety: 'Safety Rules', tabDeploy: 'China Hosting',
+    tabRoles: '6-Month Roles', tabEnrolled: 'UCSF Booked', tabCourses: 'Course Details', tabSafety: 'Safety Rules', tabDeploy: 'China Hosting',
     rolesEyebrow: 'Care model', rolesTitle: 'Simple 6-month family care plan',
     outsourcingTitle: 'Household outsourcing / automation boundary',
     outsourceFood: 'Adult meals are covered by meal delivery; postpartum meals can be ordered; father has lunch and dinner at work.',
@@ -42,6 +47,8 @@ const i18n = {
     outsourceLaundry: 'The apartment has shared laundry rooms available anytime; bottles are handled by an automatic bottle washer/sterilizer.',
     outsourceCleaning: 'Robot vacuums and a Dyson handle routine cleaning; cleaners can be hired when needed.',
     outsourceTransport: 'No driving needed; Waymo or rideshare can be used.',
+    enrolledEyebrow: 'Booked classes', enrolledTitle: 'UCSF Enrolled Classes',
+    enrolledNote: 'These are the in-person UCSF classes already booked for mother and father, sorted by date.',
     coursesEyebrow: 'Training library', coursesTitle: 'Course Details',
     coursesNote: 'Chinese and English resources are separated. Stanford Digital Medic Chinese was removed because the Mandarin Chinese page currently mainly shows COVID content, not maternal/newborn training. YouTube resources can use Chinese captions/auto-translate, but YouTube itself may not be directly reachable from mainland China.',
     filterAll: 'All', filterZh: 'Chinese', filterEn: 'English', filterReq: 'Required',
@@ -52,7 +59,8 @@ const i18n = {
     deploy3: 'If you use mainland China hosting/object storage with your own domain, ICP filing is usually required.',
     deploy4: 'Keep course videos as ordinary links rather than embedded players; this keeps the site itself stable while each external platform is handled separately.',
     footer: 'Progress is saved only in this browser via localStorage. Nothing is uploaded.',
-    who: 'Who should watch', time: 'Best time', summary: 'Summary', takeaway: 'Takeaway', open: 'Open link', done: 'Done', required: 'Required', optional: 'Optional', tbd: 'Link TBD'
+    who: 'Who should watch', time: 'Best time', summary: 'Summary', takeaway: 'Takeaway', open: 'Open link', done: 'Done', required: 'Required', optional: 'Optional', tbd: 'Link TBD',
+    date: 'Date', hours: 'Time', location: 'Location', attendees: 'Attendees', status: 'Status', classType: 'Type'
   }
 };
 
@@ -80,14 +88,61 @@ const roles = [
   }
 ];
 
+const enrolled = [
+  {
+    id: 'ucsf-birth-center-tour-2026-06-09', typeZh: '参观', typeEn: 'Tour', statusZh: '已报名', statusEn: 'Enrolled',
+    titleZh: 'Birth Center Tour', titleEn: 'Birth Center Tour',
+    dateZh: '2026年6月9日（周二）', dateEn: 'Tue Jun 09, 2026', hoursZh: '4:46 PM', hoursEn: '4:46 PM',
+    locationZh: 'Mission Bay, 1855 4th Street; Third Floor, Suite A3473', locationEn: 'Mission Bay, 1855 4th Street; Third Floor, Suite A3473',
+    attendeesZh: '2人（妈妈、爸爸）', attendeesEn: '2 attendees: mother and father',
+    summaryZh: '熟悉 UCSF Birth Center 到院路线、空间布局和临产到达流程。',
+    summaryEn: 'Get familiar with the UCSF Birth Center location, layout, and arrival flow for labor.',
+    takeawayZh: '参观后把“什么时候出发、从哪里进、去哪里报到、紧急情况怎么处理”写成家庭流程。',
+    takeawayEn: 'After the tour, turn the arrival route, check-in point, and emergency pathway into a family SOP.'
+  },
+  {
+    id: 'ucsf-new-nest-2026-08-12', typeZh: '线下课', typeEn: 'In-person class', statusZh: '已报名', statusEn: 'Enrolled',
+    titleZh: 'The New Nest: From Partners to Parents', titleEn: 'The New Nest: From Partners to Parents',
+    dateZh: '2026年8月12日（周三）', dateEn: 'Wed Aug 12, 2026', hoursZh: '6:00 PM - 7:30 PM', hoursEn: '6:00 PM - 7:30 PM',
+    locationZh: '1855 4th Street; Third Floor, Suite A3473', locationEn: '1855 4th Street; Third Floor, Suite A3473',
+    attendeesZh: '2人（妈妈、爸爸）', attendeesEn: '2 attendees: mother and father',
+    summaryZh: '帮助妈妈爸爸从伴侣关系过渡到共同育儿关系，提前处理产后沟通、分工和冲突。',
+    summaryEn: 'Helps mother and father transition from partners to co-parents and plan communication, roles, and conflict prevention.',
+    takeawayZh: '上完课后确认夜间分工、访客边界、奶奶参与方式和妈妈恢复优先级。',
+    takeawayEn: 'After class, confirm night shifts, visitor boundaries, grandmother’s role, and mother’s recovery priorities.'
+  },
+  {
+    id: 'ucsf-childbirth-intensive-2026-08-22', typeZh: '线下课', typeEn: 'In-person class', statusZh: '已报名', statusEn: 'Enrolled',
+    titleZh: 'Childbirth Preparation: Intensive', titleEn: 'Childbirth Preparation: Intensive',
+    dateZh: '2026年8月22日（周六）', dateEn: 'Sat Aug 22, 2026', hoursZh: '9:30 AM - 5:00 PM', hoursEn: '9:30 AM - 5:00 PM',
+    locationZh: '1855 4th Street; Third Floor, Suite A3473', locationEn: '1855 4th Street; Third Floor, Suite A3473',
+    attendeesZh: '2人（妈妈、爸爸）', attendeesEn: '2 attendees: mother and father',
+    summaryZh: '集中学习分娩阶段、呼吸放松、陪产支持、药物选择、剖腹产变化和产后即时护理。',
+    summaryEn: 'A concentrated childbirth-prep class covering labor stages, breathing/relaxation, support, medications, cesarean variations, and immediate postpartum care.',
+    takeawayZh: '上完课后整理 birth preference、医院包、爸爸陪产任务和“何时去医院”标准。',
+    takeawayEn: 'After class, finalize birth preferences, hospital bag, father’s labor-support tasks, and when-to-go-to-hospital rules.'
+  },
+  {
+    id: 'ucsf-breastfeeding-first-months-2026-09-19', typeZh: '线下课', typeEn: 'In-person class', statusZh: '已报名', statusEn: 'Enrolled',
+    titleZh: 'Breastfeeding and the First Few Months', titleEn: 'Breastfeeding and the First Few Months',
+    dateZh: '2026年9月19日（周六）', dateEn: 'Sat Sep 19, 2026', hoursZh: '9:30 AM - 2:30 PM', hoursEn: '9:30 AM - 2:30 PM',
+    locationZh: '1855 4th Street; Third Floor, Suite A3473', locationEn: '1855 4th Street; Third Floor, Suite A3473',
+    attendeesZh: '2人（妈妈、爸爸）', attendeesEn: '2 attendees: mother and father',
+    summaryZh: '学习母乳生理、泌乳、含乳、姿势、建立奶量和处理常见哺乳挑战。',
+    summaryEn: 'Covers breast physiology, milk production, latch, positioning, building supply, and common breastfeeding challenges.',
+    takeawayZh: '上完课后建立喂养 Plan A/B/C：直喂、泵奶瓶喂、配方奶备用，并安排 IBCLC 支持路径。',
+    takeawayEn: 'After class, build Feeding Plan A/B/C: nursing, pumped bottles, and formula backup, plus an IBCLC support path.'
+  }
+];
+
 const courses = [
   {
     id: 'ucsf-great-expectations', lang: 'en', required: true,
-    titleZh: 'UCSF Great Expectations 新生儿/母乳/育儿课程',
-    titleEn: 'UCSF Great Expectations Pregnancy & Postpartum Classes',
-    url: 'https://www.ucsfhealth.org/patients-visitors/support-services/great-expectations-pregnancy-classes',
+    titleZh: 'UCSF Great Expectations 课程总入口',
+    titleEn: 'UCSF Great Expectations Program Overview',
+    url: UCSF_INFO_URL,
     whoZh: '妈妈、爸爸为主；奶奶可看课程总结。', whoEn: 'Mother and father primarily; grandmother can review the summary.',
-    timeZh: '孕晚期；已经报名则按医院时间完成。', timeEn: 'Third trimester; complete based on the hospital schedule already booked.',
+    timeZh: '按已报名日期完成；总入口用于查看课程说明。', timeEn: 'Complete by the booked dates; use this page for class descriptions.',
     summaryZh: 'UCSF 体系课程，覆盖 pregnancy、birth、baby care、breastfeeding、parenting。',
     summaryEn: 'UCSF class set covering pregnancy, birth, baby care, breastfeeding, and parenting.',
     takeawayZh: '作为医院主线课，主要让妈妈爸爸理解产后护理、宝宝基础护理、母乳和育儿框架。',
@@ -249,6 +304,38 @@ function renderRoles() {
   `).join('');
 }
 
+function renderEnrolled() {
+  const root = document.getElementById('enrolledList');
+  root.innerHTML = enrolled.map(c => {
+    const checked = localStorage.getItem(key('enrolled', c.id)) === '1' ? 'checked' : '';
+    return `
+      <article class="card course-card enrolled-card" data-enrolled-id="${c.id}">
+        <div class="course-top">
+          <h3>${getText(c, 'title')}</h3>
+          <label class="checkline"><input type="checkbox" class="enrolled-check" data-id="${c.id}" ${checked}> ${t('done')}</label>
+        </div>
+        <div class="badges">
+          <span class="badge">UCSF</span>
+          <span class="badge">${getText(c, 'status')}</span>
+          <span class="badge">${getText(c, 'type')}</span>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-box"><strong>${t('date')}</strong><p>${getText(c, 'date')}</p></div>
+          <div class="detail-box"><strong>${t('hours')}</strong><p>${getText(c, 'hours')}</p></div>
+          <div class="detail-box"><strong>${t('location')}</strong><p>${getText(c, 'location')}</p></div>
+          <div class="detail-box"><strong>${t('attendees')}</strong><p>${getText(c, 'attendees')}</p></div>
+          <div class="detail-box"><strong>${t('summary')}</strong><p>${getText(c, 'summary')}</p></div>
+          <div class="detail-box"><strong>${t('takeaway')}</strong><p>${getText(c, 'takeaway')}</p></div>
+        </div>
+        <div class="links"><a class="link-btn" href="${UCSF_INFO_URL}" target="_blank" rel="noopener noreferrer">${t('open')}</a></div>
+      </article>
+    `;
+  }).join('');
+  document.querySelectorAll('.enrolled-check').forEach(cb => {
+    cb.addEventListener('change', e => { localStorage.setItem(key('enrolled', e.target.dataset.id), e.target.checked ? '1' : '0'); updateProgress(); });
+  });
+}
+
 function courseMatches(c) {
   if (state.filter === 'all') return true;
   if (state.filter === 'required') return c.required;
@@ -294,11 +381,13 @@ function renderSafety() {
 
 function updateProgress() {
   const courseDone = courses.filter(c => localStorage.getItem(key('course', c.id)) === '1').length;
-  document.getElementById('courseProgress').textContent = `${Math.round(courseDone / courses.length * 100)}%`;
+  const enrolledDone = enrolled.filter(c => localStorage.getItem(key('enrolled', c.id)) === '1').length;
+  const total = courses.length + enrolled.length;
+  document.getElementById('courseProgress').textContent = `${Math.round((courseDone + enrolledDone) / total * 100)}%`;
 }
 
 function renderAll() {
-  renderStaticText(); renderRoles(); renderCourses(); renderSafety(); updateProgress();
+  renderStaticText(); renderRoles(); renderEnrolled(); renderCourses(); renderSafety(); updateProgress();
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
