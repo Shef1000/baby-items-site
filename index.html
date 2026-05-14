@@ -1,134 +1,113 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baby Registry Shortlist</title>
-    <meta
-      name="description"
-      content="A practical, high-quality baby registry shortlist with priorities and budget estimates."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css?v=20260511-1" />
-  </head>
-  <body>
-    <div class="bg-cloud bg-cloud-1" aria-hidden="true"></div>
-    <div class="bg-cloud bg-cloud-2" aria-hidden="true"></div>
-
-    <header class="hero">
-      <p class="eyebrow">Baby Boy Registry</p>
-      <h1>Useful, High-Quality Baby Items</h1>
-      <p class="subtitle">
-        Prioritized shortlist with estimated prices, purchased tracking, and product photos.
-      </p>
-      <div class="hero-actions">
-        <button id="copyBtn" class="btn-primary">Copy Page Link</button>
-        <button id="resetBtn" class="btn-secondary" type="button">Reset Checks</button>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baby Care Plan | 妈妈爸爸奶奶育儿照护计划</title>
+  <meta name="description" content="A bilingual baby-care course hub with 6-month role plan, enrolled UCSF classes, course details, and progress tracking for mother, father, and grandmother." />
+  <link rel="stylesheet" href="./baby-care-china-site/styles.css?v=20260513-root" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">Mother · Father · Grandmother</p>
+        <h1 data-i18n="title">妈妈爸爸奶奶宝宝照护计划</h1>
+        <p class="subtitle" data-i18n="subtitle">6个月分工、UCSF已报名课程、课程详情与完成进度追踪</p>
       </div>
-    </header>
+      <div class="header-actions">
+        <button id="langToggle" class="pill-btn" type="button">English</button>
+        <button id="resetProgress" class="ghost-btn" type="button" data-i18n="reset">重置进度</button>
+      </div>
+    </div>
+  </header>
 
-    <main class="content" id="list">
-      <section class="view-tabs" aria-label="List tabs">
-        <button class="view-tab-btn is-active" data-view="babyView" type="button">Baby List</button>
-        <button class="view-tab-btn" data-view="benefitsView" type="button">Free Benefits</button>
-        <button class="view-tab-btn" data-view="cautionView" type="button">Skip / Use Carefully</button>
-      </section>
-
-      <section class="view-panel is-active" id="babyView">
-        <section class="summary-grid" aria-label="Registry summary">
-          <article class="summary-card">
-            <p class="summary-label">Selected Items</p>
-            <p class="summary-value" id="selectedCount">0</p>
-          </article>
-          <article class="summary-card">
-            <p class="summary-label">Selected Budget</p>
-            <p class="summary-value" id="selectedBudget">$0</p>
-          </article>
-          <article class="summary-card">
-            <p class="summary-label">Must-Have Remaining</p>
-            <p class="summary-value" id="mustRemaining">0</p>
-          </article>
-        </section>
-
-        <section class="filters" aria-label="Filters">
-          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
-          <button class="filter-btn" data-filter="Must" type="button">Must-Have</button>
-          <button class="filter-btn" data-filter="Nice" type="button">Nice-to-Have</button>
-        </section>
-
-        <section>
-          <h2>Core Picks</h2>
-          <div class="card-grid" id="corePicks"></div>
-        </section>
-      </section>
-
-      <section class="view-panel" id="benefitsView">
-        <section>
-          <h2>Free Benefits - California</h2>
-          <div class="benefit-grid" id="freeBenefits"></div>
-        </section>
-      </section>
-
-      <section class="view-panel" id="cautionView">
-        <section>
-          <h2>Skip / Use Carefully</h2>
-          <div class="card-grid" id="cautions"></div>
-        </section>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        Safe sleep: babies should sleep on a firm, flat surface with no pillows,
-        loungers, or loose bedding.
-      </p>
-      <p>Updated: May 11, 2026</p>
-    </footer>
-
-    <template id="itemTemplate">
-      <article class="item-card">
-        <img class="item-image" alt="Product image" loading="lazy" referrerpolicy="no-referrer" />
-        <div class="card-top">
-          <span class="category"></span>
-          <span class="priority"></span>
-        </div>
-        <h3></h3>
-        <p class="why"></p>
-        <p class="notes"></p>
-        <div class="card-bottom">
-          <p class="price"></p>
-          <label class="check-wrap">
-            <input class="item-check" type="checkbox" />
-            <span class="check-label">Added</span>
-          </label>
-        </div>
-        <a class="primary-link" target="_blank" rel="noopener noreferrer">Open item</a>
-        <details class="item-links">
-          <summary class="link">Open item links</summary>
-          <ul class="item-links-list"></ul>
-        </details>
-        <button class="bundle-checkout-btn" type="button">Checkout Bundle</button>
+  <main>
+    <section class="summary-grid summary-grid-single" aria-label="Summary cards">
+      <article class="card stat-card">
+        <span class="stat" id="courseProgress">0%</span>
+        <span data-i18n="courseProgressLabel">课程完成度</span>
       </article>
-    </template>
+    </section>
 
-    <template id="benefitTemplate">
-      <article class="benefit-card">
-        <div class="card-top">
-          <span class="category"></span>
-          <span class="benefit-status"></span>
-        </div>
-        <h3></h3>
-        <p class="why"></p>
-        <p class="notes"></p>
-        <a class="primary-link" target="_blank" rel="noopener noreferrer">Check benefit</a>
-      </article>
-    </template>
+    <nav class="tabs" aria-label="Page sections">
+      <a href="#roles" data-i18n="tabRoles">6个月分工</a>
+      <a href="#enrolled" data-i18n="tabEnrolled">UCSF已报名</a>
+      <a href="#courses" data-i18n="tabCourses">课程详情</a>
+      <a href="#safety" data-i18n="tabSafety">安全红线</a>
+      <a href="#deployment" data-i18n="tabDeploy">中国部署</a>
+    </nav>
 
-    <script src="./script.js?v=20260513-3"></script>
-  </body>
+    <section id="roles" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="rolesEyebrow">Care model</p>
+        <h2 data-i18n="rolesTitle">出生后6个月简单分工</h2>
+      </div>
+      <div class="card notice">
+        <h3 data-i18n="outsourcingTitle">家务外包/自动化边界</h3>
+        <ul>
+          <li data-i18n="outsourceFood">大人的饭有订阅送餐；月子餐可以另外订；爸爸公司包午餐和晚餐。</li>
+          <li data-i18n="outsourceGrocery">买菜主要靠配送；临时缺东西楼下5分钟有超市。</li>
+          <li data-i18n="outsourceLaundry">公寓有公共洗衣房，随时下去洗；奶瓶用自动清洗消毒机器。</li>
+          <li data-i18n="outsourceCleaning">家里有扫地机器人和吸尘器；需要时可以请清洁工。</li>
+          <li data-i18n="outsourceTransport">出门不用开车，可以坐 Waymo 或打车。</li>
+        </ul>
+      </div>
+      <div id="roleCards" class="role-grid"></div>
+    </section>
+
+    <section id="enrolled" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="enrolledEyebrow">Booked classes</p>
+        <h2 data-i18n="enrolledTitle">UCSF 已报名课程</h2>
+        <p data-i18n="enrolledNote" class="muted">这些是妈妈和爸爸已经报名的 UCSF 线下课程，按日期排序。</p>
+      </div>
+      <div id="enrolledList" class="course-list"></div>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="coursesEyebrow">Training library</p>
+        <h2 data-i18n="coursesTitle">课程详情</h2>
+        <p data-i18n="coursesNote" class="muted">中文资源和英文资源分开列出。YouTube 资源可打开字幕或自动翻译中文；在中国大陆网络环境下，YouTube 链接本身可能无法直接访问。</p>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">全部</button>
+        <button class="filter" type="button" data-filter="zh" data-i18n="filterZh">中文资源</button>
+        <button class="filter" type="button" data-filter="en" data-i18n="filterEn">英文资源</button>
+        <button class="filter" type="button" data-filter="required" data-i18n="filterReq">必修</button>
+      </div>
+      <div id="courseList" class="course-list"></div>
+    </section>
+
+    <section id="safety" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="safetyEyebrow">Non-negotiables</p>
+        <h2 data-i18n="safetyTitle">奶奶版冰箱安全红线</h2>
+      </div>
+      <div id="safetyList" class="safety-grid"></div>
+    </section>
+
+    <section id="deployment" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Static website</p>
+        <h2 data-i18n="deployTitle">中国可访问部署建议</h2>
+      </div>
+      <div class="card">
+        <ol class="deploy-list">
+          <li data-i18n="deploy1">最稳妥：上传整个文件夹到阿里云 OSS、腾讯云 COS 或华为云 OBS 的静态网站托管。</li>
+          <li data-i18n="deploy2">只需要三个核心文件：index.html、styles.css、app.js；不依赖外部字体、外部 JS 或嵌入视频。</li>
+          <li data-i18n="deploy3">如果用中国大陆服务器/对象存储并绑定自有域名，通常需要做 ICP 备案。</li>
+          <li data-i18n="deploy4">课程视频不要嵌入页面，保持为普通链接；这样网站本身在中国更稳，外部平台可用性单独处理。</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">进度只保存在当前浏览器本地，不上传。</p>
+  </footer>
+
+  <script src="./baby-care-china-site/app.js?v=20260513-root"></script>
+</body>
 </html>
