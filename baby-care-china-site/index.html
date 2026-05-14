@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baby Care Plan | 妈妈爸爸奶奶育儿照护计划</title>
-  <meta name="description" content="A bilingual baby-care course hub with 6-month weekly plan and progress tracking for mother, father, and grandmother." />
+  <meta name="description" content="A bilingual baby-care course hub with 6-month role plan, course details, and progress tracking for mother, father, and grandmother." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
       <div>
         <p class="eyebrow">Mother · Father · Grandmother</p>
         <h1 data-i18n="title">妈妈爸爸奶奶宝宝照护计划</h1>
-        <p class="subtitle" data-i18n="subtitle">6个月分工、课程清单、每周计划与进度追踪</p>
+        <p class="subtitle" data-i18n="subtitle">6个月分工、课程详情与完成进度追踪</p>
       </div>
       <div class="header-actions">
         <button id="langToggle" class="pill-btn" type="button">English</button>
@@ -23,25 +23,16 @@
   </header>
 
   <main>
-    <section class="summary-grid" aria-label="Summary cards">
+    <section class="summary-grid summary-grid-single" aria-label="Summary cards">
       <article class="card stat-card">
         <span class="stat" id="courseProgress">0%</span>
         <span data-i18n="courseProgressLabel">课程完成度</span>
-      </article>
-      <article class="card stat-card">
-        <span class="stat" id="weekProgress">0%</span>
-        <span data-i18n="weekProgressLabel">每周计划完成度</span>
-      </article>
-      <article class="card stat-card">
-        <span class="stat">26</span>
-        <span data-i18n="weeksLabel">出生后周计划</span>
       </article>
     </section>
 
     <nav class="tabs" aria-label="Page sections">
       <a href="#roles" data-i18n="tabRoles">6个月分工</a>
       <a href="#courses" data-i18n="tabCourses">课程详情</a>
-      <a href="#weekly" data-i18n="tabWeekly">每周计划</a>
       <a href="#safety" data-i18n="tabSafety">安全红线</a>
       <a href="#deployment" data-i18n="tabDeploy">中国部署</a>
     </nav>
@@ -77,15 +68,6 @@
         <button class="filter" type="button" data-filter="required" data-i18n="filterReq">必修</button>
       </div>
       <div id="courseList" class="course-list"></div>
-    </section>
-
-    <section id="weekly" class="section">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="weeklyEyebrow">After birth</p>
-        <h2 data-i18n="weeklyTitle">出生后6个月每周计划</h2>
-        <p class="muted" data-i18n="weeklyNote">这是家庭运行计划，不替代儿科医生、OB、IBCLC或急救建议。</p>
-      </div>
-      <div id="weeklyPlan" class="week-list"></div>
     </section>
 
     <section id="safety" class="section">
