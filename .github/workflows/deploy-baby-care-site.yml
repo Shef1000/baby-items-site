@@ -1,3 +1,4 @@
+# Trigger deploy after GitHub Pages source was set to GitHub Actions.
 name: Deploy Baby Care Site to GitHub Pages
 
 on:
