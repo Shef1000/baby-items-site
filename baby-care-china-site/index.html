@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baby Care Plan | 妈妈爸爸奶奶育儿照护计划</title>
-  <meta name="description" content="A bilingual baby-care course hub with 6-month role plan, course details, and progress tracking for mother, father, and grandmother." />
+  <meta name="description" content="A bilingual baby-care course hub with 6-month role plan, enrolled UCSF classes, course details, and progress tracking for mother, father, and grandmother." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
       <div>
         <p class="eyebrow">Mother · Father · Grandmother</p>
         <h1 data-i18n="title">妈妈爸爸奶奶宝宝照护计划</h1>
-        <p class="subtitle" data-i18n="subtitle">6个月分工、课程详情与完成进度追踪</p>
+        <p class="subtitle" data-i18n="subtitle">6个月分工、UCSF已报名课程、课程详情与完成进度追踪</p>
       </div>
       <div class="header-actions">
         <button id="langToggle" class="pill-btn" type="button">English</button>
@@ -32,6 +32,7 @@
 
     <nav class="tabs" aria-label="Page sections">
       <a href="#roles" data-i18n="tabRoles">6个月分工</a>
+      <a href="#enrolled" data-i18n="tabEnrolled">UCSF已报名</a>
       <a href="#courses" data-i18n="tabCourses">课程详情</a>
       <a href="#safety" data-i18n="tabSafety">安全红线</a>
       <a href="#deployment" data-i18n="tabDeploy">中国部署</a>
@@ -53,6 +54,15 @@
         </ul>
       </div>
       <div id="roleCards" class="role-grid"></div>
+    </section>
+
+    <section id="enrolled" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="enrolledEyebrow">Booked classes</p>
+        <h2 data-i18n="enrolledTitle">UCSF 已报名课程</h2>
+        <p data-i18n="enrolledNote" class="muted">这些是妈妈和爸爸已经报名的 UCSF 线下课程，按日期排序。</p>
+      </div>
+      <div id="enrolledList" class="course-list"></div>
     </section>
 
     <section id="courses" class="section">
