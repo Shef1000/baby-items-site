@@ -1,4 +1,4 @@
-# Trigger deploy after GitHub Pages source was set to GitHub Actions.
+# Deploy the baby-care static site after GitHub Pages source is set to GitHub Actions.
 name: Deploy Baby Care Site to GitHub Pages
 
 on:
@@ -18,6 +18,9 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     environment:
@@ -26,13 +29,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload static site artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./baby-care-china-site
 
