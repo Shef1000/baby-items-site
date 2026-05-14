@@ -1,4 +1,5 @@
 # Deploy the baby-care static site after GitHub Pages source is set to GitHub Actions.
+# This workflow publishes baby-care-china-site as the GitHub Pages site root.
 name: Deploy Baby Care Site to GitHub Pages
 
 on:
@@ -6,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "baby-care-china-site/**"
+      - "index.html"
       - ".github/workflows/deploy-baby-care-site.yml"
   workflow_dispatch:
 
