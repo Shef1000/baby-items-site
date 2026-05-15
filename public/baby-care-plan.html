@@ -214,6 +214,64 @@
         box-shadow: var(--shadow);
       }
 
+      .side-panel {
+        position: sticky;
+        top: 18px;
+        z-index: 3;
+        align-self: start;
+        min-width: 0;
+      }
+
+      .side-panel .tabs {
+        position: static;
+      }
+
+      .course-filter {
+        margin-top: 12px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+      }
+
+      .filter-title {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .filter-options {
+        display: grid;
+        gap: 8px;
+      }
+
+      .filter-btn {
+        width: 100%;
+        min-height: 42px;
+        border-radius: 14px;
+        padding: 9px 11px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .filter-btn.is-active {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .filter-count {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
       .tabs a {
         --nav-color: var(--accent);
         display: flex;
@@ -541,6 +599,10 @@
         padding: 4px 8px;
       }
 
+      .course-card.is-filtered {
+        display: none;
+      }
+
       .footer {
         max-width: 1180px;
         margin: 0 auto;
@@ -550,12 +612,43 @@
       }
 
       @media (max-width: 820px) {
+        body {
+          -webkit-text-size-adjust: 100%;
+        }
+
         .hero {
           grid-template-columns: 1fr;
+          gap: 14px;
+          padding: 24px 16px 18px;
         }
 
         .toolbar {
-          justify-content: flex-start;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: stretch;
+        }
+
+        button,
+        .tabs a {
+          min-height: 44px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+        }
+
+        .progress-wrap {
+          margin-top: 12px;
+          padding: 16px;
+          border-radius: 16px;
+        }
+
+        .quick-dashboard {
+          padding: 0 16px;
         }
 
         .grid,
@@ -569,15 +662,124 @@
 
         .content-layout {
           grid-template-columns: 1fr;
+          gap: 12px;
+          padding: 0 16px 16px;
+        }
+
+        .side-panel {
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          width: 100vw;
+          max-width: 100vw;
+          min-width: 0;
+          margin: 0 -16px;
+          border-bottom: 1px solid var(--line);
+          background: rgba(246, 247, 244, 0.96);
+          backdrop-filter: blur(12px);
+          overflow: hidden;
         }
 
         .tabs {
-          position: sticky;
-          top: 0;
+          width: 100%;
+          min-width: 0;
           flex-direction: row;
           overflow-x: auto;
           border-radius: 0;
-          margin: 0 -20px;
+          margin: 0;
+          padding: 10px 16px 8px;
+          border-width: 0;
+          background: transparent;
+          box-shadow: none;
+          scrollbar-width: none;
+        }
+
+        .tabs::-webkit-scrollbar,
+        .filter-options::-webkit-scrollbar {
+          display: none;
+        }
+
+        .tabs a {
+          flex: 0 0 auto;
+          padding: 8px 12px;
+          white-space: nowrap;
+        }
+
+        .nav-group {
+          align-self: center;
+          flex: 0 0 auto;
+          margin: 0 2px;
+        }
+
+        .course-filter {
+          margin: 0;
+          padding: 8px 16px 12px;
+          border-width: 0;
+          border-radius: 0;
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .filter-title {
+          margin-bottom: 6px;
+        }
+
+        .filter-options {
+          width: 100%;
+          min-width: 0;
+          display: flex;
+          overflow-x: auto;
+          gap: 8px;
+          padding-bottom: 2px;
+          scrollbar-width: none;
+        }
+
+        .filter-btn {
+          width: auto;
+          flex: 0 0 auto;
+          min-height: 40px;
+          border-radius: 999px;
+          padding: 8px 12px;
+          white-space: nowrap;
+        }
+
+        .filter-count {
+          margin-top: 6px;
+        }
+
+        .section-group {
+          margin: 12px 0 20px;
+          padding: 2px 12px;
+          border-radius: 16px;
+        }
+
+        .panel {
+          padding: 24px 0;
+          scroll-margin-top: 132px;
+        }
+
+        .card,
+        .phase,
+        .deployment,
+        .routine,
+        .rule {
+          padding: 16px;
+          border-radius: 16px;
+        }
+
+        .card-top {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .check {
+          justify-content: space-between;
+          width: 100%;
+          padding-top: 4px;
+        }
+
+        .summary-toggle {
+          width: 100%;
         }
 
         dl {
@@ -636,22 +838,34 @@
       </section>
 
       <div class="content-layout">
-        <nav class="tabs" aria-label="Page sections">
-          <span class="nav-group">策略与执行</span>
-          <a class="nav-strategy" href="#strategy">学习策略</a>
-          <a class="nav-operations" href="#operations">执行原则</a>
-          <a class="nav-care-model" href="#careModel">6个月分工</a>
-          <a class="nav-care-rules" href="#careRules">照护规则</a>
-          <a class="nav-routine" href="#dailyRoutine">日常流程</a>
-          <span class="nav-group">课程与资源</span>
-          <a class="nav-booked" href="#bookedClasses">UCSF已报名</a>
-          <a class="nav-library" href="#trainingLibrary">课程详情</a>
-          <a class="nav-mental" href="#mentalHealth">心理健康</a>
-          <a class="nav-recovery" href="#postpartumRecovery">产后恢复</a>
-          <a class="nav-sleep" href="#babySleep">宝宝睡眠</a>
-          <a class="nav-timeline" href="#timeline">准备时间线</a>
-          <a class="nav-hosting" href="#chinaDeploy">中国部署</a>
-        </nav>
+        <aside class="side-panel" aria-label="页面导航与课程筛选">
+          <nav class="tabs" aria-label="Page sections">
+            <span class="nav-group">策略与执行</span>
+            <a class="nav-strategy" href="#strategy">学习策略</a>
+            <a class="nav-operations" href="#operations">执行原则</a>
+            <a class="nav-care-model" href="#careModel">6个月分工</a>
+            <a class="nav-care-rules" href="#careRules">照护规则</a>
+            <a class="nav-routine" href="#dailyRoutine">日常流程</a>
+            <span class="nav-group">课程与资源</span>
+            <a class="nav-booked" href="#bookedClasses">UCSF已报名</a>
+            <a class="nav-library" href="#trainingLibrary">课程详情</a>
+            <a class="nav-mental" href="#mentalHealth">心理健康</a>
+            <a class="nav-recovery" href="#postpartumRecovery">产后恢复</a>
+            <a class="nav-sleep" href="#babySleep">宝宝睡眠</a>
+            <a class="nav-timeline" href="#timeline">准备时间线</a>
+            <a class="nav-hosting" href="#chinaDeploy">中国部署</a>
+          </nav>
+          <section class="course-filter" aria-label="课程筛选">
+            <p class="filter-title">课程筛选</p>
+            <div class="filter-options" role="group" aria-label="按照护者筛选课程">
+              <button class="filter-btn is-active" type="button" data-filter="all">全部课程</button>
+              <button class="filter-btn" type="button" data-filter="mom">我的课程 / 妈妈</button>
+              <button class="filter-btn" type="button" data-filter="dad">爸爸相关</button>
+              <button class="filter-btn" type="button" data-filter="grandma">奶奶相关</button>
+            </div>
+            <p class="filter-count" id="filterCount">显示全部课程</p>
+          </section>
+        </aside>
 
         <main>
         <div class="section-group strategy-ops-band">
@@ -1318,6 +1532,9 @@
       const completeCount = document.getElementById("completeCount");
       const totalCount = document.getElementById("totalCount");
       const requiredCount = document.getElementById("requiredCount");
+      const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
+      const filterCount = document.getElementById("filterCount");
+      let activeFilter = localStorage.getItem("babyCarePlanCourseFilter.v1") || "all";
       let english = false;
       const originalText = new WeakMap();
       const translations = {
@@ -1348,6 +1565,14 @@
         "产后恢复": "Postpartum recovery",
         "准备时间线": "Preparation timeline",
         "中国部署": "China hosting",
+        "页面导航与课程筛选": "Page navigation and course filter",
+        "课程筛选": "Course filter",
+        "按照护者筛选课程": "Filter courses by caregiver",
+        "全部课程": "All courses",
+        "我的课程 / 妈妈": "My courses / Mom",
+        "爸爸相关": "Dad",
+        "奶奶相关": "Grandma",
+        "显示全部课程": "Showing all courses",
         "综合学习，充分准备，科学照护": "Comprehensive learning, strong preparation, scientific care",
         "这份计划的目标不是收集很多链接，而是让妈妈、爸爸、奶奶对关键照护原则形成一致理解：什么必须做、什么不能做、什么时候求助。": "The goal of this plan is not to collect links, but to align mother, father, and grandmother on key care principles: what must be done, what must not be done, and when to get help.",
         "全面学习": "Comprehensive learning",
@@ -1761,6 +1986,42 @@
         });
       }
 
+      function audienceMatchesFilter(cardId, filter) {
+        if (filter === "all") return true;
+        const audience = audienceByCard[cardId] || [];
+        return audience.some((key) => key === filter || key.startsWith(`${filter}-`));
+      }
+
+      function updateCourseFilter() {
+        const courseCards = Array.from(document.querySelectorAll(".course-card[data-id]"));
+        let visible = 0;
+
+        filterButtons.forEach((button) => {
+          const isActive = button.dataset.filter === activeFilter;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        courseCards.forEach((card) => {
+          const shouldShow = audienceMatchesFilter(card.dataset.id, activeFilter);
+          card.classList.toggle("is-filtered", !shouldShow);
+          if (shouldShow) visible += 1;
+        });
+
+        if (activeFilter === "all") {
+          filterCount.textContent = english ? "Showing all courses" : "显示全部课程";
+        } else {
+          const labels = {
+            mom: english ? "my / mom" : "我的/妈妈",
+            dad: english ? "dad" : "爸爸",
+            grandma: english ? "grandma" : "奶奶"
+          };
+          filterCount.textContent = english
+            ? `Showing ${visible} courses for ${labels[activeFilter]}`
+            : `显示 ${visible} 个${labels[activeFilter]}相关课程`;
+        }
+      }
+
       function setupSummaryButtons() {
         document.querySelectorAll(".summary-box").forEach((box) => {
           if (box.previousElementSibling?.classList.contains("summary-toggle")) return;
@@ -1832,6 +2093,14 @@
         });
       });
 
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          activeFilter = button.dataset.filter;
+          localStorage.setItem("babyCarePlanCourseFilter.v1", activeFilter);
+          updateCourseFilter();
+        });
+      });
+
       document.getElementById("resetBtn").addEventListener("click", () => {
         saved.clear();
         save();
@@ -1845,6 +2114,7 @@
         translateStaticText();
         renderAudienceBadges();
         updateSummaryButtons();
+        updateCourseFilter();
         updateProgress();
       });
 
@@ -1852,6 +2122,7 @@
       setupSummaryButtons();
       translateStaticText();
       updateSummaryButtons();
+      updateCourseFilter();
       updateProgress();
     </script>
   </body>
