@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "deploy:cloudflare": "wrangler deploy"
+    "sync:cloudflare": "cp baby-care-plan.html public/index.html && cp baby-care-plan.html public/baby-care-plan.html",
+    "deploy:cloudflare": "npm run sync:cloudflare && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.15.2"
