@@ -2031,11 +2031,20 @@
       }
 
       function jumpToFilteredCourses() {
-        const firstVisibleCourse = Array.from(
-          document.querySelectorAll(".course-card[data-id]")
-        ).find((card) => !card.classList.contains("is-filtered"));
-        const target = firstVisibleCourse || document.getElementById("bookedClasses");
-        target?.scrollIntoView({ behavior: "auto", block: "start" });
+        window.requestAnimationFrame(() => {
+          const firstVisibleCourse = Array.from(
+            document.querySelectorAll(".course-card[data-id]")
+          ).find((card) => !card.classList.contains("is-filtered"));
+          const target = firstVisibleCourse || document.getElementById("bookedClasses");
+          if (!target) return;
+
+          const stickyPanel = document.querySelector(".side-panel");
+          const stickyOffset = stickyPanel && window.matchMedia("(max-width: 820px)").matches
+            ? stickyPanel.getBoundingClientRect().height + 12
+            : 24;
+          const top = target.getBoundingClientRect().top + window.scrollY - stickyOffset;
+          window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
+        });
       }
 
       function setupSummaryButtons() {
@@ -2114,9 +2123,7 @@
           activeFilter = button.dataset.filter;
           localStorage.setItem("babyCarePlanCourseFilter.v1", activeFilter);
           updateCourseFilter();
-          if (activeFilter !== "all") {
-            jumpToFilteredCourses();
-          }
+          jumpToFilteredCourses();
         });
       });
 
