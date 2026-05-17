@@ -134,18 +134,6 @@ const items = {
   ],
   addOns: [
     {
-      id: "burberry-diaper-bag",
-      name: "Burberry Norwich Check Diaper Bag",
-      category: "Daily Carry",
-      priority: "Nice",
-      price: 1590,
-      purchased: false,
-      image: "https://media.neimanmarcus.com/f_auto%2Cq_auto%3Alow%2Car_4%3A5%2Cc_fill%2Cdpr_2.0%2Cw_790/01/nm_5044086_100296_a",
-      why: "Second luxury bag option with dedicated diaper-bag layout.",
-      notes: "Official retailer product page as requested.",
-      url: "https://www.neimanmarcus.com/p/burberry-norwich-check-diaper-bag-prod281770060?childItemId=NMK2FDR_24"
-    },
-    {
       id: "portable-changing-pad",
       name: "Portable Changing Pad",
       category: "Outings",
