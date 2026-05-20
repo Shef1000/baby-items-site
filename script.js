@@ -41,6 +41,19 @@ const items = {
       url: "https://babyletto.com/products/yuzu-8-in-1-convertible-crib-with-all-stages-r-conversion-kits?variant=41415651721270"
     },
     {
+      id: "newton-nest-convertible-crib",
+      name: "Newton Nest 4-in-1 Convertible Crib",
+      category: "Sleep",
+      priority: "Must",
+      price: 749,
+      purchased: false,
+      image:
+        "https://www.newtonbaby.com/cdn/shop/files/4-AngledCrib-Natural.jpg?v=1753220377",
+      why: "4-in-1 bassinet-to-crib system that grows from newborn to about 5 years, with a bassinet mattress included.",
+      notes: "Good alternative to Babyletto Yuzu if you want Newton's bassinet mode, wheels for early months, mesh liner, and GREENGUARD Gold certification.",
+      url: "https://www.newtonbaby.com/products/newton-nest-crib?variant=46241386070213"
+    },
+    {
       id: "newton-mattress",
       name: "Newton Breathable Crib Mattress",
       category: "Sleep",
