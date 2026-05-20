@@ -229,6 +229,33 @@ const items = {
       url: "https://theollieworld.com/products/the-ollie-swaddle"
     }
   ],
+  parentWellness: [
+    {
+      id: "oura-ring-4",
+      name: "Oura Ring 4",
+      category: "Parent Wellness",
+      priority: "Nice",
+      price: 349,
+      purchased: true,
+      image: "https://ouraring.com/assets/icons/opengraph-400x400.png",
+      why: "Sleep, readiness, stress, heart-rate, and recovery tracking for parents during the fragmented newborn months.",
+      notes: "Purchased. Current official pricing starts at $349; ongoing Oura membership may be separate.",
+      url: "https://ouraring.com/product/rings/oura-ring-4/silver"
+    },
+    {
+      id: "eight-sleep-pod-5-core",
+      name: "Eight Sleep Pod 5 Core",
+      category: "Parent Wellness",
+      priority: "Nice",
+      price: 2599,
+      purchased: true,
+      image:
+        "https://res.cloudinary.com/eightsleep/image/upload/c_fill,w_1200,h_630,f_jpg,q_auto/v1747148102/pod-cover_1_q3rtmy.png",
+      why: "Dual-zone cooling/heating and sleep tracking to protect parent sleep quality during night feeds and split schedules.",
+      notes: "Purchased. Price shown for Pod 5 Core Queen from the current Eight Sleep product page; Autopilot plan may be separate.",
+      url: "https://www.eightsleep.com/us/product/pod/"
+    }
+  ],
   cautions: [
     {
       id: "boppy-lounger",
@@ -445,7 +472,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
 }
 
 function refreshSummary() {
-  const allTrackable = [...items.corePicks, ...items.addOns];
+  const allTrackable = [...items.corePicks, ...items.addOns, ...items.parentWellness];
 
   allTrackable.forEach((item) => {
     if (isPurchased(item)) {
@@ -512,6 +539,7 @@ function renderBenefits(sectionName, targetId) {
 
 renderItems("corePicks", "corePicks");
 renderItems("addOns", "corePicks");
+renderItems("parentWellness", "parentWellness");
 renderItems("cautions", "cautions", true, "caution");
 renderBenefits("freeBenefits", "freeBenefits");
 migrateLegacySelections();
@@ -537,7 +565,7 @@ copyBtn.addEventListener("click", async () => {
 const resetBtn = document.getElementById("resetBtn");
 resetBtn.addEventListener("click", () => {
   selected.clear();
-  [...items.corePicks, ...items.addOns].forEach((item) => {
+  [...items.corePicks, ...items.addOns, ...items.parentWellness].forEach((item) => {
     if (isPurchased(item)) {
       selected.add(item.id);
     }
