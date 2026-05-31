@@ -1,5 +1,6 @@
 const fallbackImage =
   "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?auto=format&fit=crop&w=900&q=80";
+const californiaCheckoutTaxRate = 0.08625;
 
 const items = {
   corePicks: [
@@ -75,7 +76,7 @@ const items = {
       image:
         "https://a.storyblok.com/f/187315/1800x2728/f25ee3d4e9/us-005270-bouncer-balance-soft-lightsage-gray-woven-jersey-product-babybjorn-01-1.png",
       why: "Ergonomic natural-rocking bouncer in Light Sage/Gray woven jersey, paired with BabyBjorn toy bars for play.",
-      notes: "Bundle budget includes the $229.99 bouncer plus two $64.99 toy bars. Bouncer supports 8-29 lb and converts from bouncer to child chair.",
+      notes: "Checkout estimate covers the bouncer plus two toy bars. Bouncer supports 8-29 lb and converts from bouncer to child chair.",
       url: "https://www.babybjorn.com/products/baby-bouncers/bouncer-balance-soft/light-sage-gray-woven-jersey-light-gray/",
       links: [
         {
@@ -235,11 +236,12 @@ const items = {
       name: "Oura Ring 5",
       category: "Parent Wellness",
       priority: "Nice",
-      price: 433,
+      price: 399,
+      checkoutPrice: 433,
       purchased: true,
       image: "https://ouraring.com/assets/icons/opengraph-400x400.png",
       why: "Sleep, readiness, stress, heart-rate, and recovery tracking for parents during the fragmented newborn months.",
-      notes: "Purchased: Oura Ring 5. Estimated California checkout total uses $399 base price plus 8.625% San Francisco sales tax; membership, if billed separately, is not included.",
+      notes: "Purchased: Oura Ring 5. Estimated California checkout total includes 8.625% San Francisco sales tax; membership, if billed separately, is not included.",
       url: "https://ouraring.com/"
     },
     {
@@ -247,12 +249,13 @@ const items = {
       name: "Eight Sleep Pod 5 Core",
       category: "Parent Wellness",
       priority: "Nice",
-      price: 3136,
+      price: 2887,
+      checkoutPrice: 3136,
       purchased: true,
       image:
         "https://res.cloudinary.com/eightsleep/image/upload/c_fill,w_1200,h_630,f_jpg,q_auto/v1747148102/pod-cover_1_q3rtmy.png",
       why: "Dual-zone cooling/heating and sleep tracking to protect parent sleep quality during night feeds and split schedules.",
-      notes: "Purchased with Enhanced subscription. Estimated California checkout total uses $2,599 Pod 5 Core + $288 first-year Enhanced subscription, then 8.625% San Francisco sales tax.",
+      notes: "Purchased with Enhanced subscription. Estimated California checkout total includes first-year Enhanced and 8.625% San Francisco sales tax.",
       url: "https://www.eightsleep.com/us/product/pod/"
     }
   ],
@@ -348,6 +351,14 @@ function fmtPrice(price) {
   }).format(price);
 }
 
+function estimatedCheckoutPrice(item) {
+  if (Number.isFinite(item.checkoutPrice)) {
+    return item.checkoutPrice;
+  }
+
+  return Math.round(item.price * (1 + californiaCheckoutTaxRate));
+}
+
 function isPurchased(item) {
   return Boolean(item.purchased);
 }
@@ -390,7 +401,9 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     clone.querySelector("h3").textContent = item.name;
     clone.querySelector(".why").textContent = item.why;
     clone.querySelector(".notes").textContent = item.notes;
-    clone.querySelector(".price").textContent = item.price > 0 ? fmtPrice(item.price) : "-";
+    clone.querySelector(".price").textContent = item.price > 0
+      ? fmtPrice(estimatedCheckoutPrice(item))
+      : "-";
 
     const itemLinks = Array.isArray(item.links) && item.links.length > 0
       ? item.links
@@ -483,7 +496,9 @@ function refreshSummary() {
   const selectedItems = allTrackable.filter((item) => selected.has(item.id));
 
   const selectedCount = selectedItems.length;
-  const selectedBudget = selectedItems.reduce((sum, item) => sum + item.price, 0);
+  const selectedBudget = selectedItems.reduce((sum, item) => {
+    return sum + estimatedCheckoutPrice(item);
+  }, 0);
 
   const mustItems = allTrackable.filter((item) => item.priority === "Must");
   const mustRemaining = mustItems.filter((item) => !selected.has(item.id)).length;
