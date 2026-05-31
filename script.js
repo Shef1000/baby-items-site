@@ -231,28 +231,28 @@ const items = {
   ],
   parentWellness: [
     {
-      id: "oura-ring-4",
-      name: "Oura Ring 4",
+      id: "oura-ring-5",
+      name: "Oura Ring 5",
       category: "Parent Wellness",
       priority: "Nice",
-      price: 349,
+      price: 433,
       purchased: true,
       image: "https://ouraring.com/assets/icons/opengraph-400x400.png",
       why: "Sleep, readiness, stress, heart-rate, and recovery tracking for parents during the fragmented newborn months.",
-      notes: "Purchased. Current official pricing starts at $349; ongoing Oura membership may be separate.",
-      url: "https://ouraring.com/product/rings/oura-ring-4/silver"
+      notes: "Purchased: Oura Ring 5. Estimated California checkout total uses $399 base price plus 8.625% San Francisco sales tax; membership, if billed separately, is not included.",
+      url: "https://ouraring.com/"
     },
     {
       id: "eight-sleep-pod-5-core",
       name: "Eight Sleep Pod 5 Core",
       category: "Parent Wellness",
       priority: "Nice",
-      price: 2599,
+      price: 3136,
       purchased: true,
       image:
         "https://res.cloudinary.com/eightsleep/image/upload/c_fill,w_1200,h_630,f_jpg,q_auto/v1747148102/pod-cover_1_q3rtmy.png",
       why: "Dual-zone cooling/heating and sleep tracking to protect parent sleep quality during night feeds and split schedules.",
-      notes: "Purchased. Price shown for Pod 5 Core Queen from the current Eight Sleep product page; Autopilot plan may be separate.",
+      notes: "Purchased with Enhanced subscription. Estimated California checkout total uses $2,599 Pod 5 Core + $288 first-year Enhanced subscription, then 8.625% San Francisco sales tax.",
       url: "https://www.eightsleep.com/us/product/pod/"
     }
   ],
