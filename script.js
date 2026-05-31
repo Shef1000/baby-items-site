@@ -144,6 +144,32 @@ const items = {
       why: "Practical for feeding support and postpartum comfort.",
       notes: "Supervised feeding use only, never for sleep.",
       url: "https://www.boppy.com/products/original-support"
+    },
+    {
+      id: "baby-brezza-bottle-washer-pro",
+      name: "Baby Brezza Bottle Washer Pro",
+      category: "Feeding",
+      priority: "Nice",
+      price: 239.99,
+      purchased: false,
+      image:
+        "https://babybrezza.com/cdn/shop/files/BWP_classic.webp?v=1770152040",
+      why: "Countertop machine that washes, sterilizes, and dries bottles, pump parts, sippy cups, and accessories.",
+      notes: "Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Includes 60 detergent tablets; use Baby Brezza detergent tablets as directed.",
+      url: "https://babybrezza.com/products/bottle-washer-pro"
+    },
+    {
+      id: "baby-brezza-formula-pro-advanced",
+      name: "Baby Brezza Formula Pro Advanced",
+      category: "Feeding",
+      priority: "Nice",
+      price: 183.99,
+      purchased: false,
+      image:
+        "https://babybrezza.com/cdn/shop/files/FPA_Carousel_01_classic.webp?v=1758552426",
+      why: "Automatically mixes warm formula bottles with adjustable ounce and temperature settings.",
+      notes: "Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Confirm formula setting before use and clean the funnel after every 4 bottles.",
+      url: "https://babybrezza.com/products/formula-pro-advanced"
     }
   ],
   addOns: [
