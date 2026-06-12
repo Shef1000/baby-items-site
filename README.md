@@ -2,6 +2,10 @@
 
 This is a static website with a curated list of practical, high-quality baby gear.
 
+## Live site
+
+- [Baby Items page](https://shef1000.github.io/baby-items-site/baby-items.html)
+
 ## Open locally
 
 - Double-click `index.html`
