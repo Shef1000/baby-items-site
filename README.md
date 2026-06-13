@@ -4,7 +4,7 @@ This is a static website with a curated list of practical, high-quality baby gea
 
 ## Live site
 
-- [Baby Items page](https://shef1000.github.io/baby-items-site/baby-items.html)
+- Baby item list: <https://shef1000.github.io/baby-items-site/baby-items.html>
 
 ## Open locally
 
