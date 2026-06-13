@@ -5,6 +5,7 @@ This is a static website with a curated list of practical, high-quality baby gea
 ## Live site
 
 - Baby item list: <https://shef1000.github.io/baby-items-site/baby-items.html>
+- Baby care plan: <https://shef1000.github.io/baby-items-site/baby-care-plan.html>
 
 ## Open locally
 
