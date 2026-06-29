@@ -122,6 +122,116 @@ items.formulaFeeding = [
   }
 ];
 
+items.formulaFeeding.push(
+  {
+    id: "oxo-bottle-cleaning-starter",
+    name: "OXO Bottle Cleaning Starter",
+    category: "Bottle Cleaning",
+    priority: "Must",
+    price: 65,
+    purchased: false,
+    image:
+      "https://www.oxo.com/media/catalog/product/cache/42f6b21d4e9bb5235c64b47a93880671/6/2/62123900_oxo_tot_space_saving_drying_rack_gray_01.jpg",
+    why: "The tracker adds a bottle brush, vertical drying rack, dishwasher basket, and compact sterilization method before delivery.",
+    notes: "Small-counter setup: OXO vertical rack plus brush and dishwasher basket; use microwave steam bags or dishwasher sanitize instead of adding another appliance unless bottle volume demands it.",
+    url: "https://www.oxo.com/space-saving-drying-rack.html",
+    links: [
+      {
+        label: "OXO Tot Space Saving Drying Rack",
+        url: "https://www.oxo.com/space-saving-drying-rack.html"
+      },
+      {
+        label: "OXO Tot Bottle Brush",
+        url: "https://www.oxo.com/tot-bottle-brush-with-nipple-cleaner-and-stand.html"
+      },
+      {
+        label: "OXO Tot Dishwasher Basket",
+        url: "https://www.oxo.com/tot-dishwasher-basket.html"
+      },
+      {
+        label: "Dr. Brown's sterilizer bags",
+        url: "https://www.drbrownsbaby.com/product/dr-browns-microwave-steam-sterilizer-bags/"
+      }
+    ]
+  },
+  {
+    id: "spectra-s1-primary-pump",
+    name: "Spectra S1 Plus Primary Pump",
+    category: "Pumping",
+    priority: "Must",
+    price: 216,
+    purchased: false,
+    image:
+      "https://www.spectrababyusa.com/wp-content/uploads/2018/08/S1Plus-1.jpg",
+    why: "The tracker recommends a reliable rechargeable primary pump before deciding on wearables.",
+    notes: "Order through insurance when possible. Keep wearable pumps as a later decision after supply and flange size are known.",
+    url: "https://www.spectrababyusa.com/products/spectra-s1-plus-premier-rechargeable-double-electric-breast-pump"
+  },
+  {
+    id: "pump-parts-flanges-milk-bags",
+    name: "Pump Parts, Fitted Flanges + Milk Bags",
+    category: "Pumping",
+    priority: "Nice",
+    price: 95,
+    purchased: false,
+    image:
+      "https://lansinoh.com/cdn/shop/products/BreastmilkStorageBags_100count_1100x.png?v=1664909147",
+    why: "The tracker adds pump parts, correct flange sizing, and one starter box of milk storage bags in the first month.",
+    notes: "Buy flanges after sizing. Keep two full pump-part sets only if pumping daily.",
+    url: "https://www.spectrababyusa.com/collections/spectra-accessories",
+    links: [
+      {
+        label: "Spectra accessories",
+        url: "https://www.spectrababyusa.com/collections/spectra-accessories"
+      },
+      {
+        label: "Maymom compatible parts",
+        url: "https://www.maymom.com/"
+      },
+      {
+        label: "Lansinoh milk storage bags",
+        url: "https://lansinoh.com/products/breastmilk-storage-bags"
+      }
+    ]
+  },
+  {
+    id: "my-brest-friend-deluxe",
+    name: "My Brest Friend Deluxe Nursing Pillow",
+    category: "Feeding Support",
+    priority: "Must",
+    price: 55,
+    purchased: false,
+    image:
+      "https://www.mybrestfriend.com/cdn/shop/files/Deluxe-Nursing-Pillow-Evening-Grey.jpg?v=1743022159",
+    why: "The tracker prefers My Brest Friend for early feeding ergonomics; keep Boppy as the softer alternate.",
+    notes: "Choose one main nursing pillow after considering chair/sofa setup.",
+    url: "https://www.mybrestfriend.com/products/deluxe-nursing-pillow"
+  },
+  {
+    id: "nipple-care-starter",
+    name: "Silverette + Nipple Balm Starter",
+    category: "Feeding Support",
+    priority: "Must",
+    price: 75,
+    purchased: false,
+    image:
+      "https://silveretteusa.com/cdn/shop/files/SilveretteNursingCups_1200x1200.jpg?v=1705506602",
+    why: "The tracker adds nipple care before birth for early breastfeeding discomfort and recovery.",
+    notes: "Use as needed and ask a lactation consultant for pain, latch, or supply issues.",
+    url: "https://silveretteusa.com/products/silverette-nursing-cups",
+    links: [
+      {
+        label: "Silverette nursing cups",
+        url: "https://silveretteusa.com/products/silverette-nursing-cups"
+      },
+      {
+        label: "Earth Mama nipple butter",
+        url: "https://earthmamaorganics.com/products/organic-nipple-butter"
+      }
+    ]
+  }
+);
+
 function removeMovedCorePickCards() {
   renderedCards.forEach(({ card, item }) => {
     if (movedFormulaItemIds.has(item.id) && card.parentElement?.id === "corePicks") {

@@ -223,14 +223,14 @@ const items = {
     },
     {
       id: "clean-butt-bundle",
-      name: "Tubby Todd + Aquaphor Clean Butt Bundle",
+      name: "Tubby Todd + Aquaphor + Desitin Clean Butt Bundle",
       category: "Diapering",
       priority: "Must",
-      price: 54,
+      price: 64,
       purchased: false,
       image: "https://tubbytodd.com/cdn/shop/files/AOO-Hero-Image_NEAseal_8oz.jpg?v=1764199484",
       why: "Great combo for gentle cleanups plus a strong moisture barrier at every diaper change.",
-      notes: "Budget includes 1 Tubby Todd All Over Ointment + Aquaphor x3.",
+      notes: "Updated from Baby Gear Tracker. Budget includes 1 Tubby Todd All Over Ointment, Aquaphor, and one stronger zinc option.",
       url: "https://tubbytodd.com/products/all-over-ointment",
       links: [
         {
@@ -240,6 +240,10 @@ const items = {
         {
           label: "Aquaphor Baby Healing Ointment",
           url: "https://www.aquaphorus.com/products/body-care/baby-healing-ointment-advanced-therapy"
+        },
+        {
+          label: "Desitin Maximum Strength",
+          url: "https://www.desitin.com/diaper-rash-products/maximum-strength-original-zinc-oxide-paste"
         }
       ]
     },
@@ -333,6 +337,488 @@ const items = {
     }
   ]
 };
+
+items.addOns.push(
+  {
+    id: "cradlewise-extra-linens-bundle",
+    name: "Cradlewise Extra Sheets + Mattress Cover",
+    category: "Sleep",
+    priority: "Must",
+    price: 215,
+    purchased: false,
+    image: "https://cradlewise.com/cdn/shop/files/Cradlewise_Fitted_Sheet_1.jpg?v=1745346046",
+    why: "The tracker calls for three extra fitted sheets and one extra mattress cover so overnight changes do not stall.",
+    notes: "Added from Baby Gear Tracker. Use Cradlewise-specific linens for correct fit.",
+    url: "https://cradlewise.com/product/fitted-sheet/",
+    links: [
+      {
+        label: "Cradlewise fitted sheet",
+        url: "https://cradlewise.com/product/fitted-sheet/"
+      },
+      {
+        label: "Cradlewise mattress cover",
+        url: "https://cradlewise.com/product/mattress-cover/"
+      }
+    ]
+  },
+  {
+    id: "pacifier-starter-variety",
+    name: "Pacifier Starter Variety",
+    category: "Sleep",
+    priority: "Must",
+    price: 30,
+    purchased: false,
+    image: "https://philips.scene7.com/is/image/philipsconsumer/60d1fe5579ed4bb69be9b17700d14848?$pnglarge$&wid=960",
+    why: "The tracker calls for a small variety before birth because newborn pacifier preference is unpredictable.",
+    notes: "Start with Philips Avent Soothie plus one BIBS or MAM newborn option. No clips or strings in sleep space.",
+    url: "https://www.usa.philips.com/c-p/SCF190_41/soothie-pacifier",
+    links: [
+      {
+        label: "Philips Avent Soothie",
+        url: "https://www.usa.philips.com/c-p/SCF190_41/soothie-pacifier"
+      },
+      {
+        label: "BIBS pacifiers",
+        url: "https://bibsworld.com/collections/pacifiers"
+      },
+      {
+        label: "AAP safe sleep",
+        url: "https://www.aap.org/en/patient-care/safe-sleep/"
+      }
+    ]
+  },
+  {
+    id: "nursery-drawer-organizers",
+    name: "Drawer Dividers + Small Storage Bins",
+    category: "Organization",
+    priority: "Must",
+    price: 55,
+    purchased: false,
+    image: "https://www.ikea.com/us/en/images/products/skubb-box-set-of-6-white__0711231_pe728208_s5.jpg",
+    why: "The tracker marks storage bins and drawer dividers as P0 because they prevent duplicate buying and make size rotation easier.",
+    notes: "Use vertical drawer organizers; skip freestanding nursery furniture unless it becomes necessary.",
+    url: "https://www.ikea.com/us/en/p/skubb-box-set-of-6-white-00428549/",
+    links: [
+      {
+        label: "IKEA SKUBB boxes",
+        url: "https://www.ikea.com/us/en/p/skubb-box-set-of-6-white-00428549/"
+      },
+      {
+        label: "OXO drawer organizer options",
+        url: "https://www.oxo.com/shop/kitchenware/organization.html"
+      }
+    ]
+  },
+  {
+    id: "coterie-diaper-wipes-starter",
+    name: "Coterie Newborn + Size 1 Diaper/Wipes Starter",
+    category: "Diapering",
+    priority: "Must",
+    price: 185,
+    purchased: false,
+    image: "https://www.coterie.com/cdn/shop/files/StarterKit_NB_1_1200x.jpg?v=1748893603",
+    why: "The tracker calls for one newborn pack, one size 1 backup, and unscented wipes before delivery.",
+    notes: "Do not stockpile. Start small because babies size out quickly and fit varies.",
+    url: "https://www.coterie.com/products/the-diaper",
+    links: [
+      {
+        label: "Coterie diapers",
+        url: "https://www.coterie.com/products/the-diaper"
+      },
+      {
+        label: "Coterie wipes",
+        url: "https://www.coterie.com/products/the-wipe"
+      }
+    ]
+  },
+  {
+    id: "ubbi-diaper-pail-bags",
+    name: "Ubbi Steel Diaper Pail + Kitchen Bags",
+    category: "Diapering",
+    priority: "Must",
+    price: 90,
+    purchased: false,
+    image: "https://ubbiworld.com/cdn/shop/products/ubbi-diaper-pail-white-10000_1200x1200.jpg?v=1660840231",
+    why: "The tracker recommends a narrow steel diaper pail that uses regular kitchen bags and avoids proprietary refill clutter.",
+    notes: "Place next to the changing pad. Uses standard tall kitchen bags.",
+    url: "https://ubbiworld.com/products/ubbi-diaper-pail",
+    links: [
+      {
+        label: "Ubbi Steel Diaper Pail",
+        url: "https://ubbiworld.com/products/ubbi-diaper-pail"
+      },
+      {
+        label: "Tall kitchen trash bags",
+        url: "https://www.target.com/s?searchTerm=tall+kitchen+trash+bags"
+      }
+    ]
+  },
+  {
+    id: "keekaroo-peanut-changer",
+    name: "Keekaroo Peanut Wipeable Changing Pad",
+    category: "Diapering",
+    priority: "Must",
+    price: 150,
+    purchased: false,
+    image: "https://www.keekaroo.com/cdn/shop/products/peanut-changer-vanilla.jpg?v=1684445550",
+    why: "The tracker recommends a wipeable changing pad on existing furniture instead of a dedicated changing table.",
+    notes: "Space-saving setup for 88 Howard: existing dresser or counter plus wipeable pad.",
+    url: "https://www.keekaroo.com/peanut-changer.html"
+  },
+  {
+    id: "diaper-caddy-cleanup-bundle",
+    name: "Diaper Caddy + Changing Cleanup Bundle",
+    category: "Diapering",
+    priority: "Must",
+    price: 55,
+    purchased: false,
+    image: "https://www.oxo.com/media/catalog/product/cache/42f6b21d4e9bb5235c64b47a93880671/6/3/63112600_oxo_tot_diaper_caddy_with_changing_mat_01.jpg",
+    why: "The tracker calls for one mobile caddy, hand sanitizer, and cleanup supplies before delivery.",
+    notes: "One basket only; avoid multiple stations unless the apartment layout demands it.",
+    url: "https://www.oxo.com/tot-diaper-caddy-with-changing-mat.html",
+    links: [
+      {
+        label: "OXO Tot diaper caddy",
+        url: "https://www.oxo.com/tot-diaper-caddy-with-changing-mat.html"
+      },
+      {
+        label: "Babyganics hand sanitizer",
+        url: "https://babyganics.com/products/alcohol-free-foaming-hand-sanitizer/"
+      }
+    ]
+  },
+  {
+    id: "nuna-pipa-aire-rx",
+    name: "Nuna PIPA aire rx Infant Car Seat",
+    category: "Transport",
+    priority: "Must",
+    price: 650,
+    purchased: false,
+    image: "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/p/i/pipa_aire_rx_caviar_iso_web.jpg",
+    why: "The tracker recommends this for no-car life because easy vehicle-belt installation matters for Waymo and taxis.",
+    notes: "Choose final car seat and stroller together. Practice baseless install before the hospital ride.",
+    url: "https://nunababy.com/usa/pipa-aire-rx",
+    links: [
+      {
+        label: "Nuna PIPA aire rx",
+        url: "https://nunababy.com/usa/pipa-aire-rx"
+      },
+      {
+        label: "Waymo child seat policy",
+        url: "https://support.google.com/waymo/answer/9059053?hl=en"
+      }
+    ]
+  },
+  {
+    id: "compact-city-stroller-shortlist",
+    name: "Compact City Stroller Shortlist",
+    category: "Stroller",
+    priority: "Must",
+    price: 650,
+    purchased: false,
+    image: "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/t/r/trvl_lx_caviar_us_web_1.jpg",
+    why: "The tracker recommends one compact daily stroller instead of a bulky full-size stroller for elevator, Waymo, and apartment storage.",
+    notes: "Default: Nuna TRVL LX + compatible PIPA setup, or Bugaboo Butterfly 2 / YOYO3 if folded size is the priority.",
+    url: "https://nunababy.com/usa/trvl-lx-stroller",
+    links: [
+      {
+        label: "Nuna TRVL LX",
+        url: "https://nunababy.com/usa/trvl-lx-stroller"
+      },
+      {
+        label: "Bugaboo Butterfly 2",
+        url: "https://www.bugaboo.com/us-en/strollers/bugaboo-butterfly-2/bugaboo-butterfly-2-travel-stroller-PM007648.html"
+      },
+      {
+        label: "Stokke YOYO3",
+        url: "https://www.stokke.com/USA/en-us/strollers/yoyo-strollers/stokke-yoyo-stroller-6-months.html"
+      }
+    ]
+  },
+  {
+    id: "city-stroller-weather-install-bundle",
+    name: "Stroller Weather + Car Seat Install Bundle",
+    category: "Transport",
+    priority: "Must",
+    price: 170,
+    purchased: false,
+    image: "https://www.uppababy.com/wp-content/uploads/2023/10/0224_VistaV2_RainShield_Angle.jpg",
+    why: "The tracker adds adapters, a manufacturer rain cover, thin car-seat-safe layers, and an install cheat sheet.",
+    notes: "Buy adapters only after the stroller/car seat combo is final. Use thin layers only; no bulky coats under car seat harness.",
+    url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+    links: [
+      {
+        label: "NHTSA car seat guidance",
+        url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats"
+      },
+      {
+        label: "Waymo child seat policy",
+        url: "https://support.google.com/waymo/answer/9059053?hl=en"
+      }
+    ]
+  },
+  {
+    id: "newborn-soft-carrier",
+    name: "Newborn Soft Carrier",
+    category: "Carrier",
+    priority: "Must",
+    price: 85,
+    purchased: false,
+    image: "https://sollybaby.com/cdn/shop/files/wrap-wrap-navy-stripe-wraps-39690988503227.jpg?v=1750274304",
+    why: "The tracker adds a soft newborn carrier because it often fits tiny newborns better than a structured carrier.",
+    notes: "Use for elevators, lobby trips, errands, and hands-free walks. Check airway and fit every time.",
+    url: "https://sollybaby.com/products/wrap",
+    links: [
+      {
+        label: "Solly Wrap",
+        url: "https://sollybaby.com/products/wrap"
+      },
+      {
+        label: "Ergobaby Embrace",
+        url: "https://ergobaby.com/baby-carrier/embrace"
+      }
+    ]
+  },
+  {
+    id: "dagne-dover-indi-diaper-backpack",
+    name: "Dagne Dover Indi Diaper Backpack",
+    category: "Outings",
+    priority: "Must",
+    price: 215,
+    purchased: false,
+    image: "https://www.dagnedover.com/cdn/shop/files/Indi_Diaper_Backpack_Medium_Dune_Hero.jpg?v=1747754974",
+    why: "The tracker recommends one packed diaper backpack as the daily Waymo/walking hub.",
+    notes: "Medium is the default for compact city use. Avoid a second diaper tote unless daily load proves too large.",
+    url: "https://www.dagnedover.com/collections/indi-diaper-backpack"
+  },
+  {
+    id: "bath-grooming-starter-bundle",
+    name: "Foldable Bath + Grooming Starter Bundle",
+    category: "Bath",
+    priority: "Must",
+    price: 205,
+    purchased: false,
+    image: "https://www.stokke.com/on/demandware.static/-/Sites-stokke-master-catalog/default/dwcc4ff1e7/images/large/541400_1.jpg",
+    why: "The tracker adds the foldable bath, hooded towels, washcloths, fragrance-free wash, nail file, and soft brush before delivery.",
+    notes: "Small-bathroom setup: Stokke Flexi Bath with newborn support plus compact grooming supplies.",
+    url: "https://www.stokke.com/USA/en-us/bath/stokke-flexibath/5316.html",
+    links: [
+      {
+        label: "Stokke Flexi Bath",
+        url: "https://www.stokke.com/USA/en-us/bath/stokke-flexibath/5316.html"
+      },
+      {
+        label: "Haakaa electric nail file",
+        url: "https://www.haakaausa.com/products/electric-baby-nail-care-set"
+      },
+      {
+        label: "Frida Baby DermaFrida",
+        url: "https://frida.com/products/dermafrida-the-skinsoother"
+      }
+    ]
+  },
+  {
+    id: "baby-laundry-starter-bundle",
+    name: "Baby Laundry Starter Bundle",
+    category: "Laundry",
+    priority: "Must",
+    price: 95,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/81CMsmU0VLL._AC_SL1500_.jpg",
+    why: "The tracker adds fragrance-free detergent, stain remover, a slim hamper, and mesh laundry bags before birth.",
+    notes: "Use fragrance-free detergent for the first wash round. Mesh bags help keep tiny socks and pump parts organized.",
+    url: "https://dirtylabs.com/products/bio-enzyme-laundry-detergent-free-clear",
+    links: [
+      {
+        label: "Dirty Labs Free & Clear",
+        url: "https://dirtylabs.com/products/bio-enzyme-laundry-detergent-free-clear"
+      },
+      {
+        label: "Tide Free & Gentle",
+        url: "https://tide.com/en-us/shop/type/liquid/tide-free-and-gentle-liquid"
+      },
+      {
+        label: "Miss Mouth's Messy Eater",
+        url: "https://missmouths.com/products/messy-eater-stain-treater"
+      }
+    ]
+  },
+  {
+    id: "infant-health-sick-day-kit",
+    name: "Infant Health + Sick-Day Kit",
+    category: "Health",
+    priority: "Must",
+    price: 95,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/products/nosefrida-saline-kit-hero.png?v=1669918782",
+    why: "The tracker adds a thermometer, saline/aspirator, infant acetaminophen, vitamin D drops, syringe, and petroleum jelly before delivery.",
+    notes: "Ask the pediatrician before dosing infant acetaminophen. Keep this together for late-night sick-day use.",
+    url: "https://frida.com/products/nosefrida-the-snotsucker-saline-kit",
+    links: [
+      {
+        label: "Frida Baby NoseFrida Saline Kit",
+        url: "https://frida.com/products/nosefrida-the-snotsucker-saline-kit"
+      },
+      {
+        label: "FridaBaby 3-in-1 thermometer",
+        url: "https://frida.com/products/3-in-1-true-temp-thermometer"
+      },
+      {
+        label: "AAP medicine safety",
+        url: "https://www.healthychildren.org/English/safety-prevention/at-home/medication-safety/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    id: "newborn-play-development-starter",
+    name: "Newborn Play + Book Starter",
+    category: "Play",
+    priority: "Must",
+    price: 235,
+    purchased: false,
+    image: "https://lovevery.com/cdn/shop/products/Play_Gym_Desktop.jpg?v=1700250454",
+    why: "The tracker adds a play gym, high-contrast cards/books, board books, and one soft rattle/crinkle toy.",
+    notes: "One developmental station plus a small book/card shelf prevents toy clutter.",
+    url: "https://lovevery.com/products/the-play-gym",
+    links: [
+      {
+        label: "Lovevery Play Gym",
+        url: "https://lovevery.com/products/the-play-gym"
+      },
+      {
+        label: "Wee Gallery art cards",
+        url: "https://weegallery.com/collections/art-cards"
+      },
+      {
+        label: "Manhattan Toy Winkel",
+        url: "https://www.manhattantoy.com/products/winkel"
+      }
+    ]
+  },
+  {
+    id: "later-solids-teething-bundle",
+    name: "Later Solids + Teething Bundle",
+    category: "Feeding",
+    priority: "Nice",
+    price: 75,
+    purchased: false,
+    image: "https://mushie.com/cdn/shop/products/silicone-bib-blush_1200x1200.jpg?v=1673279407",
+    why: "The tracker marks silicone bibs, teethers, and a small toy bin for the 3-6 month window.",
+    notes: "Buy later near solids/teething. This is intentionally not a newborn-stage purchase.",
+    url: "https://mushie.com/products/silicone-bib",
+    links: [
+      {
+        label: "Mushie silicone bibs",
+        url: "https://mushie.com/products/silicone-bib"
+      },
+      {
+        label: "Comotomo teether",
+        url: "https://comotomo.com/products/teether"
+      }
+    ]
+  }
+);
+
+items.parentWellness.push(
+  {
+    id: "frida-mom-postpartum-kit",
+    name: "Frida Mom Postpartum Recovery Kit",
+    category: "Parent Wellness",
+    priority: "Must",
+    price: 100,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/products/fridamom-postpartum-recovery-essentials-kit-hero.png?v=1669918987",
+    why: "The tracker adds a postpartum recovery kit before delivery so bathroom supplies are ready at home.",
+    notes: "Complements hospital supplies; keep the kit in the primary bathroom before due date.",
+    url: "https://frida.com/products/postpartum-recovery-essentials-kit"
+  },
+  {
+    id: "nursing-bras-pads-bundle",
+    name: "Nursing Bras / Tanks + Pads Bundle",
+    category: "Parent Wellness",
+    priority: "Must",
+    price: 220,
+    purchased: false,
+    image: "https://www.kindredbravely.com/cdn/shop/files/sublime-hands-free-pumping-nursing-bra-evryday-lounge-jogger-black-Ionna-k5-21536-1500x1875-3808281.png?v=1766515155&width=1200",
+    why: "The tracker adds nursing bras or tanks plus disposable or washable nursing pads before delivery.",
+    notes: "Start with a few comfortable sizes; adjust after supply and postpartum fit settle.",
+    url: "https://www.kindredbravely.com/collections/nursing-bras",
+    links: [
+      {
+        label: "Kindred Bravely nursing bras",
+        url: "https://www.kindredbravely.com/collections/nursing-bras"
+      },
+      {
+        label: "Bodily nursing bras",
+        url: "https://itsbodily.com/collections/breastfeeding"
+      },
+      {
+        label: "Lansinoh nursing pads",
+        url: "https://lansinoh.com/products/stay-dry-disposable-nursing-pads"
+      }
+    ]
+  },
+  {
+    id: "feeding-night-station-cart",
+    name: "Feeding / Night Station Cart",
+    category: "Parent Wellness",
+    priority: "Must",
+    price: 80,
+    purchased: false,
+    image: "https://www.ikea.com/us/en/images/products/raskog-utility-cart-white__0503386_pe632064_s5.jpg",
+    why: "The tracker calls for a shared night-feeding station so diapers, burp cloths, pump parts, snacks, and water are in one place.",
+    notes: "Use one rolling cart or caddy only; avoid duplicating stations unless the apartment layout requires it.",
+    url: "https://www.ikea.com/us/en/p/raskog-utility-cart-white-20382932/"
+  }
+);
+
+items.freeBenefits.push(
+  {
+    id: "infant-cpr-choking-class",
+    name: "Infant CPR / Choking Class",
+    category: "Safety",
+    status: "Book",
+    why: "The tracker marks infant CPR and choking training as a P0 before-birth action.",
+    notes: "Use Red Cross San Francisco or another local infant CPR provider that fits your schedule.",
+    url: "https://www.redcross.org/local/california/take-a-class/cpr-san-francisco-ca"
+  },
+  {
+    id: "ucsf-car-seat-fitting",
+    name: "Car Seat Installation Check",
+    category: "Safety",
+    status: "Book",
+    why: "The tracker calls for a car seat fitting before delivery, especially for Waymo/taxi baseless installation.",
+    notes: "UCSF CHiPPS and CHP are the local options to check first.",
+    url: "https://emergency.ucsf.edu/collaborations/ucsf-benioff-childrens-hospital-san-francisco-child-passenger-and-pedestrian-safety-chipps-program"
+  },
+  {
+    id: "lactation-consultant-booking",
+    name: "Lactation Consultant",
+    category: "Support",
+    status: "Book",
+    why: "The tracker adds a local International Board Certified Lactation Consultant before birth.",
+    notes: "Have a contact ready even if feeding goes smoothly; fit and latch issues are easier to solve quickly.",
+    url: "https://www.carolinekerherve.com/"
+  },
+  {
+    id: "postpartum-night-support-shortlist",
+    name: "Postpartum Doula / Night Nurse Shortlist",
+    category: "Support",
+    status: "Book",
+    why: "The tracker adds postpartum or night support as a P0 planning item.",
+    notes: "Use this as a shortlist starting point; confirm availability, newborn experience, references, and overnight scope.",
+    url: "https://eastbaypostpartum.com/"
+  },
+  {
+    id: "baby-admin-checklist",
+    name: "Baby Admin Checklist",
+    category: "Admin",
+    status: "Do",
+    why: "The tracker includes pediatrician selection, insurance enrollment, leave paperwork, birth certificate/SSN, urgent-care plan, and gift/returns tracking.",
+    notes: "Keep this outside the purchase budget; it is a before-birth execution list, not gear.",
+    url: "https://www.usa.gov/birth-certificate"
+  }
+);
 
 const stateKey = "babyRegistryChecked.v1";
 const selected = new Set(loadState());
