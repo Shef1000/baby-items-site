@@ -456,6 +456,19 @@ items.addOns.push(
     url: "https://www.walmart.com/ip/2-in-1-Baby-Changing-Table-with-Bathtub-Akaber-Newborn-Foldable-Portable-Diaper-Station-Adjustable-Height-with-Wheels-Waterproof-Pad-Storage-Rack/17293067799?wmlspartner=wlpa&selectedSellerId=102741195&selectedOfferId=60F9BBAB865932FE92EBD2F3DC10AD88&conditionGroupCode=1"
   },
   {
+    id: "angelcare-baby-bath-support-grey",
+    name: "Angelcare Baby Bath Support - Grey",
+    category: "Bath / Changing",
+    priority: "Nice",
+    price: 19.78,
+    checkoutPrice: 21.49,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/61x79D9WpNL._SL1500_.jpg",
+    why: "Lightweight newborn bath insert for hands-free support inside a tub, useful if the larger bath/changing station feels bulky for daily use.",
+    notes: "Amazon listing shows the grey bath support for babies under 6 months or 20 lb, with a quick-drain mesh seat and hang loop. Checkout estimate includes 8.625% San Francisco sales tax; shipping depends on Prime/order size.",
+    url: "https://www.amazon.com/dp/B01M6YVW7B"
+  },
+  {
     id: "newborn-soft-carrier",
     name: "Newborn Soft Carrier",
     category: "Carrier",
