@@ -131,7 +131,7 @@ items.formulaFeeding.push(
     price: 65,
     purchased: false,
     image:
-      "https://www.oxo.com/media/catalog/product/cache/42f6b21d4e9bb5235c64b47a93880671/6/2/62123900_oxo_tot_space_saving_drying_rack_gray_01.jpg",
+      "https://images.ctfassets.net/50gzycvace50/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2/7e539e9d2e706cc27bf3953914540ecf/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
     why: "The tracker adds a bottle brush, vertical drying rack, dishwasher basket, and compact sterilization method before delivery.",
     notes: "Small-counter setup: OXO vertical rack plus brush and dishwasher basket; use microwave steam bags or dishwasher sanitize instead of adding another appliance unless bottle volume demands it.",
     url: "https://www.oxo.com/space-saving-drying-rack.html",
@@ -162,7 +162,7 @@ items.formulaFeeding.push(
     price: 216,
     purchased: false,
     image:
-      "https://www.spectrababyusa.com/wp-content/uploads/2018/08/S1Plus-1.jpg",
+      "https://www.spectrababyusa.com/cdn/shop/files/S1PlusMainImage.png?crop=center&height=1200&v=1737986354&width=1200",
     why: "The tracker recommends a reliable rechargeable primary pump before deciding on wearables.",
     notes: "Order through insurance when possible. Keep wearable pumps as a later decision after supply and flange size are known.",
     url: "https://www.spectrababyusa.com/products/spectra-s1-plus-premier-rechargeable-double-electric-breast-pump"
@@ -175,7 +175,7 @@ items.formulaFeeding.push(
     price: 95,
     purchased: false,
     image:
-      "https://lansinoh.com/cdn/shop/products/BreastmilkStorageBags_100count_1100x.png?v=1664909147",
+      "https://lansinoh.com/cdn/shop/files/US_June2026_MSB_Plastic_BabyCenter_PDP_-01.jpg?v=1782415629",
     why: "The tracker adds pump parts, correct flange sizing, and one starter box of milk storage bags in the first month.",
     notes: "Buy flanges after sizing. Keep two full pump-part sets only if pumping daily.",
     url: "https://www.spectrababyusa.com/collections/spectra-accessories",
@@ -202,7 +202,7 @@ items.formulaFeeding.push(
     price: 55,
     purchased: false,
     image:
-      "https://www.mybrestfriend.com/cdn/shop/files/Deluxe-Nursing-Pillow-Evening-Grey.jpg?v=1743022159",
+      "https://www.mybrestfriend.com/cdn/shop/files/Evening-Grey-05_bc28a5e9-1dab-4761-8d8f-a7ee9ed75fd5.jpg?crop=center&height=1200&v=1762458227&width=1200",
     why: "The tracker prefers My Brest Friend for early feeding ergonomics; keep Boppy as the softer alternate.",
     notes: "Choose one main nursing pillow after considering chair/sofa setup.",
     url: "https://www.mybrestfriend.com/products/deluxe-nursing-pillow"
@@ -215,7 +215,7 @@ items.formulaFeeding.push(
     price: 75,
     purchased: false,
     image:
-      "https://silveretteusa.com/cdn/shop/files/SilveretteNursingCups_1200x1200.jpg?v=1705506602",
+      "https://silveretteusa.com/cdn/shop/files/37c1b22d59e214d67f59cf957ad479377e3e253f_1.jpg?v=1764866452",
     why: "The tracker adds nipple care before birth for early breastfeeding discomfort and recovery.",
     notes: "Use as needed and ask a lactation consultant for pain, latch, or supply issues.",
     url: "https://silveretteusa.com/products/silverette-nursing-cups",
