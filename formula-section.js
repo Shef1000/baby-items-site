@@ -155,17 +155,27 @@ items.formulaFeeding.push(
     ]
   },
   {
-    id: "spectra-s1-primary-pump",
-    name: "Spectra S1 Plus Primary Pump",
+    id: "eufy-s1-pro-lavie-massage-pump-bundle",
+    name: "eufy S1 Pro Heated Pump + LaVie Massage Pads",
     category: "Pumping",
     priority: "Must",
-    price: 216,
+    price: 419.98,
     purchased: false,
     image:
-      "https://www.spectrababyusa.com/cdn/shop/files/S1PlusMainImage.png?crop=center&height=1200&v=1737986354&width=1200",
-    why: "The tracker recommends a reliable rechargeable primary pump before deciding on wearables.",
-    notes: "Order through insurance when possible. Keep wearable pumps as a later decision after supply and flange size are known.",
-    url: "https://www.spectrababyusa.com/products/spectra-s1-plus-premier-rechargeable-double-electric-breast-pump"
+      "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/2e5838e978c539a89958f42a59e3a0db.png?v=1782118674",
+    why: "Primary pumping setup with heat plus massage support: eufy provides HeatFlow heated wearable pumping, and LaVie pads add warming vibration massage during pumping.",
+    notes: "Displayed checkout estimate uses eufy S1 Pro at $349.99 plus LaVie warming massage pads at $69.99, before 8.625% San Francisco sales tax. Confirm flange size and ask a lactation consultant if pumping is painful or output drops.",
+    url: "https://www.eufy.com/products/t8d04121",
+    links: [
+      {
+        label: "eufy Wearable Breast Pump S1 Pro",
+        url: "https://www.eufy.com/products/t8d04121"
+      },
+      {
+        label: "LaVie Warming Lactation Massage Pads",
+        url: "https://www.laviemom.com/collections/lactation-massagers/products/warming-lactation-massage-pads"
+      }
+    ]
   },
   {
     id: "pump-parts-flanges-milk-bags",
@@ -178,11 +188,11 @@ items.formulaFeeding.push(
       "https://lansinoh.com/cdn/shop/files/US_June2026_MSB_Plastic_BabyCenter_PDP_-01.jpg?v=1782415629",
     why: "The tracker adds pump parts, correct flange sizing, and one starter box of milk storage bags in the first month.",
     notes: "Buy flanges after sizing. Keep two full pump-part sets only if pumping daily.",
-    url: "https://www.spectrababyusa.com/collections/spectra-accessories",
+    url: "https://www.eufy.com/products/t8d04121",
     links: [
       {
-        label: "Spectra accessories",
-        url: "https://www.spectrababyusa.com/collections/spectra-accessories"
+        label: "eufy Breast Pump S1 Pro",
+        url: "https://www.eufy.com/products/t8d04121"
       },
       {
         label: "Maymom compatible parts",
@@ -193,19 +203,6 @@ items.formulaFeeding.push(
         url: "https://lansinoh.com/products/breastmilk-storage-bags"
       }
     ]
-  },
-  {
-    id: "my-brest-friend-deluxe",
-    name: "My Brest Friend Deluxe Nursing Pillow",
-    category: "Feeding Support",
-    priority: "Must",
-    price: 55,
-    purchased: false,
-    image:
-      "https://www.mybrestfriend.com/cdn/shop/files/Evening-Grey-05_bc28a5e9-1dab-4761-8d8f-a7ee9ed75fd5.jpg?crop=center&height=1200&v=1762458227&width=1200",
-    why: "The tracker prefers My Brest Friend for early feeding ergonomics; keep Boppy as the softer alternate.",
-    notes: "Choose one main nursing pillow after considering chair/sofa setup.",
-    url: "https://www.mybrestfriend.com/products/deluxe-nursing-pillow"
   },
   {
     id: "nipple-care-starter",
