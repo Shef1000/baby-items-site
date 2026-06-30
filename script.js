@@ -30,18 +30,6 @@ const items = {
       url: "https://cradlewise.com/product/smart-crib/"
     },
     {
-      id: "babyletto-yuzu-8-in-1-light-sage",
-      name: "Babyletto Yuzu 8-in-1 Convertible Crib - Light Sage",
-      category: "Sleep",
-      priority: "Must",
-      price: 699,
-      purchased: false,
-      image: "https://babyletto.com/cdn/shop/files/gjcg0us9qgjbofdmqyyh_grande.jpg",
-      why: "Long-use 8-in-1 crib system that starts as a bassinet and converts through multiple crib and toddler stages.",
-      notes: "Light Sage variant with All-Stages conversion kits included. Good flexible sleep setup alongside your purchased Cradlewise.",
-      url: "https://babyletto.com/products/yuzu-8-in-1-convertible-crib-with-all-stages-r-conversion-kits?variant=41415651721270"
-    },
-    {
       id: "newton-nest-convertible-crib",
       name: "Newton Nest 4-in-1 Convertible Crib",
       category: "Sleep",
@@ -51,20 +39,8 @@ const items = {
       image:
         "https://www.newtonbaby.com/cdn/shop/files/4-AngledCrib-Natural.jpg?v=1753220377",
       why: "4-in-1 bassinet-to-crib system that grows from newborn to about 5 years, with a bassinet mattress included.",
-      notes: "Good alternative to Babyletto Yuzu if you want Newton's bassinet mode, wheels for early months, mesh liner, and GREENGUARD Gold certification.",
+      notes: "Keep this as the crib candidate. Product listing includes free sheets, so no separate Newton mattress or sheet card is needed.",
       url: "https://www.newtonbaby.com/products/newton-nest-crib?variant=46241386070213"
-    },
-    {
-      id: "newton-mattress",
-      name: "Newton Breathable Crib Mattress",
-      category: "Sleep",
-      priority: "Must",
-      price: 299,
-      purchased: false,
-      image: "https://www.newtonbaby.com/cdn/shop/products/600x600-Mattress---Original-WHT.jpg?v=1634649623",
-      why: "Fully washable breathable design with strong parent preference for crib airflow.",
-      notes: "Pair with a fitted crib sheet and follow standard safe-sleep setup.",
-      url: "https://www.newtonbaby.com/products/newton-crib-mattress"
     },
     {
       id: "babybjorn-bouncer-toy-bundle",
@@ -94,21 +70,21 @@ const items = {
       ]
     },
     {
-      id: "doona-car-seat-stroller",
-      name: "Doona Car Seat & Stroller",
+      id: "nuna-pipa-aire-rx",
+      name: "Nuna PIPA aire rx Infant Car Seat",
       category: "Transport",
       priority: "Must",
       price: 650,
       purchased: false,
       image:
-        "https://images.ctfassets.net/a5ijcxwbf06s/13gZ2xzIqTygwh5T4MSkXk/e4fc51ef9cbba8b7478cedca0430a6c3/Doona_US_Desert_Green_35627.png",
-      why: "Single car-seat-on-wheels setup for Waymo/taxi rides without owning a car or hauling a separate stroller frame.",
-      notes: "Displayed checkout estimate uses the $650 official price plus 8.625% San Francisco sales tax. Practice baseless seatbelt install before hospital and Waymo rides; use rear-facing only per manual.",
-      url: "https://www.doona.com/en-us/car-seat-stroller/discover-doona-plus",
+        "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/p/i/pipa_aire_rx_caviar_iso_web.jpg",
+      why: "Best fit for Waymo/Uber/taxi use because it can install with a standard vehicle seat belt and no base.",
+      notes: "Displayed checkout estimate uses the $650 planning price plus 8.625% San Francisco sales tax. Waymo requires you to bring and install your own child seat for children under 8; for Uber, plan to bring this rear-facing infant seat rather than relying on a driver-provided seat.",
+      url: "https://nunababy.com/usa/pipa-aire-rx",
       links: [
         {
-          label: "Doona+ Car Seat & Stroller",
-          url: "https://www.doona.com/en-us/car-seat-stroller/discover-doona-plus"
+          label: "Nuna PIPA aire rx",
+          url: "https://nunababy.com/usa/pipa-aire-rx"
         },
         {
           label: "Waymo child seat policy",
@@ -463,32 +439,6 @@ items.addOns.push(
       {
         label: "Babyganics hand sanitizer",
         url: "https://babyganics.com/products/alcohol-free-foaming-hand-sanitizer/"
-      }
-    ]
-  },
-  {
-    id: "city-stroller-weather-install-bundle",
-    name: "Doona Weather + Waymo Install Kit",
-    category: "Transport",
-    priority: "Must",
-    price: 103,
-    purchased: false,
-    image: "https://images.ctfassets.net/a5ijcxwbf06s/24tuCZZ6g88eElgkohU77A/c51240fd4f26d5d4327248aff97deca8/390x624_WYG_3__5_.png?fm=webp",
-    why: "Doona-specific accessories and install prep are enough for rare Waymo/taxi use; no stroller adapters or extra car-seat system needed.",
-    notes: "Displayed checkout estimate covers Doona 360 protection plus sunshade extension. Practice seatbelt install without the base and keep bulky coats out of the harness.",
-    url: "https://www.doona.com/en-us/accessories",
-    links: [
-      {
-        label: "Doona accessories",
-        url: "https://www.doona.com/en-us/accessories"
-      },
-      {
-        label: "NHTSA car seat guidance",
-        url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats"
-      },
-      {
-        label: "Waymo child seat policy",
-        url: "https://support.google.com/waymo/answer/9059053?hl=en"
       }
     ]
   },
