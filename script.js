@@ -443,6 +443,19 @@ items.addOns.push(
     ]
   },
   {
+    id: "walmart-akaber-2-in-1-bath-changing-table",
+    name: "Akaber 2-in-1 Baby Changing Table with Bathtub",
+    category: "Bath / Changing",
+    priority: "Must",
+    price: 89.99,
+    checkoutPrice: 128,
+    purchased: false,
+    image: "https://i5.walmartimages.com/seo/2-in-1-Baby-Changing-Table-with-Bathtub-Akaber-Newborn-Foldable-Portable-Diaper-Station-Adjustable-Height-with-Wheels-Waterproof-Pad-Storage-Rack_d2e9398f-2356-4774-82f3-94929b980772.68fe9fd3fa45d244e6b97d44ada175a8.jpeg",
+    why: "Walmart Akaber combo station with a removable anti-slip bathtub, changing table, adjustable height, lockable wheels, waterproof pad, and storage rack.",
+    notes: "Displayed checkout estimate uses the current $89.99 Walmart sale price, $29.99 shipping to 94105, and 8.625% San Francisco sales tax on the item. This overlaps with separate bath and changing-pad purchases, so keep it only if the combo station fits the apartment layout.",
+    url: "https://www.walmart.com/ip/2-in-1-Baby-Changing-Table-with-Bathtub-Akaber-Newborn-Foldable-Portable-Diaper-Station-Adjustable-Height-with-Wheels-Waterproof-Pad-Storage-Rack/17293067799?wmlspartner=wlpa&selectedSellerId=102741195&selectedOfferId=60F9BBAB865932FE92EBD2F3DC10AD88&conditionGroupCode=1"
+  },
+  {
     id: "newborn-soft-carrier",
     name: "Newborn Soft Carrier",
     category: "Carrier",
