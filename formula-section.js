@@ -213,11 +213,11 @@ items.formulaFeeding.push(
     category: "Feeding Support",
     priority: "Must",
     price: 75,
-    purchased: false,
+    purchased: true,
     image:
       "https://silveretteusa.com/cdn/shop/files/37c1b22d59e214d67f59cf957ad479377e3e253f_1.jpg?v=1764866452",
     why: "The tracker adds nipple care before birth for early breastfeeding discomfort and recovery.",
-    notes: "Use as needed and ask a lactation consultant for pain, latch, or supply issues.",
+    notes: "Purchased. Use as needed and ask a lactation consultant for pain, latch, or supply issues.",
     url: "https://silveretteusa.com/products/silverette-nursing-cups",
     links: [
       {

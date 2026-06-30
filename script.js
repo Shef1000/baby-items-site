@@ -94,30 +94,31 @@ const items = {
       ]
     },
     {
-      id: "cybex-egazelle-s-stormy-blue",
-      name: "Cybex e-Gazelle S - Stormy Blue",
-      category: "Stroller",
-      priority: "Must",
-      price: 1199.95,
-      purchased: false,
-      image:
-        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dw18d4ed53/images/products/10103386/cyb_24_int_y270_e-gazelles_shopper_seata_tpe_srbl_18f142702ddd9f70.jpeg",
-      why: "Electric-assist stroller with uphill and uneven-surface support, rocking mode, and 20+ configurations.",
-      notes: "Stormy Blue with Taupe Frame. Seat unit is suitable from 3 months to 50 lb; use from birth requires Gazelle S Cot or infant car seat, sold separately.",
-      url: "https://www.cybex-online.com/en/us/p/10103386.html"
-    },
-    {
-      id: "cybex-cloud-g-pro-stormy-blue",
-      name: "Cybex Cloud G Pro with Load Leg Base - Stormy Blue",
+      id: "doona-car-seat-stroller",
+      name: "Doona Car Seat & Stroller",
       category: "Transport",
       priority: "Must",
-      price: 599.95,
+      price: 650,
       purchased: false,
       image:
-        "https://www.cybex-online.com/on/demandware.static/-/Sites-cybex-master-catalog/default/dwa9327d17/images/products/10107214/cyb_25_us_y090_cloudgpro_srbl_canopy_recline_198991f60ab57c70.jpeg",
-      why: "Cybex infant seat with 45% more recline outside the vehicle, load leg base, SensorSafe, and stroller travel-system compatibility.",
-      notes: "Stormy Blue variant, product code 525000605. Fits babies from 4-30 lb and up to 32 in; Cybex says its infant seats work with Cybex strollers using the stroller adapters.",
-      url: "https://www.cybex-online.com/en/us/p/10107214.html"
+        "https://images.ctfassets.net/a5ijcxwbf06s/13gZ2xzIqTygwh5T4MSkXk/e4fc51ef9cbba8b7478cedca0430a6c3/Doona_US_Desert_Green_35627.png",
+      why: "Single car-seat-on-wheels setup for Waymo/taxi rides without owning a car or hauling a separate stroller frame.",
+      notes: "Displayed checkout estimate uses the $650 official price plus 8.625% San Francisco sales tax. Practice baseless seatbelt install before hospital and Waymo rides; use rear-facing only per manual.",
+      url: "https://www.doona.com/en-us/car-seat-stroller/discover-doona-plus",
+      links: [
+        {
+          label: "Doona+ Car Seat & Stroller",
+          url: "https://www.doona.com/en-us/car-seat-stroller/discover-doona-plus"
+        },
+        {
+          label: "Waymo child seat policy",
+          url: "https://support.google.com/waymo/answer/9059053?hl=en"
+        },
+        {
+          label: "NHTSA car seat guidance",
+          url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats"
+        }
+      ]
     },
     {
       id: "tripp-trapp",
@@ -432,28 +433,6 @@ items.addOns.push(
     ]
   },
   {
-    id: "ubbi-diaper-pail-bags",
-    name: "Ubbi Steel Diaper Pail + Kitchen Bags",
-    category: "Diapering",
-    priority: "Must",
-    price: 90,
-    purchased: false,
-    image: "https://ubbiworld.com/cdn/shop/files/10000_White.jpg?v=1770303595",
-    why: "The tracker recommends a narrow steel diaper pail that uses regular kitchen bags and avoids proprietary refill clutter.",
-    notes: "Place next to the changing pad. Uses standard tall kitchen bags.",
-    url: "https://ubbiworld.com/products/ubbi-diaper-pail",
-    links: [
-      {
-        label: "Ubbi Steel Diaper Pail",
-        url: "https://ubbiworld.com/products/ubbi-diaper-pail"
-      },
-      {
-        label: "Tall kitchen trash bags",
-        url: "https://www.target.com/s?searchTerm=tall+kitchen+trash+bags"
-      }
-    ]
-  },
-  {
     id: "keekaroo-peanut-changer",
     name: "Keekaroo Peanut Wipeable Changing Pad",
     category: "Diapering",
@@ -488,65 +467,21 @@ items.addOns.push(
     ]
   },
   {
-    id: "nuna-pipa-aire-rx",
-    name: "Nuna PIPA aire rx Infant Car Seat",
-    category: "Transport",
-    priority: "Must",
-    price: 650,
-    purchased: false,
-    image: "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/p/i/pipa_aire_rx_caviar_iso_web.jpg",
-    why: "The tracker recommends this for no-car life because easy vehicle-belt installation matters for Waymo and taxis.",
-    notes: "Choose final car seat and stroller together. Practice baseless install before the hospital ride.",
-    url: "https://nunababy.com/usa/pipa-aire-rx",
-    links: [
-      {
-        label: "Nuna PIPA aire rx",
-        url: "https://nunababy.com/usa/pipa-aire-rx"
-      },
-      {
-        label: "Waymo child seat policy",
-        url: "https://support.google.com/waymo/answer/9059053?hl=en"
-      }
-    ]
-  },
-  {
-    id: "compact-city-stroller-shortlist",
-    name: "Compact City Stroller Shortlist",
-    category: "Stroller",
-    priority: "Must",
-    price: 650,
-    purchased: false,
-    image: "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/t/r/trvl_lx_caviar_us_web_1.jpg",
-    why: "The tracker recommends one compact daily stroller instead of a bulky full-size stroller for elevator, Waymo, and apartment storage.",
-    notes: "Default: Nuna TRVL LX + compatible PIPA setup, or Bugaboo Butterfly 2 / YOYO3 if folded size is the priority.",
-    url: "https://nunababy.com/usa/trvl-lx-stroller",
-    links: [
-      {
-        label: "Nuna TRVL LX",
-        url: "https://nunababy.com/usa/trvl-lx-stroller"
-      },
-      {
-        label: "Bugaboo Butterfly 2",
-        url: "https://www.bugaboo.com/us-en/strollers/bugaboo-butterfly-2/bugaboo-butterfly-2-travel-stroller-PM007648.html"
-      },
-      {
-        label: "Stokke YOYO3",
-        url: "https://www.stokke.com/USA/en-us/strollers/yoyo-strollers/stokke-yoyo-stroller-6-months.html"
-      }
-    ]
-  },
-  {
     id: "city-stroller-weather-install-bundle",
-    name: "Stroller Weather + Car Seat Install Bundle",
+    name: "Doona Weather + Waymo Install Kit",
     category: "Transport",
     priority: "Must",
-    price: 170,
+    price: 103,
     purchased: false,
-    image: "https://nunababy.com/media/catalog/product/n/u/nuna_pipaairerx_polished_angle_us_web_78ef.jpg?optimize=high&fit=bounds&height=900&width=900&canvas=900:900",
-    why: "The tracker adds adapters, a manufacturer rain cover, thin car-seat-safe layers, and an install cheat sheet.",
-    notes: "Buy adapters only after the stroller/car seat combo is final. Use thin layers only; no bulky coats under car seat harness.",
-    url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+    image: "https://images.ctfassets.net/a5ijcxwbf06s/24tuCZZ6g88eElgkohU77A/c51240fd4f26d5d4327248aff97deca8/390x624_WYG_3__5_.png?fm=webp",
+    why: "Doona-specific accessories and install prep are enough for rare Waymo/taxi use; no stroller adapters or extra car-seat system needed.",
+    notes: "Displayed checkout estimate covers Doona 360 protection plus sunshade extension. Practice seatbelt install without the base and keep bulky coats out of the harness.",
+    url: "https://www.doona.com/en-us/accessories",
     links: [
+      {
+        label: "Doona accessories",
+        url: "https://www.doona.com/en-us/accessories"
+      },
       {
         label: "NHTSA car seat guidance",
         url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats"
@@ -580,66 +515,20 @@ items.addOns.push(
     ]
   },
   {
-    id: "dagne-dover-indi-diaper-backpack",
-    name: "Dagne Dover Indi Diaper Backpack",
-    category: "Outings",
-    priority: "Must",
-    price: 215,
-    purchased: false,
-    image: "https://www.dagnedover.com/cdn/shop/files/dagne-2025-Baby_Indi_Onyx_S_front-2048x2048-6181ec3f-554d-47d7-bc13-132846c69bfa.jpg?v=1749480023&width=1200",
-    why: "The tracker recommends one packed diaper backpack as the daily Waymo/walking hub.",
-    notes: "Medium is the default for compact city use. Avoid a second diaper tote unless daily load proves too large.",
-    url: "https://www.dagnedover.com/collections/indi-diaper-backpack"
-  },
-  {
-    id: "bath-grooming-starter-bundle",
-    name: "Foldable Bath + Grooming Starter Bundle",
+    id: "johnsons-baby-care-essentials-gift-set",
+    name: "Johnson's Baby Care Essentials Gift Set",
     category: "Bath",
     priority: "Must",
-    price: 205,
+    price: 20,
     purchased: false,
-    image: "https://www.stokke.com/on/demandware.static/-/Sites-stokke-master-catalog/default/dw6fb849f8/images/inriverimages/mainview/FlexiBath_SandyBeige_NewbornSupport_231220-3096_eCom.jpg",
-    why: "The tracker adds the foldable bath, hooded towels, washcloths, fragrance-free wash, nail file, and soft brush before delivery.",
-    notes: "Small-bathroom setup: Stokke Flexi Bath with newborn support plus compact grooming supplies.",
-    url: "https://www.stokke.com/USA/en-us/bath/stokke-flexibath/5316.html",
+    image: "https://images.ctfassets.net/3vnc73o2e0fb/79B9wyp2M21iIC12j3UYW6/babe0d0be5d2ada7e5c156beb44e62ed/JNB_USA_US_381371197569_771197561_622705_Care_Essentials_Gift_Set_00000.webp?fm=webp&w=1920",
+    why: "Replaces the laundry starter bundle with a simple newborn bath/skin-care bundle.",
+    notes: "Official set includes Head-to-Toe wash and shampoo, baby body lotion, and Desitin diaper rash paste in travel sizes. Displayed checkout estimate uses a $20 retail placeholder plus 8.625% San Francisco sales tax because Johnson's official product page does not sell direct.",
+    url: "https://www.johnsonsbaby.com/baby-products/baby-care-essentials-gift-set",
     links: [
       {
-        label: "Stokke Flexi Bath",
-        url: "https://www.stokke.com/USA/en-us/bath/stokke-flexibath/5316.html"
-      },
-      {
-        label: "Haakaa electric nail file",
-        url: "https://www.haakaausa.com/products/electric-baby-nail-care-set"
-      },
-      {
-        label: "Frida Baby DermaFrida",
-        url: "https://frida.com/products/dermafrida-the-skinsoother"
-      }
-    ]
-  },
-  {
-    id: "baby-laundry-starter-bundle",
-    name: "Baby Laundry Starter Bundle",
-    category: "Laundry",
-    priority: "Must",
-    price: 95,
-    purchased: false,
-    image: "https://cdn.shopify.com/s/files/1/0370/0215/0024/files/dirty-labs-bio-laundry-detergent-in-water.jpg?v=1738104490",
-    why: "The tracker adds fragrance-free detergent, stain remover, a slim hamper, and mesh laundry bags before birth.",
-    notes: "Use fragrance-free detergent for the first wash round. Mesh bags help keep tiny socks and pump parts organized.",
-    url: "https://dirtylabs.com/products/bio-enzyme-laundry-detergent-free-clear",
-    links: [
-      {
-        label: "Dirty Labs Free & Clear",
-        url: "https://dirtylabs.com/products/bio-enzyme-laundry-detergent-free-clear"
-      },
-      {
-        label: "Tide Free & Gentle",
-        url: "https://tide.com/en-us/shop/type/liquid/tide-free-and-gentle-liquid"
-      },
-      {
-        label: "Miss Mouth's Messy Eater",
-        url: "https://missmouths.com/products/messy-eater-stain-treater"
+        label: "Johnson's Baby Care Essentials Gift Set",
+        url: "https://www.johnsonsbaby.com/baby-products/baby-care-essentials-gift-set"
       }
     ]
   },
