@@ -376,26 +376,18 @@ items.addOns.push(
     ]
   },
   {
-    id: "coterie-diaper-wipes-starter",
-    name: "Coterie Newborn + Size 1 Diaper/Wipes Starter",
-    category: "Diapering",
+    id: "costco-huggies-plus-newborn-diapers",
+    name: "Huggies Plus Diapers Size Newborn - Costco",
+    category: "Diapers",
     priority: "Must",
-    price: 185,
+    price: 0,
+    priceLabel: "Confirm Costco price",
     purchased: false,
-    image: "https://cdn.sanity.io/images/e4q6bkl9/production/0a6d3ce27e3373f2d2b52d13c5c151b263d7fa25-1240x1240.png?rect=0,295,1240,651&w=1200&h=630",
-    why: "The tracker calls for one newborn pack, one size 1 backup, and unscented wipes before delivery.",
-    notes: "Do not stockpile. Start small because babies size out quickly and fit varies.",
-    url: "https://www.coterie.com/products/the-diaper",
-    links: [
-      {
-        label: "Coterie diapers",
-        url: "https://www.coterie.com/products/the-diaper"
-      },
-      {
-        label: "Coterie wipes",
-        url: "https://www.coterie.com/products/the-wipe"
-      }
-    ]
+    image:
+      "https://bfasset.costco-static.com/U447IH35/as/s4pvbk6gjkkc9gknfhwcxcv/4201011902-847__1?auto=webp&canvas=1024%2C1024&fit=bounds&format=jpg&height=1024&width=1024",
+    why: "Costco newborn box with 148 Huggies Plus Little Snugglers diapers; good first newborn diaper stock without overbuying multiple sizes.",
+    notes: "Costco item 2009060. Product page lists newborn size, 148 count, online-only, UPS Ground included in quoted price, and diapers made without phthalates, parabens, lotions, elemental chlorine, or natural rubber latex. Confirm member price at Costco checkout because the public page did not expose a reliable price.",
+    url: "https://www.costco.com/p/-/huggies-plus-diapers-size-newborn/4201011902"
   },
   {
     id: "keekaroo-peanut-changer",
@@ -772,7 +764,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     clone.querySelector(".notes").textContent = item.notes;
     clone.querySelector(".price").textContent = item.price > 0
       ? fmtPrice(estimatedCheckoutPrice(item))
-      : "-";
+      : item.priceLabel || "-";
 
     const itemLinks = Array.isArray(item.links) && item.links.length > 0
       ? item.links
