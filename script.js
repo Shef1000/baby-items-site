@@ -152,18 +152,6 @@ const items = {
       url: "https://www.skiphop.com/skiphop-diaper-bags/V_202410.html"
     },
     {
-      id: "sleep-sacks",
-      name: "Sleep Sacks (2-3)",
-      category: "Sleep",
-      priority: "Must",
-      price: 105,
-      purchased: false,
-      image: "https://www.halosleep.com/cdn/shop/files/OG_Image_1200x630.jpg?v=1738939808",
-      why: "Safer and more practical than loose blankets.",
-      notes: "Choose TOG levels based on room temperature.",
-      url: "https://www.halosleep.com/sleepsack"
-    },
-    {
       id: "halo-cotton-swaddle-birds-small",
       name: "HALO SleepSack Swaddle Cotton 1.5 TOG - Birds, Small",
       category: "Sleep",
@@ -178,28 +166,18 @@ const items = {
       url: "https://www.babylist.com/gp/halo-sleepsack-swaddle-cotton/2204/2317974"
     },
     {
-      id: "waterwipes-warmer-bundle",
-      name: "Huggies Simply Clean Wipes + Momcozy Wipe Warmer",
+      id: "momcozy-wipe-warmer",
+      name: "Momcozy Baby Wipe Warmer",
       category: "Diapering",
       priority: "Must",
-      price: 51.37,
-      checkoutPrice: 56,
+      price: 31.9,
+      checkoutPrice: 35,
       purchased: true,
       image:
-        "https://i5.walmartimages.com/seo/HUGGIES-SIMP-CLN-FF-BABYWIPE-RGD-FLPTP-864_3f416fb7-17dd-439a-a7f4-ccc1234d6f10.ff378d84c184baea94979ec55a758859.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
-      why: "Purchased diaper-change starter: high-count unscented wipes plus a warmer with night light.",
-      notes: "Purchased from Walmart: Huggies Simply Clean Unscented Baby Wipes, 12 flip-top packs, 864 count ($19.47) plus Momcozy 4-mode wipe warmer flash deal ($31.90). Checkout estimate includes 8.625% San Francisco sales tax.",
-      url: "https://www.walmart.com/ip/17615710998",
-      links: [
-        {
-          label: "Huggies wipes at Walmart",
-          url: "https://www.walmart.com/ip/17615710998"
-        },
-        {
-          label: "Momcozy wipe warmer",
-          url: "https://momcozy.com/products/momcozy-large-capacity-baby-wipe-warmer"
-        }
-      ]
+        "https://momcozy.com/cdn/shop/files/11_28dbc3d8-843f-4934-91f8-5a14e37429da.jpg?v=1779354329",
+      why: "Purchased wipe warmer with multiple temperature modes and night light for diaper changes.",
+      notes: "Purchased from Walmart at $31.90. Checkout estimate includes 8.625% San Francisco sales tax. Huggies is tracked separately under the newborn diaper card.",
+      url: "https://momcozy.com/products/momcozy-large-capacity-baby-wipe-warmer"
     },
     {
       id: "clean-butt-bundle",
@@ -227,18 +205,6 @@ const items = {
         }
       ]
     },
-    {
-      id: "ollie-swaddle-2pack",
-      name: "The Ollie Swaddle x2",
-      category: "Sleep",
-      priority: "Must",
-      price: 138,
-      purchased: false,
-      image: "https://theollieworld.com/cdn/shop/files/The_Ollie_Swaddle_Stone_01_1200x1200.jpg?v=1766869637",
-      why: "Easy fit and quick diaper access; two gives one in use + one in laundry.",
-      notes: "Counted as quantity two in the budget total.",
-      url: "https://theollieworld.com/products/the-ollie-swaddle"
-    }
   ],
   parentWellness: [
     {
@@ -378,16 +344,16 @@ items.addOns.push(
   },
   {
     id: "costco-huggies-plus-newborn-diapers",
-    name: "Huggies Plus Diapers Size Newborn - Costco",
+    name: "Huggies Plus Diapers Size Newborn - 148 Count",
     category: "Diapers",
     priority: "Must",
     price: 0,
-    priceLabel: "Confirm Costco price",
-    purchased: false,
+    priceLabel: "Purchased - price TBD",
+    purchased: true,
     image:
       "https://bfasset.costco-static.com/U447IH35/as/s4pvbk6gjkkc9gknfhwcxcv/4201011902-847__1?auto=webp&canvas=1024%2C1024&fit=bounds&format=jpg&height=1024&width=1024",
-    why: "Costco newborn box with 148 Huggies Plus Little Snugglers diapers; good first newborn diaper stock without overbuying multiple sizes.",
-    notes: "Costco item 2009060. Product page lists newborn size, 148 count, online-only, UPS Ground included in quoted price, and diapers made without phthalates, parabens, lotions, elemental chlorine, or natural rubber latex. Confirm member price at Costco checkout because the public page did not expose a reliable price.",
+    why: "Purchased newborn diaper box: 148 Huggies Plus Little Snugglers diapers, tracked once here instead of duplicated under wipes.",
+    notes: "Costco item 2009060. Product page lists newborn size, 148 count, online-only, UPS Ground included in quoted price, and diapers made without phthalates, parabens, lotions, elemental chlorine, or natural rubber latex. Exact checkout price still needs to be entered because the public Costco page did not expose a reliable price.",
     url: "https://www.costco.com/p/-/huggies-plus-diapers-size-newborn/4201011902"
   },
   {
@@ -674,7 +640,7 @@ const stateKey = "babyRegistryChecked.v1";
 const selected = new Set(loadState());
 const renderedCards = [];
 const legacyWipeBundleIds = ["waterwipes-12-pack", "wipe-warmer-machine"];
-const wipeBundleId = "waterwipes-warmer-bundle";
+const wipeBundleId = "momcozy-wipe-warmer";
 
 function loadState() {
   try {
