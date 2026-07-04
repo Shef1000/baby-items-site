@@ -30,19 +30,6 @@ items.formulaFeeding = [
     ]
   },
   {
-    id: "ready-to-feed-disposable-nipples",
-    name: "Sterile Disposable Nipples for Ready-to-Feed Bottles",
-    category: "Formula",
-    priority: "Must",
-    price: 35,
-    purchased: false,
-    image:
-      "https://i5.walmartimages.com/seo/Enfamil-Standard-Flow-Soft-Nipples-Latex-Free-BPA-Free-12-Count_3676b1e3-42e7-426b-9cca-acf1d8ef565e_1.c9c44cf2abb35ce6e2d56305fb01f390.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
-    why: "Lets helpers open a 2 oz bottle, attach a nipple, feed, and avoid bottle washing during overnight feeds.",
-    notes: "Match nipple compatibility to the ready-to-feed bottle brand. Buy roughly one sterile nipple per planned RTF bottle.",
-    url: "https://www.enfamil.com/products/enfamil-standard-flow-soft-nipples/"
-  },
-  {
     id: "dr-browns-options-narrow-glass-4oz",
     name: "Dr. Brown's Options+ Narrow Glass 4 oz Bottles",
     category: "Bottle Feeding",
@@ -67,19 +54,6 @@ items.formulaFeeding = [
     why: "Good second bottle shape for combo feeding if baby rejects the main Dr. Brown's narrow nipple.",
     notes: "Buy only 2-4 as a test set. Do not buy many bottle brands before seeing what baby accepts.",
     url: "https://www.evenflofeeding.com/products/balance-bottles-glass-wide-neck"
-  },
-  {
-    id: "lansinoh-glass-bottles",
-    name: "Lansinoh Glass Baby Bottles",
-    category: "Bottle Feeding",
-    priority: "Nice",
-    price: 50,
-    purchased: false,
-    image:
-      "https://lansinoh.com/cdn/shop/files/US_March2026_GlassBottleWN3_PDP_flowguide-M_1100x.png?v=1774014101",
-    why: "Another breastfeeding-friendly glass bottle option with a soft nipple profile.",
-    notes: "Use as an optional alternate to Evenflo. Choose one backup glass bottle system, not both, unless testing latch preferences.",
-    url: "https://lansinoh.com/products/glass-feeding-baby-5oz"
   },
   {
     id: "baby-brezza-bottle-washer-pro",
