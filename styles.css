@@ -301,6 +301,11 @@ h1 {
   border-color: #f3aa8d;
 }
 
+.section-nav-link.parent {
+  background: #e4f1ee;
+  border-color: #95c6ba;
+}
+
 section + section {
   margin-top: 2.7rem;
 }
@@ -373,6 +378,10 @@ section + section {
 
 .essentials-travel .section-progress span {
   background: #e06f42;
+}
+
+.essentials-parent .section-progress span {
+  background: #2d7d75;
 }
 
 h2 {
@@ -534,11 +543,13 @@ h2 {
 }
 
 .item-links.is-hidden,
+.inventory-details.is-hidden,
 .primary-link.is-hidden {
   display: none;
 }
 
-.item-links summary::-webkit-details-marker {
+.item-links summary::-webkit-details-marker,
+.inventory-details summary::-webkit-details-marker {
   display: none;
 }
 
@@ -554,6 +565,28 @@ h2 {
   text-decoration: underline;
   text-underline-offset: 2px;
   font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.inventory-content {
+  display: grid;
+  gap: 0.72rem;
+  margin-top: 0.55rem;
+  border-radius: 0.8rem;
+  background: #edf4ff;
+  padding: 0.7rem;
+}
+
+.inventory-group h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.94rem;
+}
+
+.inventory-group ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  line-height: 1.42;
   font-size: 0.9rem;
 }
 

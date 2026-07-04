@@ -6,7 +6,7 @@
     <title>Fehring's Baby Items</title>
     <meta
       name="description"
-      content="A practical, high-quality baby registry shortlist organized by sleep, play, eat, poop, and travel essentials."
+      content="A practical, high-quality baby registry shortlist organized by sleep, play, eat, poop, travel, and parent care essentials."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260704-play-department" />
+    <link rel="stylesheet" href="./styles.css?v=20260704-parent-care-cover" />
   </head>
   <body>
     <div class="bg-cloud bg-cloud-1" aria-hidden="true"></div>
@@ -24,7 +24,7 @@
       <p class="eyebrow">Fehring's Baby Items</p>
       <h1>Useful, High-Quality Baby Items</h1>
       <p class="subtitle">
-        Shortlist organized by sleep, play, eat, poop, and travel essentials.
+        Shortlist organized by sleep, play, eat, poop, travel, and parent care essentials.
       </p>
       <div class="hero-actions">
         <button id="copyBtn" class="btn-primary">Copy Page Link</button>
@@ -62,10 +62,11 @@
 
         <nav class="section-nav" aria-label="Baby item departments">
           <a class="section-nav-link sleep" href="#sleepSection">Sleep <span id="sleepNavProgress">0/0</span></a>
-          <a class="section-nav-link play" href="#playSection">Play <span id="playNavProgress">0/0</span></a>
           <a class="section-nav-link eat" href="#eatSection">Eat <span id="eatNavProgress">0/0</span></a>
           <a class="section-nav-link poop" href="#poopSection">Poop <span id="poopNavProgress">0/0</span></a>
           <a class="section-nav-link travel" href="#travelSection">Travel <span id="travelNavProgress">0/0</span></a>
+          <a class="section-nav-link parent" href="#parentCareSection">Parent <span id="parentCareNavProgress">0/0</span></a>
+          <a class="section-nav-link play" href="#playSection">Play <span id="playNavProgress">0/0</span></a>
         </nav>
 
         <section class="essentials-section essentials-sleep" id="sleepSection">
@@ -78,18 +79,6 @@
           </div>
           <div class="section-progress" aria-hidden="true"><span id="sleepProgressBar"></span></div>
           <div class="card-grid" id="sleepEssentials"></div>
-        </section>
-
-        <section class="essentials-section essentials-play" id="playSection">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Department</p>
-              <h2>Entertain / Play</h2>
-            </div>
-            <p class="section-progress-label" id="playProgressLabel">0/0</p>
-          </div>
-          <div class="section-progress" aria-hidden="true"><span id="playProgressBar"></span></div>
-          <div class="card-grid" id="playEssentials"></div>
         </section>
 
         <section class="essentials-section essentials-eat" id="eatSection">
@@ -126,6 +115,30 @@
           </div>
           <div class="section-progress" aria-hidden="true"><span id="travelProgressBar"></span></div>
           <div class="card-grid" id="travelEssentials"></div>
+        </section>
+
+        <section class="essentials-section essentials-parent" id="parentCareSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Parent Care</h2>
+            </div>
+            <p class="section-progress-label" id="parentCareProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="parentCareProgressBar"></span></div>
+          <div class="card-grid" id="parentCareEssentials"></div>
+        </section>
+
+        <section class="essentials-section essentials-play" id="playSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Entertain / Play</h2>
+            </div>
+            <p class="section-progress-label" id="playProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="playProgressBar"></span></div>
+          <div class="card-grid" id="playEssentials"></div>
         </section>
 
       </section>
@@ -174,6 +187,10 @@
           <summary class="link">Open item links</summary>
           <ul class="item-links-list"></ul>
         </details>
+        <details class="inventory-details is-hidden">
+          <summary class="link">Open inventory</summary>
+          <div class="inventory-content"></div>
+        </details>
         <button class="bundle-checkout-btn" type="button">Checkout Bundle</button>
       </article>
     </template>
@@ -191,7 +208,7 @@
       </article>
     </template>
 
-    <script src="./script.js?v=20260704-ergobaby-travel"></script>
-    <script src="./formula-section.js?v=20260704-ergobaby-travel"></script>
+    <script src="./script.js?v=20260704-parent-care-inventory"></script>
+    <script src="./formula-section.js?v=20260704-parent-care-inventory"></script>
   </body>
 </html>

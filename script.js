@@ -261,23 +261,128 @@ const items = {
 items.addOns.push(
   {
     id: "cradlewise-extra-linens-bundle",
-    name: "Cradlewise Extra Sheets + Mattress Cover",
+    name: "Cradlewise Extra Fitted Sheets",
     category: "Sleep",
     priority: "Must",
-    price: 215,
+    price: 150,
     purchased: false,
     image: "https://assets.cradlewise.com/images/index/meta-image-cng-new.jpg",
-    why: "The tracker calls for three extra fitted sheets and one extra mattress cover so overnight changes do not stall.",
-    notes: "Added from Baby Gear Tracker. Use Cradlewise-specific linens for correct fit.",
+    why: "The tracker calls for extra fitted sheets so overnight changes do not stall.",
+    notes: "Mattress cover is tracked separately as purchased. Use Cradlewise-specific linens for correct fit.",
     url: "https://cradlewise.com/product/fitted-sheet/",
     links: [
       {
         label: "Cradlewise fitted sheet",
         url: "https://cradlewise.com/product/fitted-sheet/"
+      }
+    ]
+  },
+  {
+    id: "cradlewise-extra-mattress-cover",
+    name: "Cradlewise Extra Mattress Cover",
+    category: "Sleep",
+    priority: "Must",
+    price: 65,
+    checkoutPrice: 71,
+    purchased: true,
+    image: "https://assets.cradlewise.com/images/index/meta-image-cng-new.jpg",
+    why: "Purchased extra mattress cover for faster cleanup and crib reset after leaks or spit-up.",
+    notes: "Purchased. Checkout estimate uses a $65 accessory estimate plus 8.625% San Francisco sales tax. Cradlewise notes to use only its mattress cover for fit and safety.",
+    url: "https://cradlewise.com/product/mattress-cover/"
+  },
+  {
+    id: "baby-clothes-swaddle-inventory",
+    name: "Baby Clothes + Swaddle Inventory",
+    category: "Clothes / Swaddles",
+    priority: "Must",
+    price: 1500,
+    checkoutPrice: 1500,
+    purchased: true,
+    image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=900&q=80",
+    why: "Purchased clothing, cloths, towels, swaddles, sleep sacks, and fitted sheets inventory.",
+    notes: "Purchased: $1,500 spent. Open inventory for exact counts by type and size.",
+    inventoryLabel: "Open inventory",
+    inventory: [
+      {
+        heading: "Cloth / Care",
+        lines: [
+          "Burp cloth: 30",
+          "Bibs: 7",
+          "Shower towel: 7",
+          "Diaper changing pad: 2",
+          "Face towel: 5",
+          "Pillow: 1"
+        ]
       },
       {
-        label: "Cradlewise mattress cover",
-        url: "https://cradlewise.com/product/mattress-cover/"
+        heading: "Newborn",
+        lines: [
+          "Long zipper: 9 pieces",
+          "Short: 2 pieces",
+          "Top: 5 shirts (0-1 month)"
+        ]
+      },
+      {
+        heading: "0-3 Months",
+        lines: [
+          "No legs button clip: 2",
+          "Button with legs: 2",
+          "Zipper with legs: 5"
+        ]
+      },
+      {
+        heading: "3 Months",
+        lines: [
+          "Zipper with legs: 8",
+          "No legs button clip: 13",
+          "Long button: 2"
+        ]
+      },
+      {
+        heading: "3-6 Months",
+        lines: [
+          "No legs button clip: 3",
+          "Button long: 2",
+          "Zipper with legs: 3"
+        ]
+      },
+      {
+        heading: "6 Months",
+        lines: [
+          "Zipper with legs: 6",
+          "Half half outfit, top + bottom: 2 sets",
+          "No legs button clip: 1"
+        ]
+      },
+      {
+        heading: "6-9 Months",
+        lines: [
+          "Button long: 4",
+          "Zipper with legs: 4"
+        ]
+      },
+      {
+        heading: "9 Months",
+        lines: [
+          "Zipper with legs: 4"
+        ]
+      },
+      {
+        heading: "Sleep Gear",
+        lines: [
+          "Love to Dream swaddles: 3, arms-up newborn swaddles",
+          "HALO arms-free / arms-up sleep sack, 0-3M: 1, transition / arms-free option",
+          "HALO arms-free / arms-up sleep sack, 3-6M: 1, transition / arms-free option for later",
+          "HALO SleepSack Swaddle, 0-3M: 1, arms-down / wrapped swaddle option",
+          "Other sleep sacks / wearable blankets: 3, general sleep sack / wearable blanket",
+          "Total sleep sacks / swaddles / wearable blankets: 9, more than enough"
+        ]
+      },
+      {
+        heading: "Crib / Cradlewise",
+        lines: [
+          "Crib / Cradlewise fitted sheets: 3 total"
+        ]
       }
     ]
   },
@@ -638,6 +743,8 @@ const babyGroupByItemId = {
   "newton-mini-sheets-two-pack": "sleep",
   "halo-cotton-swaddle-birds-small": "sleep",
   "cradlewise-extra-linens-bundle": "sleep",
+  "cradlewise-extra-mattress-cover": "sleep",
+  "baby-clothes-swaddle-inventory": "sleep",
   "pacifier-starter-variety": "sleep",
 
   "babybjorn-bouncer-toy-bundle": "play",
@@ -697,6 +804,12 @@ const departmentProgress = {
     labelId: "travelProgressLabel",
     navId: "travelNavProgress",
     barId: "travelProgressBar"
+  },
+  parentCare: {
+    targetId: "parentCareEssentials",
+    labelId: "parentCareProgressLabel",
+    navId: "parentCareNavProgress",
+    barId: "parentCareProgressBar"
   }
 };
 
@@ -790,11 +903,18 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
       : [{ label: item.name, url: item.url }];
     const isBundle = itemLinks.length > 1;
     const primaryLink = clone.querySelector(".primary-link");
-    primaryLink.href = item.url;
+    if (item.url) {
+      primaryLink.href = item.url;
+    } else {
+      primaryLink.classList.add("is-hidden");
+    }
 
     const linksDetails = clone.querySelector(".item-links");
     const linksSummary = clone.querySelector(".item-links .link");
     const linksList = clone.querySelector(".item-links-list");
+    const inventoryDetails = clone.querySelector(".inventory-details");
+    const inventorySummary = clone.querySelector(".inventory-details .link");
+    const inventoryContent = clone.querySelector(".inventory-content");
 
     linksSummary.textContent = `Open item links (${itemLinks.length})`;
 
@@ -808,6 +928,28 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
       li.appendChild(anchor);
       linksList.appendChild(li);
     });
+
+    if (Array.isArray(item.inventory) && item.inventory.length > 0) {
+      inventorySummary.textContent = item.inventoryLabel || "Open inventory";
+      item.inventory.forEach((section) => {
+        const groupEl = document.createElement("section");
+        groupEl.className = "inventory-group";
+
+        const headingEl = document.createElement("h4");
+        headingEl.textContent = section.heading;
+        groupEl.appendChild(headingEl);
+
+        const listEl = document.createElement("ul");
+        section.lines.forEach((line) => {
+          const itemEl = document.createElement("li");
+          itemEl.textContent = line;
+          listEl.appendChild(itemEl);
+        });
+        groupEl.appendChild(listEl);
+        inventoryContent.appendChild(groupEl);
+      });
+      inventoryDetails.classList.remove("is-hidden");
+    }
 
     const bundleCheckoutBtn = clone.querySelector(".bundle-checkout-btn");
     if (!isBundle || caution) {
@@ -830,9 +972,10 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     if (caution) {
       primaryLink.classList.add("is-hidden");
       linksDetails.classList.add("is-hidden");
+      inventoryDetails.classList.add("is-hidden");
       bundleCheckoutBtn.classList.add("is-hidden");
     } else {
-      primaryLink.classList.remove("is-hidden");
+      primaryLink.classList.toggle("is-hidden", !item.url);
     }
 
     const checkbox = clone.querySelector(".item-check");
@@ -865,7 +1008,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
 }
 
 function refreshSummary() {
-  const allTrackable = [...items.corePicks, ...items.addOns];
+  const allTrackable = [...items.corePicks, ...items.addOns, ...items.parentWellness];
 
   allTrackable.forEach((item) => {
     if (isPurchased(item)) {
@@ -910,6 +1053,7 @@ function renderBenefits(sectionName, targetId) {
 
 renderItems("corePicks", babyEssentialsTargetForItem);
 renderItems("addOns", babyEssentialsTargetForItem);
+renderItems("parentWellness", "parentCareEssentials");
 renderItems("cautions", "cautions", true, "caution");
 renderBenefits("freeBenefits", "freeBenefits");
 migrateLegacySelections();
@@ -935,7 +1079,7 @@ copyBtn.addEventListener("click", async () => {
 const resetBtn = document.getElementById("resetBtn");
 resetBtn.addEventListener("click", () => {
   selected.clear();
-  [...items.corePicks, ...items.addOns, ...(items.formulaFeeding || [])].forEach((item) => {
+  [...items.corePicks, ...items.addOns, ...(items.formulaFeeding || []), ...items.parentWellness].forEach((item) => {
     if (isPurchased(item)) {
       selected.add(item.id);
     }

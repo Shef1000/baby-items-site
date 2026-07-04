@@ -169,7 +169,7 @@ function removeMovedCorePickCards() {
 
 function trackableItems() {
   const corePicksForBudget = items.corePicks.filter((item) => !movedFormulaItemIds.has(item.id));
-  return [...corePicksForBudget, ...items.addOns, ...items.formulaFeeding];
+  return [...corePicksForBudget, ...items.addOns, ...items.formulaFeeding, ...items.parentWellness];
 }
 
 function formulaBudgetBreakdown() {
