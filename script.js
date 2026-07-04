@@ -44,20 +44,21 @@ const items = {
     },
     {
       id: "babybjorn-bouncer-toy-bundle",
-      name: "BabyBjorn Bouncer Balance Soft + Toys Bundle",
+      name: "BabyBjorn Bouncer Bliss + Toys Bundle - Nordstrom Rack",
       category: "Bouncer",
       priority: "Must",
-      price: 360,
+      price: 289.95,
+      checkoutPrice: 315,
       purchased: false,
       image:
-        "https://a.storyblok.com/f/187315/1800x2728/f25ee3d4e9/us-005270-bouncer-balance-soft-lightsage-gray-woven-jersey-product-babybjorn-01-1.png",
-      why: "Ergonomic natural-rocking bouncer in Light Sage/Gray woven jersey, paired with BabyBjorn toy bars for play.",
-      notes: "Checkout estimate covers the bouncer plus two toy bars. Bouncer supports 8-29 lb and converts from bouncer to child chair.",
-      url: "https://www.babybjorn.com/products/baby-bouncers/bouncer-balance-soft/light-sage-gray-woven-jersey-light-gray/",
+        "https://n.nordstrommedia.com/it/7c950a49-0d1b-47a0-b61d-b2303e278db8.jpeg?w=780&h=1170&crop=pad&dpr=2",
+      why: "Nordstrom Rack deal on the BabyBjorn Bouncer Bliss in Powder Pink, paired with BabyBjorn toy bars for play.",
+      notes: "Checkout estimate covers the $159.97 Rack bouncer plus two $64.99 toy bars and 8.625% San Francisco sales tax. Rack listing says jersey, but inspect on arrival because one recent review reported receiving mesh instead.",
+      url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size",
       links: [
         {
-          label: "Bouncer Balance Soft - Light Sage/Gray",
-          url: "https://www.babybjorn.com/products/baby-bouncers/bouncer-balance-soft/light-sage-gray-woven-jersey-light-gray/"
+          label: "Nordstrom Rack Bouncer Bliss - Powder Pink",
+          url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size"
         },
         {
           label: "Toy for Bouncer - Googly eyes Pastel",
