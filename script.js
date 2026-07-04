@@ -124,19 +124,6 @@ const items = {
       url: "https://www.boppy.com/products/original-support"
     },
     {
-      id: "baby-brezza-bottle-washer-pro",
-      name: "Baby Brezza Bottle Washer Pro",
-      category: "Feeding",
-      priority: "Nice",
-      price: 239.99,
-      purchased: false,
-      image:
-        "https://babybrezza.com/cdn/shop/files/BWP_classic.webp?v=1770152040",
-      why: "Countertop machine that washes, sterilizes, and dries bottles, pump parts, sippy cups, and accessories.",
-      notes: "Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Includes 60 detergent tablets; use Baby Brezza detergent tablets as directed.",
-      url: "https://babybrezza.com/products/bottle-washer-pro"
-    },
-    {
       id: "baby-brezza-formula-pro-advanced",
       name: "Baby Brezza Formula Pro Advanced",
       category: "Feeding",

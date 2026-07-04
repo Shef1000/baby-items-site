@@ -82,29 +82,16 @@ items.formulaFeeding = [
     url: "https://lansinoh.com/products/glass-feeding-baby-5oz"
   },
   {
-    id: "wabi-baby-uv-sterilizer-dryer",
-    name: "Wabi Baby UV Sterilizer Dryer",
-    category: "Bottle Cleaning",
-    priority: "Nice",
-    price: 259,
-    purchased: false,
-    image:
-      "https://www.wabibaby.com/cdn/shop/files/wa9900-wh-front_full_e2773ceb-6136-4fbf-a3d3-3d40eb09e0a4.png?v=1689438066&width=1500",
-    why: "Premium drying and sterilizing cabinet for bottles, nipples, pacifiers, and pump parts.",
-    notes: "Optional if using the Baby Brezza Bottle Washer Pro, but useful as a clean drying/storage station.",
-    url: "https://www.wabibaby.com/products/uvc"
-  },
-  {
     id: "baby-brezza-bottle-washer-pro",
     name: "Baby Brezza Bottle Washer Pro",
     category: "Bottle Cleaning",
-    priority: "Nice",
+    priority: "Must",
     price: 239.99,
     purchased: false,
     image:
       "https://babybrezza.com/cdn/shop/files/BWP_classic.webp?v=1770152040",
     why: "Countertop machine that washes, sterilizes, and dries bottles, pump parts, sippy cups, and accessories.",
-    notes: "Moved from Core Picks into Formula / Ready-to-Feed because it mainly supports bottle-feeding cleanup and night-shift labor reduction.",
+    notes: "Chosen all-in-one bottle washer, sterilizer, and dryer. This replaces standalone UV sterilizers, separate drying cabinets, and duplicate bottle washer options. Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Includes 60 detergent tablets; use Baby Brezza detergent tablets as directed.",
     url: "https://babybrezza.com/products/bottle-washer-pro"
   },
   {
@@ -123,37 +110,6 @@ items.formulaFeeding = [
 ];
 
 items.formulaFeeding.push(
-  {
-    id: "oxo-bottle-cleaning-starter",
-    name: "OXO Bottle Cleaning Starter",
-    category: "Bottle Cleaning",
-    priority: "Must",
-    price: 65,
-    purchased: false,
-    image:
-      "https://images.ctfassets.net/50gzycvace50/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2/7e539e9d2e706cc27bf3953914540ecf/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
-    why: "The tracker adds a bottle brush, vertical drying rack, dishwasher basket, and compact sterilization method before delivery.",
-    notes: "Small-counter setup: OXO vertical rack plus brush and dishwasher basket; use microwave steam bags or dishwasher sanitize instead of adding another appliance unless bottle volume demands it.",
-    url: "https://www.oxo.com/space-saving-drying-rack.html",
-    links: [
-      {
-        label: "OXO Tot Space Saving Drying Rack",
-        url: "https://www.oxo.com/space-saving-drying-rack.html"
-      },
-      {
-        label: "OXO Tot Bottle Brush",
-        url: "https://www.oxo.com/tot-bottle-brush-with-nipple-cleaner-and-stand.html"
-      },
-      {
-        label: "OXO Tot Dishwasher Basket",
-        url: "https://www.oxo.com/tot-dishwasher-basket.html"
-      },
-      {
-        label: "Dr. Brown's sterilizer bags",
-        url: "https://www.drbrownsbaby.com/product/dr-browns-microwave-steam-sterilizer-bags/"
-      }
-    ]
-  },
   {
     id: "eufy-s1-pro-lavie-massage-pump-bundle",
     name: "eufy S1 Pro Heated Pump + LaVie Massage Pads",
