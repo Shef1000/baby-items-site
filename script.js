@@ -44,31 +44,17 @@ const items = {
     },
     {
       id: "babybjorn-bouncer-toy-bundle",
-      name: "BabyBjorn Bouncer Bliss + Toys Bundle - Nordstrom Rack",
+      name: "BabyBjorn Bouncer Bliss - Nordstrom Rack",
       category: "Bouncer",
       priority: "Must",
-      price: 289.95,
-      checkoutPrice: 315,
+      price: 159.97,
+      checkoutPrice: 174,
       purchased: false,
       image:
         "https://n.nordstrommedia.com/it/7c950a49-0d1b-47a0-b61d-b2303e278db8.jpeg?w=780&h=1170&crop=pad&dpr=2",
-      why: "Nordstrom Rack deal on the BabyBjorn Bouncer Bliss in Powder Pink, paired with BabyBjorn toy bars for play.",
-      notes: "Checkout estimate covers the $159.97 Rack bouncer plus two $64.99 toy bars and 8.625% San Francisco sales tax. Rack listing says jersey, but inspect on arrival because one recent review reported receiving mesh instead.",
-      url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size",
-      links: [
-        {
-          label: "Nordstrom Rack Bouncer Bliss - Powder Pink",
-          url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size"
-        },
-        {
-          label: "Toy for Bouncer - Googly eyes Pastel",
-          url: "https://www.babybjorn.com/products/baby-bouncers/accessories-baby-bouncer/toy-for-bouncer-googly-eyes/pastel/"
-        },
-        {
-          label: "Toy for Bouncer - Soft friends Neutrals",
-          url: "https://www.babybjorn.com/products/baby-bouncers/accessories-baby-bouncer/toy-for-bouncer-soft-friends/neutrals/"
-        }
-      ]
+      why: "Nordstrom Rack deal on the BabyBjorn Bouncer Bliss in Powder Pink; skip the separate toy bars for now.",
+      notes: "Checkout estimate covers the $159.97 Rack bouncer plus 8.625% San Francisco sales tax. Listing qualifies for free shipping over $89, but confirm there is no surcharge at checkout. Rack listing says jersey, but inspect on arrival because one recent review reported receiving mesh instead.",
+      url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size"
     },
     {
       id: "nuna-pipa-aire-rx",
