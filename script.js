@@ -39,8 +39,22 @@ const items = {
       image:
         "https://www.newtonbaby.com/cdn/shop/files/4-AngledCrib-Natural.jpg?v=1753220377",
       why: "4-in-1 bassinet-to-crib system that grows from newborn to about 5 years, with a bassinet mattress included.",
-      notes: "Keep this as the crib candidate. Product listing includes free sheets, so no separate Newton mattress or sheet card is needed.",
+      notes: "Keep this as the crib candidate. Product listing may include free sheets depending on the promo; the extra purchased mini sheets are tracked separately.",
       url: "https://www.newtonbaby.com/products/newton-nest-crib?variant=46241386070213"
+    },
+    {
+      id: "newton-mini-sheets-two-pack",
+      name: "Newton Breathable Organic Mini Crib Sheets x2",
+      category: "Sleep",
+      priority: "Must",
+      price: 79.98,
+      checkoutPrice: 87,
+      purchased: true,
+      image:
+        "https://www.newtonbaby.com/cdn/shop/products/600x600_Sheets_-_White.jpg?v=1686236541",
+      why: "Two extra mini crib sheet packs keep the Newton sleep setup covered through laundry cycles.",
+      notes: "Purchased two packs. Checkout estimate uses 2 x $39.99 plus 8.625% San Francisco sales tax.",
+      url: "https://www.newtonbaby.com/products/newton-mini-sheets"
     },
     {
       id: "babybjorn-bouncer-toy-bundle",
@@ -164,24 +178,25 @@ const items = {
     },
     {
       id: "waterwipes-warmer-bundle",
-      name: "WaterWipes + Wipe Warmer Bundle",
+      name: "Huggies Simply Clean Wipes + Momcozy Wipe Warmer",
       category: "Diapering",
       priority: "Must",
-      price: 72,
-      purchased: false,
+      price: 51.37,
+      checkoutPrice: 56,
+      purchased: true,
       image:
-        "https://cdn.shopify.com/s/files/1/0790/4172/4704/files/10049_base_9b128329-dfb8-4beb-8ba8-2de30ee77b4b.jpg?v=1707192624",
-      why: "Keeps wipes stocked and ready for quick, smoother diaper changes.",
-      notes: "Bundle includes WaterWipes (12-pack) + wipe warmer machine.",
-      url: "https://www.waterwipes.com/us/en/products/original-baby-wipes",
+        "https://i5.walmartimages.com/seo/HUGGIES-SIMP-CLN-FF-BABYWIPE-RGD-FLPTP-864_3f416fb7-17dd-439a-a7f4-ccc1234d6f10.ff378d84c184baea94979ec55a758859.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
+      why: "Purchased diaper-change starter: high-count unscented wipes plus a warmer with night light.",
+      notes: "Purchased from Walmart: Huggies Simply Clean Unscented Baby Wipes, 12 flip-top packs, 864 count ($19.47) plus Momcozy 4-mode wipe warmer flash deal ($31.90). Checkout estimate includes 8.625% San Francisco sales tax.",
+      url: "https://www.walmart.com/ip/17615710998",
       links: [
         {
-          label: "WaterWipes (12-pack)",
-          url: "https://www.waterwipes.com/us/en/products/original-baby-wipes"
+          label: "Huggies wipes at Walmart",
+          url: "https://www.walmart.com/ip/17615710998"
         },
         {
-          label: "Munchkin Warm Glow Wipe Warmer",
-          url: "https://www.munchkin.com/warm-glow-wipe-warmer"
+          label: "Momcozy wipe warmer",
+          url: "https://momcozy.com/products/momcozy-large-capacity-baby-wipe-warmer"
         }
       ]
     },
@@ -327,29 +342,16 @@ items.addOns.push(
   },
   {
     id: "pacifier-starter-variety",
-    name: "Pacifier Starter Variety",
+    name: "Philips Avent Soothie Pacifiers 0-3M - 4 Pack",
     category: "Sleep",
     priority: "Must",
-    price: 30,
-    purchased: false,
+    price: 11.89,
+    checkoutPrice: 13,
+    purchased: true,
     image: "https://philips.scene7.com/is/image/philipsconsumer/60d1fe5579ed4bb69be9b17700d14848?wid=960&hei=960&fit=constrain",
-    why: "The tracker calls for a small variety before birth because newborn pacifier preference is unpredictable.",
-    notes: "Start with Philips Avent Soothie plus one BIBS or MAM newborn option. No clips or strings in sleep space.",
-    url: "https://www.usa.philips.com/c-p/SCF190_41/soothie-pacifier",
-    links: [
-      {
-        label: "Philips Avent Soothie",
-        url: "https://www.usa.philips.com/c-p/SCF190_41/soothie-pacifier"
-      },
-      {
-        label: "BIBS pacifiers",
-        url: "https://bibsworld.com/collections/pacifiers"
-      },
-      {
-        label: "AAP safe sleep",
-        url: "https://www.aap.org/en/patient-care/safe-sleep/"
-      }
-    ]
+    why: "Purchased newborn pacifier set with the one-piece silicone design commonly used for 0-3 month babies.",
+    notes: "Purchased from Walmart: Philips Avent Soothie Baby Pacifiers, green 4-pack, model SCF190/41. No clips or strings in sleep space.",
+    url: "https://www.walmart.com/search?q=Philips%20Avent%20Soothie%20Baby%20Pacifiers%200-3%20Months%20Green%204%20Pack%20SCF190%2F41"
   },
   {
     id: "nursery-drawer-organizers",
@@ -397,15 +399,17 @@ items.addOns.push(
   },
   {
     id: "keekaroo-peanut-changer",
-    name: "Keekaroo Peanut Wipeable Changing Pad",
+    name: "Keekaroo Peanut Changer - Vanilla",
     category: "Diapering",
     priority: "Must",
-    price: 150,
-    purchased: false,
-    image: "https://www.keekaroo.com/media/catalog/product/cache/7800bb778a954cb4c97ef3c76a1a4610/k/r/kr_grey_with_baby.png",
-    why: "The tracker recommends a wipeable changing pad on existing furniture instead of a dedicated changing table.",
-    notes: "Space-saving setup for 88 Howard: existing dresser or counter plus wipeable pad.",
-    url: "https://www.keekaroo.com/peanut-changer.html"
+    price: 149.95,
+    checkoutPrice: 163,
+    purchased: true,
+    image:
+      "https://images.ctfassets.net/50gzycvace50/834ab06a1fd45e483c5a3b55b21dc87683ee4c0cb2bb9decaf75283c3b4e5f40/09275d8faafd895387c421c6309d0a93/834ab06a1fd45e483c5a3b55b21dc87683ee4c0cb2bb9decaf75283c3b4e5f40.png?bg=rgb%3Afafafa&fl=progressive&fm=jpg&h=1240&w=1240",
+    why: "Purchased wipeable changing pad for use on existing furniture instead of a dedicated changing table.",
+    notes: "Purchased from Keekaroo Brand Products via Walmart: Peanut Changer in Vanilla, fully impermeable shell over foam. Checkout estimate includes 8.625% San Francisco sales tax.",
+    url: "https://www.walmart.com/search?q=Keekaroo%20Peanut%20Changer%20Vanilla"
   },
   {
     id: "diaper-caddy-cleanup-bundle",
@@ -444,16 +448,17 @@ items.addOns.push(
   },
   {
     id: "angelcare-baby-bath-support-grey",
-    name: "Angelcare Baby Bath Support - Grey",
+    name: "The First Years Sure Comfort Newborn to Toddler Tub - White",
     category: "Bath / Changing",
-    priority: "Nice",
-    price: 19.78,
-    checkoutPrice: 21.49,
-    purchased: false,
-    image: "https://m.media-amazon.com/images/I/61x79D9WpNL._SL1500_.jpg",
-    why: "Lightweight newborn bath insert for hands-free support inside a tub, useful if the larger bath/changing station feels bulky for daily use.",
-    notes: "Amazon listing shows the grey bath support for babies under 6 months or 20 lb, with a quick-drain mesh seat and hang loop. Checkout estimate includes 8.625% San Francisco sales tax; shipping depends on Prime/order size.",
-    url: "https://www.amazon.com/dp/B01M6YVW7B"
+    priority: "Must",
+    price: 19.99,
+    checkoutPrice: 22,
+    purchased: true,
+    image:
+      "https://i5.walmartimages.com/seo/The-First-Years-Sure-Comfort-Newborn-to-Toddler-Tub-White_b5e176d6-1f1f-4dc4-8893-a2961f5d2743.4ee7e2dd09f78bf92a2330237a8783a5.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
+    why: "Purchased simple newborn-to-toddler bath tub with included sling for early baths.",
+    notes: "Purchased from Walmart in white. Checkout estimate uses the $19.99 product price plus 8.625% San Francisco sales tax.",
+    url: "https://www.walmart.com/ip/911326907"
   },
   {
     id: "newborn-soft-carrier",
