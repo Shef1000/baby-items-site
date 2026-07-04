@@ -122,35 +122,9 @@ const items = {
       why: "Practical for feeding support and postpartum comfort.",
       notes: "Supervised feeding use only, never for sleep.",
       url: "https://www.boppy.com/products/original-support"
-    },
-    {
-      id: "baby-brezza-formula-pro-advanced",
-      name: "Baby Brezza Formula Pro Advanced",
-      category: "Feeding",
-      priority: "Nice",
-      price: 183.99,
-      purchased: false,
-      image:
-        "https://babybrezza.com/cdn/shop/files/FPA_Carousel_01_classic.webp?v=1758552426",
-      why: "Automatically mixes warm formula bottles with adjustable ounce and temperature settings.",
-      notes: "Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Confirm formula setting before use and clean the funnel after every 4 bottles.",
-      url: "https://babybrezza.com/products/formula-pro-advanced"
     }
   ],
   addOns: [
-    {
-      id: "portable-changing-pad",
-      name: "Portable Changing Pad",
-      category: "Outings",
-      priority: "Must",
-      price: 30,
-      purchased: false,
-      image:
-        "https://www.dagnedover.com/cdn/shop/files/dagne-2025-Baby_Indi_Onyx_S_anglewipe-2048x2048-f60149e1-e113-472e-9690-4fbdc912b44f.jpg?v=1751472669&width=1200",
-      why: "Compact and practical for frequent outing changes.",
-      notes: "A foldable wipeable pad is enough.",
-      url: "https://www.skiphop.com/skiphop-diaper-bags/V_202410.html"
-    },
     {
       id: "halo-cotton-swaddle-birds-small",
       name: "HALO SleepSack Swaddle Cotton 1.5 TOG - Birds, Small",
@@ -321,28 +295,6 @@ items.addOns.push(
     url: "https://www.walmart.com/search?q=Philips%20Avent%20Soothie%20Baby%20Pacifiers%200-3%20Months%20Green%204%20Pack%20SCF190%2F41"
   },
   {
-    id: "nursery-drawer-organizers",
-    name: "Drawer Dividers + Small Storage Bins",
-    category: "Organization",
-    priority: "Must",
-    price: 55,
-    purchased: false,
-    image: "https://images.ctfassets.net/50gzycvace50/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2/7e539e9d2e706cc27bf3953914540ecf/d59a01d7e312fbe767fec0a4818936410d1094d3a4c70acc53074741ea1ab3c2.png?fl=progressive&fm=jpg&bg=rgb:fafafa&w=1240&h=1240",
-    why: "The tracker marks storage bins and drawer dividers as P0 because they prevent duplicate buying and make size rotation easier.",
-    notes: "Use vertical drawer organizers; skip freestanding nursery furniture unless it becomes necessary.",
-    url: "https://www.ikea.com/us/en/p/skubb-box-set-of-6-white-00428549/",
-    links: [
-      {
-        label: "IKEA SKUBB boxes",
-        url: "https://www.ikea.com/us/en/p/skubb-box-set-of-6-white-00428549/"
-      },
-      {
-        label: "OXO drawer organizer options",
-        url: "https://www.oxo.com/shop/kitchenware/organization.html"
-      }
-    ]
-  },
-  {
     id: "costco-huggies-plus-newborn-diapers",
     name: "Huggies Plus Diapers Size Newborn - 148 Count",
     category: "Diapers",
@@ -369,28 +321,6 @@ items.addOns.push(
     why: "Purchased wipeable changing pad for use on existing furniture instead of a dedicated changing table.",
     notes: "Purchased from Keekaroo Brand Products via Walmart: Peanut Changer in Vanilla, fully impermeable shell over foam. Checkout estimate includes 8.625% San Francisco sales tax.",
     url: "https://www.walmart.com/search?q=Keekaroo%20Peanut%20Changer%20Vanilla"
-  },
-  {
-    id: "diaper-caddy-cleanup-bundle",
-    name: "Diaper Caddy + Changing Cleanup Bundle",
-    category: "Diapering",
-    priority: "Must",
-    price: 55,
-    purchased: false,
-    image: "https://www.oxo.com/media/catalog/product/cache/42f6b21d4e9bb5235c64b47a93880671/6/3/63112600_oxo_tot_diaper_caddy_with_changing_mat_01.jpg",
-    why: "The tracker calls for one mobile caddy, hand sanitizer, and cleanup supplies before delivery.",
-    notes: "One basket only; avoid multiple stations unless the apartment layout demands it.",
-    url: "https://www.oxo.com/tot-diaper-caddy-with-changing-mat.html",
-    links: [
-      {
-        label: "OXO Tot diaper caddy",
-        url: "https://www.oxo.com/tot-diaper-caddy-with-changing-mat.html"
-      },
-      {
-        label: "Babyganics hand sanitizer",
-        url: "https://babyganics.com/products/alcohol-free-foaming-hand-sanitizer/"
-      }
-    ]
   },
   {
     id: "walmart-akaber-2-in-1-bath-changing-table",
@@ -671,6 +601,107 @@ function migrateLegacySelections() {
   }
 }
 
+const babyGroupTargets = {
+  sleep: "sleepEssentials",
+  play: "playEssentials",
+  eat: "eatEssentials",
+  poop: "poopEssentials",
+  travel: "travelEssentials"
+};
+
+const babyGroupByItemId = {
+  "cradlewise-crib": "sleep",
+  "newton-nest-convertible-crib": "sleep",
+  "newton-mini-sheets-two-pack": "sleep",
+  "halo-cotton-swaddle-birds-small": "sleep",
+  "cradlewise-extra-linens-bundle": "sleep",
+  "pacifier-starter-variety": "sleep",
+
+  "babybjorn-bouncer-toy-bundle": "play",
+  "newborn-play-development-starter": "play",
+
+  "tripp-trapp": "eat",
+  "boppy-nursing": "eat",
+  "later-solids-teething-bundle": "eat",
+
+  "momcozy-wipe-warmer": "poop",
+  "clean-butt-bundle": "poop",
+  "costco-huggies-plus-newborn-diapers": "poop",
+  "keekaroo-peanut-changer": "poop",
+  "walmart-akaber-2-in-1-bath-changing-table": "poop",
+  "angelcare-baby-bath-support-grey": "poop",
+  "johnsons-baby-care-essentials-gift-set": "poop",
+  "infant-health-sick-day-kit": "poop",
+
+  "wildbird-aerial": "travel",
+  "nuna-pipa-aire-rx": "travel",
+  "newborn-soft-carrier": "travel"
+};
+
+function babyEssentialsTargetForItem(item) {
+  const group = babyGroupByItemId[item.id] || "poop";
+  return babyGroupTargets[group];
+}
+
+const departmentProgress = {
+  sleep: {
+    targetId: "sleepEssentials",
+    labelId: "sleepProgressLabel",
+    navId: "sleepNavProgress",
+    barId: "sleepProgressBar"
+  },
+  play: {
+    targetId: "playEssentials",
+    labelId: "playProgressLabel",
+    navId: "playNavProgress",
+    barId: "playProgressBar"
+  },
+  eat: {
+    targetId: "eatEssentials",
+    labelId: "eatProgressLabel",
+    navId: "eatNavProgress",
+    barId: "eatProgressBar"
+  },
+  poop: {
+    targetId: "poopEssentials",
+    labelId: "poopProgressLabel",
+    navId: "poopNavProgress",
+    barId: "poopProgressBar"
+  },
+  travel: {
+    targetId: "travelEssentials",
+    labelId: "travelProgressLabel",
+    navId: "travelNavProgress",
+    barId: "travelProgressBar"
+  }
+};
+
+function refreshDepartmentProgress() {
+  Object.values(departmentProgress).forEach(({ targetId, labelId, navId, barId }) => {
+    const cards = Array.from(document.querySelectorAll(`#${targetId} .item-card`));
+    const total = cards.length;
+    const complete = cards.filter((card) => {
+      const itemId = card.dataset.itemId;
+      return card.classList.contains("purchased") || (itemId && selected.has(itemId));
+    }).length;
+    const progressText = `${complete}/${total}`;
+    const progressPercent = total ? Math.round((complete / total) * 100) : 0;
+    const label = document.getElementById(labelId);
+    const nav = document.getElementById(navId);
+    const bar = document.getElementById(barId);
+
+    if (label) {
+      label.textContent = progressText;
+    }
+    if (nav) {
+      nav.textContent = progressText;
+    }
+    if (bar) {
+      bar.style.width = `${progressPercent}%`;
+    }
+  });
+}
+
 function fmtPrice(price) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -692,10 +723,16 @@ function isPurchased(item) {
 }
 
 function renderItems(sectionName, targetId, caution = false, group = "baby") {
-  const target = document.getElementById(targetId);
   const template = document.getElementById("itemTemplate");
 
   items[sectionName].forEach((item, index) => {
+    const resolvedTargetId = typeof targetId === "function" ? targetId(item) : targetId;
+    const target = document.getElementById(resolvedTargetId);
+
+    if (!target) {
+      return;
+    }
+
     const clone = template.content.cloneNode(true);
     const card = clone.querySelector(".item-card");
 
@@ -716,15 +753,6 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     };
 
     clone.querySelector(".category").textContent = item.category;
-
-    const priorityEl = clone.querySelector(".priority");
-    priorityEl.textContent = isPurchased(item) ? "Purchased" : item.priority;
-    if (item.priority === "Must") {
-      priorityEl.classList.add("must");
-    }
-    if (isPurchased(item)) {
-      priorityEl.classList.add("purchased");
-    }
 
     clone.querySelector("h3").textContent = item.name;
     clone.querySelector(".why").textContent = item.why;
@@ -804,7 +832,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     });
 
     card.style.animationDelay = `${index * 70}ms`;
-    card.dataset.priority = item.priority;
+    card.dataset.itemId = item.id;
     card.dataset.group = group;
 
     renderedCards.push({ card, item, caution, group });
@@ -813,7 +841,7 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
 }
 
 function refreshSummary() {
-  const allTrackable = [...items.corePicks, ...items.addOns, ...items.parentWellness];
+  const allTrackable = [...items.corePicks, ...items.addOns];
 
   allTrackable.forEach((item) => {
     if (isPurchased(item)) {
@@ -828,33 +856,9 @@ function refreshSummary() {
     return sum + estimatedCheckoutPrice(item);
   }, 0);
 
-  const mustItems = allTrackable.filter((item) => item.priority === "Must");
-  const mustRemaining = mustItems.filter((item) => !selected.has(item.id)).length;
-
   document.getElementById("selectedCount").textContent = String(selectedCount);
   document.getElementById("selectedBudget").textContent = fmtPrice(selectedBudget);
-  document.getElementById("mustRemaining").textContent = String(mustRemaining);
-}
-
-function setFilter(filterValue) {
-  renderedCards.forEach(({ card, item, caution, group }) => {
-    if (group !== "baby") {
-      return;
-    }
-
-    if (filterValue === "all") {
-      card.classList.remove("is-hidden");
-      return;
-    }
-
-    if (caution || isPurchased(item)) {
-      card.classList.add("is-hidden");
-      return;
-    }
-
-    const shouldShow = item.priority === filterValue;
-    card.classList.toggle("is-hidden", !shouldShow);
-  });
+  refreshDepartmentProgress();
 }
 
 function renderBenefits(sectionName, targetId) {
@@ -880,9 +884,8 @@ function renderBenefits(sectionName, targetId) {
   });
 }
 
-renderItems("corePicks", "corePicks");
-renderItems("addOns", "corePicks");
-renderItems("parentWellness", "parentWellness");
+renderItems("corePicks", babyEssentialsTargetForItem);
+renderItems("addOns", babyEssentialsTargetForItem);
 renderItems("cautions", "cautions", true, "caution");
 renderBenefits("freeBenefits", "freeBenefits");
 migrateLegacySelections();
@@ -908,7 +911,7 @@ copyBtn.addEventListener("click", async () => {
 const resetBtn = document.getElementById("resetBtn");
 resetBtn.addEventListener("click", () => {
   selected.clear();
-  [...items.corePicks, ...items.addOns, ...items.parentWellness].forEach((item) => {
+  [...items.corePicks, ...items.addOns, ...(items.formulaFeeding || [])].forEach((item) => {
     if (isPurchased(item)) {
       selected.add(item.id);
     }
@@ -926,16 +929,6 @@ resetBtn.addEventListener("click", () => {
   });
 
   refreshSummary();
-});
-
-document.querySelectorAll(".filter-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter-btn").forEach((node) => {
-      node.classList.remove("is-active");
-    });
-    btn.classList.add("is-active");
-    setFilter(btn.dataset.filter);
-  });
 });
 
 document.querySelectorAll(".view-tab-btn").forEach((btn) => {

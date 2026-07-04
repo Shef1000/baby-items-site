@@ -6,7 +6,7 @@
     <title>Fehring's Baby Items</title>
     <meta
       name="description"
-      content="A practical, high-quality baby registry shortlist with priorities, budget estimates, purchase links, and product photos."
+      content="A practical, high-quality baby registry shortlist organized by sleep, play, eat, poop, and travel essentials."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-restore" />
+    <link rel="stylesheet" href="./styles.css?v=20260704-play-department" />
   </head>
   <body>
     <div class="bg-cloud bg-cloud-1" aria-hidden="true"></div>
@@ -24,7 +24,7 @@
       <p class="eyebrow">Fehring's Baby Items</p>
       <h1>Useful, High-Quality Baby Items</h1>
       <p class="subtitle">
-        Prioritized shortlist with estimated prices, purchased tracking, and product photos.
+        Shortlist organized by sleep, play, eat, poop, and travel essentials.
       </p>
       <div class="hero-actions">
         <button id="copyBtn" class="btn-primary">Copy Page Link</button>
@@ -54,35 +54,80 @@
             <p class="summary-label">Total List Cost</p>
             <p class="summary-value" id="totalListCost">$0</p>
           </article>
-          <article class="summary-card">
-            <p class="summary-label">Must-Have Remaining</p>
-            <p class="summary-value" id="mustRemaining">0</p>
-          </article>
         </section>
 
-        <section class="filters" aria-label="Filters">
-          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
-          <button class="filter-btn" data-filter="Must" type="button">Must-Have</button>
-          <button class="filter-btn" data-filter="Nice" type="button">Nice-to-Have</button>
-        </section>
         <p class="price-note">
           Prices shown are estimated California checkout totals for 94105, including 8.625% San Francisco sales tax where applicable.
         </p>
 
-        <section>
-          <h2>Core Picks</h2>
-          <div class="card-grid" id="corePicks"></div>
+        <nav class="section-nav" aria-label="Baby item departments">
+          <a class="section-nav-link sleep" href="#sleepSection">Sleep <span id="sleepNavProgress">0/0</span></a>
+          <a class="section-nav-link play" href="#playSection">Play <span id="playNavProgress">0/0</span></a>
+          <a class="section-nav-link eat" href="#eatSection">Eat <span id="eatNavProgress">0/0</span></a>
+          <a class="section-nav-link poop" href="#poopSection">Poop <span id="poopNavProgress">0/0</span></a>
+          <a class="section-nav-link travel" href="#travelSection">Travel <span id="travelNavProgress">0/0</span></a>
+        </nav>
+
+        <section class="essentials-section essentials-sleep" id="sleepSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Sleep</h2>
+            </div>
+            <p class="section-progress-label" id="sleepProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="sleepProgressBar"></span></div>
+          <div class="card-grid" id="sleepEssentials"></div>
         </section>
 
-        <section>
-          <h2>Formula / Ready-to-Feed</h2>
-          <div class="card-grid" id="formulaFeeding"></div>
+        <section class="essentials-section essentials-play" id="playSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Entertain / Play</h2>
+            </div>
+            <p class="section-progress-label" id="playProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="playProgressBar"></span></div>
+          <div class="card-grid" id="playEssentials"></div>
         </section>
 
-        <section>
-          <h2>Parent Wellness</h2>
-          <div class="card-grid" id="parentWellness"></div>
+        <section class="essentials-section essentials-eat" id="eatSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Eat</h2>
+            </div>
+            <p class="section-progress-label" id="eatProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="eatProgressBar"></span></div>
+          <div class="card-grid" id="eatEssentials"></div>
         </section>
+
+        <section class="essentials-section essentials-poop" id="poopSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Poop</h2>
+            </div>
+            <p class="section-progress-label" id="poopProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="poopProgressBar"></span></div>
+          <div class="card-grid" id="poopEssentials"></div>
+        </section>
+
+        <section class="essentials-section essentials-travel" id="travelSection">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Department</p>
+              <h2>Travel</h2>
+            </div>
+            <p class="section-progress-label" id="travelProgressLabel">0/0</p>
+          </div>
+          <div class="section-progress" aria-hidden="true"><span id="travelProgressBar"></span></div>
+          <div class="card-grid" id="travelEssentials"></div>
+        </section>
+
       </section>
 
       <section class="view-panel" id="benefitsView">
@@ -105,7 +150,7 @@
         Safe sleep: babies should sleep on a firm, flat surface with no pillows,
         loungers, or loose bedding.
       </p>
-      <p>Updated: June 29, 2026</p>
+      <p>Updated: July 4, 2026</p>
     </footer>
 
     <template id="itemTemplate">
@@ -113,7 +158,6 @@
         <img class="item-image" alt="Product image" loading="lazy" referrerpolicy="no-referrer" />
         <div class="card-top">
           <span class="category"></span>
-          <span class="priority"></span>
         </div>
         <h3></h3>
         <p class="why"></p>
@@ -147,7 +191,7 @@
       </article>
     </template>
 
-    <script src="./script.js?v=20260704-formula-sleep-diaper-cleanup"></script>
-    <script src="./formula-section.js?v=20260704-formula-sleep-diaper-cleanup"></script>
+    <script src="./script.js?v=20260704-play-department"></script>
+    <script src="./formula-section.js?v=20260704-play-department"></script>
   </body>
 </html>

@@ -169,7 +169,7 @@ function removeMovedCorePickCards() {
 
 function trackableItems() {
   const corePicksForBudget = items.corePicks.filter((item) => !movedFormulaItemIds.has(item.id));
-  return [...corePicksForBudget, ...items.addOns, ...items.formulaFeeding, ...items.parentWellness];
+  return [...corePicksForBudget, ...items.addOns, ...items.formulaFeeding];
 }
 
 function formulaBudgetBreakdown() {
@@ -188,7 +188,7 @@ function formulaBudgetBreakdown() {
 }
 
 function renderFormulaBudgetSummary() {
-  const formulaTarget = document.getElementById("formulaFeeding");
+  const formulaTarget = document.getElementById("eatEssentials");
   if (!formulaTarget || document.getElementById("formulaBudgetSummary")) {
     return;
   }
@@ -223,24 +223,24 @@ refreshSummary = function refreshSummaryWithFormula() {
   const totalListBudget = allTrackable.reduce((sum, item) => {
     return sum + estimatedCheckoutPrice(item);
   }, 0);
-  const mustItems = allTrackable.filter((item) => item.priority === "Must");
-  const mustRemaining = mustItems.filter((item) => !selected.has(item.id)).length;
-
   document.getElementById("selectedCount").textContent = String(selectedCount);
   document.getElementById("selectedBudget").textContent = fmtPrice(selectedBudget);
-  document.getElementById("mustRemaining").textContent = String(mustRemaining);
 
   const totalListCost = document.getElementById("totalListCost");
   if (totalListCost) {
     totalListCost.textContent = fmtPrice(totalListBudget);
   }
+
+  if (typeof refreshDepartmentProgress === "function") {
+    refreshDepartmentProgress();
+  }
 };
 
-const formulaTarget = document.getElementById("formulaFeeding");
+const formulaTarget = document.getElementById("eatEssentials");
 removeMovedCorePickCards();
 renderFormulaBudgetSummary();
-if (formulaTarget && formulaTarget.children.length === 0) {
-  renderItems("formulaFeeding", "formulaFeeding");
+if (formulaTarget) {
+  renderItems("formulaFeeding", "eatEssentials");
 }
 
 saveState();
