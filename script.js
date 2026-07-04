@@ -164,6 +164,20 @@ const items = {
       url: "https://www.halosleep.com/sleepsack"
     },
     {
+      id: "halo-cotton-swaddle-birds-small",
+      name: "HALO SleepSack Swaddle Cotton 1.5 TOG - Birds, Small",
+      category: "Sleep",
+      priority: "Must",
+      price: 34.99,
+      checkoutPrice: 38,
+      purchased: true,
+      image:
+        "https://images.ctfassets.net/50gzycvace50/6b0428f2265ae83dec5f3583b27c26e2a2d83d7a6b354cbb179b256a6b3fc97e/3a31bec7edfc442b7463b8d3ec825608/6b0428f2265ae83dec5f3583b27c26e2a2d83d7a6b354cbb179b256a6b3fc97e.png?bg=rgb%3Afafafa&fl=progressive&fm=jpg&h=1240&w=1240",
+      why: "Purchased cotton swaddle for the 3-6 month window, with arms-in or arms-out use and a bottom-opening zipper for diaper changes.",
+      notes: "Purchased in Birds, Small. Babylist lists size Small as 13-18 lb, 100% cotton interlock, machine washable, and 1.5 TOG. Stop swaddling once baby shows signs of rolling or breaking out.",
+      url: "https://www.babylist.com/gp/halo-sleepsack-swaddle-cotton/2204/2317974"
+    },
+    {
       id: "waterwipes-warmer-bundle",
       name: "Huggies Simply Clean Wipes + Momcozy Wipe Warmer",
       category: "Diapering",
