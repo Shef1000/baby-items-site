@@ -372,6 +372,29 @@ items.addOns.push(
     ]
   },
   {
+    id: "ergobaby-omni-deluxe-natural-beige",
+    name: "Ergobaby Omni Deluxe Carrier - Natural Beige Mesh",
+    category: "Carrier",
+    priority: "Must",
+    price: 219,
+    checkoutPrice: 238,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/41RF4DWhsPL._SY300_SX300_QL70_ML2_.jpg",
+    why: "Breathable all-position carrier for travel, errands, and shared caregiver use from newborn to toddler.",
+    notes: "Amazon lists Natural Beige Mesh, 7-45 lb support, inward/outward/hip/back carry, lumbar support, airflow, and built-in storage. Keep as a travel carrier candidate against WildBird/newborn soft carrier after fit testing.",
+    url: "https://www.amazon.com/dp/B0DWFZ5FCP?lv=shuf&th=1&tag=bl-anon-guides-offers-20&channelId=1&plpRedirect=mhFallback",
+    links: [
+      {
+        label: "Amazon - Ergobaby Omni Deluxe",
+        url: "https://www.amazon.com/dp/B0DWFZ5FCP?lv=shuf&th=1&tag=bl-anon-guides-offers-20&channelId=1&plpRedirect=mhFallback"
+      },
+      {
+        label: "Ergobaby store on Amazon",
+        url: "https://www.amazon.com/stores/ERGObaby/page/DAF7346A-38F3-45E2-9F51-D6C2D6F40B23"
+      }
+    ]
+  },
+  {
     id: "johnsons-baby-care-essentials-gift-set",
     name: "Johnson's Baby Care Essentials Gift Set",
     category: "Bath",
@@ -635,7 +658,8 @@ const babyGroupByItemId = {
 
   "wildbird-aerial": "travel",
   "nuna-pipa-aire-rx": "travel",
-  "newborn-soft-carrier": "travel"
+  "newborn-soft-carrier": "travel",
+  "ergobaby-omni-deluxe-natural-beige": "travel"
 };
 
 function babyEssentialsTargetForItem(item) {
