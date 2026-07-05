@@ -71,21 +71,22 @@ const items = {
       url: "https://www.nordstromrack.com/s/babybjorn-bouncer-bliss-convertible-jersey-baby-bouncer/5481599?color=powder+pink&size=one+size"
     },
     {
-      id: "nuna-pipa-aire-rx",
-      name: "Nuna PIPA aire rx Infant Car Seat",
-      category: "Transport",
+      id: "nuna-trvl-lx-pipa-urbn-travel-system",
+      name: "Nuna TRVL lx + PIPA urbn Travel System",
+      category: "Travel System",
       priority: "Must",
-      price: 650,
-      purchased: false,
+      price: 699,
+      checkoutPrice: 759,
+      purchased: true,
       image:
-        "https://nunababy.com/media/catalog/product/cache/2d69aa1ed9d1466f19a0c14a2e1484ec/p/i/pipa_aire_rx_caviar_iso_web.jpg",
-      why: "Best fit for Waymo/Uber/taxi use because it can install with a standard vehicle seat belt and no base.",
-      notes: "Displayed checkout estimate uses the $650 planning price plus 8.625% San Francisco sales tax. Waymo requires you to bring and install your own child seat for children under 8; for Uber, plan to bring this rear-facing infant seat rather than relying on a driver-provided seat.",
-      url: "https://nunababy.com/usa/pipa-aire-rx",
+        "https://nunababy.com/media/catalog/product/T/R/TRVLlx_cedar_PIPAurbn_cedar_LA_US_5489__1100x1100_web_a1f3.jpg?canvas=730%3A730&fit=bounds&height=730&optimize=high&width=730",
+      why: "Purchased stroller + baseless infant car seat setup for Waymo/Uber/taxi and everyday travel.",
+      notes: "Purchased. Checkout estimate uses a $699 sale reference plus 8.625% San Francisco sales tax; replace with exact receipt total if different. Nuna lists PIPA urbn as baseless with pipaFIX rigid latch or vehicle seat belt install, and TRVL lx as a one-hand-fold compact stroller from birth to 50 lb.",
+      url: "https://nunababy.com/usa/pipa-urbn-trvl-lx-travel-system",
       links: [
         {
-          label: "Nuna PIPA aire rx",
-          url: "https://nunababy.com/usa/pipa-aire-rx"
+          label: "Nuna TRVL lx + PIPA urbn travel system",
+          url: "https://nunababy.com/usa/pipa-urbn-trvl-lx-travel-system"
         },
         {
           label: "Waymo child seat policy",
@@ -764,7 +765,7 @@ const babyGroupByItemId = {
   "infant-health-sick-day-kit": "poop",
 
   "wildbird-aerial": "travel",
-  "nuna-pipa-aire-rx": "travel",
+  "nuna-trvl-lx-pipa-urbn-travel-system": "travel",
   "newborn-soft-carrier": "travel",
   "ergobaby-omni-deluxe-natural-beige": "travel"
 };
