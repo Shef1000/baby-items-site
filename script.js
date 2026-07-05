@@ -494,6 +494,29 @@ items.addOns.push(
     ]
   },
   {
+    id: "noodle-boo-newborn-2-in-1-wash",
+    name: "Noodle & Boo Newborn 2-in-1 Hair & Body Wash - 16 fl oz",
+    category: "Bath",
+    priority: "Must",
+    price: 0,
+    priceLabel: "Purchased - price TBD",
+    purchased: true,
+    image: "https://m.media-amazon.com/images/I/31npemPK-IS._AC_.jpg",
+    why: "Purchased tear-free newborn shampoo/body wash for baths.",
+    notes: "Purchased from Amazon. Amazon did not expose a reliable featured-offer price publicly, so spend is TBD until the receipt total is entered.",
+    url: "https://www.amazon.com/dp/B00IDSJX7M?lv=shuf&channelId=500&plpRedirect=mhFallback&th=1",
+    links: [
+      {
+        label: "Amazon - Noodle & Boo 2-in-1 Newborn Wash",
+        url: "https://www.amazon.com/dp/B00IDSJX7M?lv=shuf&channelId=500&plpRedirect=mhFallback&th=1"
+      },
+      {
+        label: "Noodle & Boo newborn care collection",
+        url: "https://www.noodleandboo.com/collections/newborn-care"
+      }
+    ]
+  },
+  {
     id: "infant-health-sick-day-kit",
     name: "Infant Sick-Day Basics: Snotsucker + Thermometer + Tylenol",
     category: "Health",
@@ -743,6 +766,7 @@ const babyGroupByItemId = {
   "walmart-akaber-2-in-1-bath-changing-table": "poop",
   "angelcare-baby-bath-support-grey": "poop",
   "johnsons-baby-care-essentials-gift-set": "poop",
+  "noodle-boo-newborn-2-in-1-wash": "poop",
   "infant-health-sick-day-kit": "poop",
 
   "nuna-trvl-lx-pipa-urbn-travel-system": "travel",
