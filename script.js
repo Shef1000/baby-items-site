@@ -62,13 +62,13 @@ const items = {
       name: "Nuna TRVL lx + PIPA urbn Travel System",
       category: "Travel System",
       priority: "Must",
-      price: 699,
-      checkoutPrice: 759,
+      price: 800,
+      checkoutPrice: 869,
       purchased: true,
       image:
         "https://nunababy.com/media/catalog/product/T/R/TRVLlx_cedar_PIPAurbn_cedar_LA_US_5489__1100x1100_web_a1f3.jpg?canvas=730%3A730&fit=bounds&height=730&optimize=high&width=730",
       why: "Purchased stroller + baseless infant car seat setup for Waymo/Uber/taxi and everyday travel.",
-      notes: "Purchased. Checkout estimate uses a $699 sale reference plus 8.625% San Francisco sales tax; replace with exact receipt total if different. Nuna lists PIPA urbn as baseless with pipaFIX rigid latch or vehicle seat belt install, and TRVL lx as a one-hand-fold compact stroller from birth to 50 lb.",
+      notes: "Purchased. Checkout estimate uses your $800 pre-tax price plus 8.625% San Francisco sales tax. Nuna lists PIPA urbn as baseless with pipaFIX rigid latch or vehicle seat belt install, and TRVL lx as a one-hand-fold compact stroller from birth to 50 lb.",
       url: "https://nunababy.com/usa/pipa-urbn-trvl-lx-travel-system",
       links: [
         {
@@ -495,23 +495,28 @@ items.addOns.push(
   },
   {
     id: "infant-health-sick-day-kit",
-    name: "Infant Health + Sick-Day Kit",
+    name: "Infant Sick-Day Basics: Snotsucker + Thermometer + Tylenol",
     category: "Health",
     priority: "Must",
-    price: 95,
-    purchased: false,
+    price: 32,
+    checkoutPrice: 32,
+    purchased: true,
     image: "https://frida.com/cdn/shop/files/HERO_783ba058-03a4-4ce5-a996-d28de2c30fd0_600x.jpg?v=1720804759",
-    why: "The tracker adds a thermometer, saline/aspirator, infant acetaminophen, vitamin D drops, syringe, and petroleum jelly before delivery.",
-    notes: "Ask the pediatrician before dosing infant acetaminophen. Keep this together for late-night sick-day use.",
+    why: "Purchased the core sick-day basics: snotsucker, thermometer, and infant Tylenol.",
+    notes: "Purchased total: $32. Ask the pediatrician before dosing infant acetaminophen/Tylenol, especially for newborns under 12 weeks.",
     url: "https://frida.com/products/nosefrida-the-snotsucker-saline-kit",
     links: [
       {
-        label: "Frida Baby NoseFrida Saline Kit",
+        label: "Frida Baby NoseFrida Snotsucker",
         url: "https://frida.com/products/nosefrida-the-snotsucker-saline-kit"
       },
       {
-        label: "FridaBaby 3-in-1 thermometer",
+        label: "FridaBaby Thermometer",
         url: "https://frida.com/products/3-in-1-true-temp-thermometer"
+      },
+      {
+        label: "Infants' Tylenol dosing safety",
+        url: "https://www.tylenol.com/products/infants-tylenol-oral-suspension"
       },
       {
         label: "AAP medicine safety",
