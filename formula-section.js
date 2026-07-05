@@ -61,11 +61,12 @@ items.formulaFeeding = [
     category: "Bottle Cleaning",
     priority: "Must",
     price: 239.99,
-    purchased: false,
+    checkoutPrice: 261,
+    purchased: true,
     image:
       "https://babybrezza.com/cdn/shop/files/BWP_classic.webp?v=1770152040",
     why: "Countertop machine that washes, sterilizes, and dries bottles, pump parts, sippy cups, and accessories.",
-    notes: "Chosen all-in-one bottle washer, sterilizer, and dryer. This replaces standalone UV sterilizers, separate drying cabinets, and duplicate bottle washer options. Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Includes 60 detergent tablets; use Baby Brezza detergent tablets as directed.",
+    notes: "Purchased all-in-one bottle washer, sterilizer, and dryer. This replaces standalone UV sterilizers, separate drying cabinets, and duplicate bottle washer options. Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax. Includes 60 detergent tablets; use Baby Brezza detergent tablets as directed.",
     url: "https://babybrezza.com/products/bottle-washer-pro"
   },
   {

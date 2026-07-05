@@ -5,19 +5,6 @@ const californiaCheckoutTaxRate = 0.08625;
 const items = {
   corePicks: [
     {
-      id: "wildbird-aerial",
-      name: "WildBird Aerial Buckle Carrier",
-      category: "Carrier",
-      priority: "Must",
-      price: 168,
-      purchased: false,
-      image:
-        "https://wildbird.co/cdn/shop/files/1.desert-lark-aerial-carrier-1.jpg?v=1764005453",
-      why: "Comfortable structured carrier with strong build quality for daily wear.",
-      notes: "ASTM tested for 7-45 lb. For tiny newborns, follow fit/airway guidance carefully.",
-      url: "https://wildbird.co/collections/aerial-buckle-carrier/products/desert-lark-aerial-carrier"
-    },
-    {
       id: "cradlewise-crib",
       name: "Cradlewise Smart Crib",
       category: "Sleep",
@@ -156,20 +143,17 @@ const items = {
     },
     {
       id: "clean-butt-bundle",
-      name: "Tubby Todd + Aquaphor + Desitin Clean Butt Bundle",
+      name: "Aquaphor + Desitin Diaper Rash Care",
       category: "Diapering",
       priority: "Must",
-      price: 64,
-      purchased: false,
-      image: "https://tubbytodd.com/cdn/shop/files/AOO-Hero-Image_NEAseal_8oz.jpg?v=1764199484",
-      why: "Great combo for gentle cleanups plus a strong moisture barrier at every diaper change.",
-      notes: "Updated from Baby Gear Tracker. Budget includes 1 Tubby Todd All Over Ointment, Aquaphor, and one stronger zinc option.",
-      url: "https://tubbytodd.com/products/all-over-ointment",
+      price: 25,
+      checkoutPrice: 27,
+      purchased: true,
+      image: "https://www.aquaphorus.com/-/media/project/beiersdorf/aquaphor/us/aquaphor/products/baby-care/baby-healing-ointment/072140633781-eucerin-aquaphor-baby-healing-ointment-14oz-front.png",
+      why: "Purchased core diaper-rash setup: Aquaphor as the daily moisture barrier and Desitin Maximum Strength for stronger zinc oxide protection.",
+      notes: "Purchased Aquaphor Baby Healing Ointment and Desitin Maximum Strength Baby Diaper Rash Paste. Checkout estimate uses a $25 combined retail placeholder plus 8.625% San Francisco sales tax; replace with receipt total if different.",
+      url: "https://www.aquaphorus.com/products/body-care/baby-healing-ointment-advanced-therapy",
       links: [
-        {
-          label: "Tubby Todd All Over Ointment",
-          url: "https://tubbytodd.com/products/all-over-ointment"
-        },
         {
           label: "Aquaphor Baby Healing Ointment",
           url: "https://www.aquaphorus.com/products/body-care/baby-healing-ointment-advanced-therapy"
@@ -179,6 +163,19 @@ const items = {
           url: "https://www.desitin.com/diaper-rash-products/maximum-strength-original-zinc-oxide-paste"
         }
       ]
+    },
+    {
+      id: "tide-pods-free-gentle-152",
+      name: "Tide Pods Free & Gentle Laundry Detergent - 152 Count",
+      category: "Laundry",
+      priority: "Must",
+      price: 31.99,
+      checkoutPrice: 35,
+      purchased: true,
+      image: "https://bfasset.costco-static.com/U447IH35/as/m9z4w3bt37gtsfv6pjw89h/4000415444-847__1?auto=webp&format=jpg&width=1200&height=1200&fit=bounds",
+      why: "Purchased fragrance-free, dye-free laundry pods for baby clothes, cloths, towels, and family laundry.",
+      notes: "Purchased from Costco: Tide Pods Laundry Detergent Pods, Free & Gentle, 152-count. Checkout estimate uses a $31.99 Costco placeholder plus 8.625% San Francisco sales tax; replace with receipt total if different.",
+      url: "https://www.costco.com/p/-/tide-pods-laundry-detergent-pods-free-gentle-152-count/4000415444?sp=grs&langId=-1"
     },
   ],
   parentWellness: [
@@ -479,29 +476,6 @@ items.addOns.push(
     ]
   },
   {
-    id: "ergobaby-omni-deluxe-natural-beige",
-    name: "Ergobaby Omni Deluxe Carrier - Natural Beige Mesh",
-    category: "Carrier",
-    priority: "Must",
-    price: 219,
-    checkoutPrice: 238,
-    purchased: false,
-    image: "https://m.media-amazon.com/images/I/41RF4DWhsPL._SY300_SX300_QL70_ML2_.jpg",
-    why: "Breathable all-position carrier for travel, errands, and shared caregiver use from newborn to toddler.",
-    notes: "Amazon lists Natural Beige Mesh, 7-45 lb support, inward/outward/hip/back carry, lumbar support, airflow, and built-in storage. Keep as a travel carrier candidate against WildBird/newborn soft carrier after fit testing.",
-    url: "https://www.amazon.com/dp/B0DWFZ5FCP?lv=shuf&th=1&tag=bl-anon-guides-offers-20&channelId=1&plpRedirect=mhFallback",
-    links: [
-      {
-        label: "Amazon - Ergobaby Omni Deluxe",
-        url: "https://www.amazon.com/dp/B0DWFZ5FCP?lv=shuf&th=1&tag=bl-anon-guides-offers-20&channelId=1&plpRedirect=mhFallback"
-      },
-      {
-        label: "Ergobaby store on Amazon",
-        url: "https://www.amazon.com/stores/ERGObaby/page/DAF7346A-38F3-45E2-9F51-D6C2D6F40B23"
-      }
-    ]
-  },
-  {
     id: "johnsons-baby-care-essentials-gift-set",
     name: "Johnson's Baby Care Essentials Gift Set",
     category: "Bath",
@@ -758,6 +732,7 @@ const babyGroupByItemId = {
 
   "momcozy-wipe-warmer": "poop",
   "clean-butt-bundle": "poop",
+  "tide-pods-free-gentle-152": "poop",
   "costco-huggies-plus-newborn-diapers": "poop",
   "keekaroo-peanut-changer": "poop",
   "walmart-akaber-2-in-1-bath-changing-table": "poop",
@@ -765,10 +740,8 @@ const babyGroupByItemId = {
   "johnsons-baby-care-essentials-gift-set": "poop",
   "infant-health-sick-day-kit": "poop",
 
-  "wildbird-aerial": "travel",
   "nuna-trvl-lx-pipa-urbn-travel-system": "travel",
-  "ergobaby-embrace-newborn-carrier": "travel",
-  "ergobaby-omni-deluxe-natural-beige": "travel"
+  "ergobaby-embrace-newborn-carrier": "travel"
 };
 
 function babyEssentialsTargetForItem(item) {
