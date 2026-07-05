@@ -456,24 +456,25 @@ items.addOns.push(
     url: "https://www.walmart.com/ip/911326907"
   },
   {
-    id: "newborn-soft-carrier",
-    name: "Newborn Soft Carrier",
+    id: "ergobaby-embrace-newborn-carrier",
+    name: "Ergobaby Embrace Newborn Baby Carrier",
     category: "Carrier",
     priority: "Must",
-    price: 85,
-    purchased: false,
-    image: "https://sollybaby.com/cdn/shop/files/Untitled_design.png?v=1676401822",
-    why: "The tracker adds a soft newborn carrier because it often fits tiny newborns better than a structured carrier.",
-    notes: "Use for elevators, lobby trips, errands, and hands-free walks. Check airway and fit every time.",
-    url: "https://sollybaby.com/products/wrap",
+    price: 99,
+    checkoutPrice: 108,
+    purchased: true,
+    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=900&q=80",
+    why: "Purchased newborn-specific soft structured carrier for the first 0-12 months and quick hands-free outings.",
+    notes: "Purchased from Amazon. Checkout estimate uses Ergobaby's $99 official price plus 8.625% San Francisco sales tax because Amazon did not expose a current offer price publicly. Product range is 7-25 lb; check airway, hip position, and fit every time.",
+    url: "https://www.amazon.com/dp/B08Z1L1M18?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1",
     links: [
       {
-        label: "Solly Wrap",
-        url: "https://sollybaby.com/products/wrap"
+        label: "Amazon - Ergobaby Embrace",
+        url: "https://www.amazon.com/dp/B08Z1L1M18?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1"
       },
       {
-        label: "Ergobaby Embrace",
-        url: "https://ergobaby.com/baby-carrier/embrace"
+        label: "Ergobaby Embrace official page",
+        url: "https://ergobaby.com/the-embrace-newborn-carrier"
       }
     ]
   },
@@ -766,7 +767,7 @@ const babyGroupByItemId = {
 
   "wildbird-aerial": "travel",
   "nuna-trvl-lx-pipa-urbn-travel-system": "travel",
-  "newborn-soft-carrier": "travel",
+  "ergobaby-embrace-newborn-carrier": "travel",
   "ergobaby-omni-deluxe-natural-beige": "travel"
 };
 
