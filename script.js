@@ -258,24 +258,6 @@ const items = {
 
 items.addOns.push(
   {
-    id: "cradlewise-extra-linens-bundle",
-    name: "Cradlewise Extra Fitted Sheets",
-    category: "Sleep",
-    priority: "Must",
-    price: 150,
-    purchased: false,
-    image: "https://assets.cradlewise.com/images/index/meta-image-cng-new.jpg",
-    why: "The tracker calls for extra fitted sheets so overnight changes do not stall.",
-    notes: "Mattress cover is tracked separately as purchased. Use Cradlewise-specific linens for correct fit.",
-    url: "https://cradlewise.com/product/fitted-sheet/",
-    links: [
-      {
-        label: "Cradlewise fitted sheet",
-        url: "https://cradlewise.com/product/fitted-sheet/"
-      }
-    ]
-  },
-  {
     id: "cradlewise-extra-mattress-cover",
     name: "Cradlewise Extra Mattress Cover",
     category: "Sleep",
@@ -746,7 +728,6 @@ const babyGroupByItemId = {
   "newton-nest-convertible-crib": "sleep",
   "newton-mini-sheets-two-pack": "sleep",
   "halo-cotton-swaddle-birds-small": "sleep",
-  "cradlewise-extra-linens-bundle": "sleep",
   "cradlewise-extra-mattress-cover": "sleep",
   "baby-clothes-swaddle-inventory": "sleep",
   "pacifier-starter-variety": "sleep",
