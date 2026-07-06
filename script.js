@@ -408,17 +408,17 @@ items.addOns.push(
     url: "https://www.walmart.com/search?q=Keekaroo%20Peanut%20Changer%20Vanilla"
   },
   {
-    id: "walmart-akaber-2-in-1-bath-changing-table",
-    name: "Akaber 2-in-1 Baby Changing Table with Bathtub",
-    category: "Bath / Changing",
+    id: "amazon-b0dws9xw57-portable-changing-table",
+    name: "Portable Folding Baby Changing Table with Waste Basket + 2 Drawers",
+    category: "Diapering",
     priority: "Must",
-    price: 89.99,
-    checkoutPrice: 128,
-    purchased: false,
-    image: "https://i5.walmartimages.com/seo/2-in-1-Baby-Changing-Table-with-Bathtub-Akaber-Newborn-Foldable-Portable-Diaper-Station-Adjustable-Height-with-Wheels-Waterproof-Pad-Storage-Rack_d2e9398f-2356-4774-82f3-94929b980772.68fe9fd3fa45d244e6b97d44ada175a8.jpeg",
-    why: "Walmart Akaber combo station with a removable anti-slip bathtub, changing table, adjustable height, lockable wheels, waterproof pad, and storage rack.",
-    notes: "Displayed checkout estimate uses the current $89.99 Walmart sale price, $29.99 shipping to 94105, and 8.625% San Francisco sales tax on the item. This overlaps with separate bath and changing-pad purchases, so keep it only if the combo station fits the apartment layout.",
-    url: "https://www.walmart.com/ip/2-in-1-Baby-Changing-Table-with-Bathtub-Akaber-Newborn-Foldable-Portable-Diaper-Station-Adjustable-Height-with-Wheels-Waterproof-Pad-Storage-Rack/17293067799?wmlspartner=wlpa&selectedSellerId=102741195&selectedOfferId=60F9BBAB865932FE92EBD2F3DC10AD88&conditionGroupCode=1"
+    price: 0,
+    priceLabel: "Purchased - price TBD",
+    purchased: true,
+    image: "https://m.media-amazon.com/images/I/411IEBjqRWL._AC_.jpg",
+    why: "Purchased portable diaper changing station with waterproof changing pad, lockable wheels, waste basket, two foldable drawers, and adjustable height.",
+    notes: "Replaces the previous wheeled changing-table candidate. Amazon product page lists a heavy-duty metal frame, waterproof pad, guardrails, safety strap, 3-level height adjustment, lockable wheels, side storage, two drawers, and foldable compact storage. Amazon did not expose a featured-offer price publicly, so enter the receipt total later.",
+    url: "https://www.amazon.com/Changing-Versatile-Portable-Waterproof-Adjustable/dp/B0DWS9XW57"
   },
   {
     id: "angelcare-baby-bath-support-grey",
@@ -744,7 +744,7 @@ const babyGroupByItemId = {
   "tide-pods-free-gentle-152": "poop",
   "costco-huggies-plus-newborn-diapers": "poop",
   "keekaroo-peanut-changer": "poop",
-  "walmart-akaber-2-in-1-bath-changing-table": "poop",
+  "amazon-b0dws9xw57-portable-changing-table": "poop",
   "angelcare-baby-bath-support-grey": "poop",
   "johnsons-baby-care-essentials-gift-set": "poop",
   "noodle-boo-newborn-2-in-1-wash": "poop",
