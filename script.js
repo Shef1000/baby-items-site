@@ -211,12 +211,12 @@ const items = {
       name: "Parent Swimming Pack: Swim Cap + Wetsuit + Thermal Shoes",
       category: "Parent Wellness",
       priority: "Nice",
-      price: 0,
-      priceLabel: "Purchased - price TBD",
+      price: 66.49,
+      checkoutPrice: 72,
       purchased: true,
       image: "https://m.media-amazon.com/images/I/31wtEmGCMyL._AC_.jpg",
       why: "Purchased parent swim setup for low-impact exercise and recovery: swim cap, shorty wetsuit, and thermal diving shoes.",
-      notes: "Includes VIRSIDI long-hair silicone swim cap with 3D ear protection, earplugs, and nose clip; MWTA Black 2/2mm back-zip size 2 neoprene shorty spring wetsuit; and $10 thermal diving shoes. Amazon did not expose a public featured-offer price, and Walmart blocked automated price access, so enter the final receipt total later.",
+      notes: "Includes VIRSIDI long-hair silicone swim cap set ($11.99), MWTA Black 2/2mm neoprene shorty spring wetsuit ($44.50), and $10 thermal diving shoes. Checkout estimate uses $66.49 pre-tax plus 8.625% California/San Francisco sales tax, rounded to $72; replace with receipt total if different.",
       url: "https://www.amazon.com/dp/B0FMY2H6Y3?psc=1&smid=AE162ROC22DGU&ref_=chk_typ_imgToDp",
       links: [
         {
