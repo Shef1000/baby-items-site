@@ -205,6 +205,29 @@ const items = {
       why: "Dual-zone cooling/heating and sleep tracking to protect parent sleep quality during night feeds and split schedules.",
       notes: "Purchased with Enhanced subscription. Estimated California checkout total includes first-year Enhanced and 8.625% San Francisco sales tax.",
       url: "https://www.eightsleep.com/us/product/pod/"
+    },
+    {
+      id: "parent-swimming-pack",
+      name: "Parent Swimming Pack: Swim Cap + Wetsuit + Thermal Shoes",
+      category: "Parent Wellness",
+      priority: "Nice",
+      price: 0,
+      priceLabel: "Purchased - price TBD",
+      purchased: true,
+      image: "https://m.media-amazon.com/images/I/31wtEmGCMyL._AC_.jpg",
+      why: "Purchased parent swim setup for low-impact exercise and recovery: swim cap, shorty wetsuit, and thermal diving shoes.",
+      notes: "Includes VIRSIDI long-hair silicone swim cap with 3D ear protection, earplugs, and nose clip; MWTA Black 2/2mm back-zip size 2 neoprene shorty spring wetsuit; and $10 thermal diving shoes. Amazon did not expose a public featured-offer price, and Walmart blocked automated price access, so enter the final receipt total later.",
+      url: "https://www.amazon.com/dp/B0FMY2H6Y3?psc=1&smid=AE162ROC22DGU&ref_=chk_typ_imgToDp",
+      links: [
+        {
+          label: "Amazon - VIRSIDI swim cap set",
+          url: "https://www.amazon.com/dp/B0FMY2H6Y3?psc=1&smid=AE162ROC22DGU&ref_=chk_typ_imgToDp"
+        },
+        {
+          label: "Walmart - MWTA 2/2mm shorty spring wetsuit",
+          url: "https://www.walmart.com/ip/MWTA-Black-2-2mm-Back-Zip-Size-2-Neoprene-Shorty-Spring-Wetsuit-with-Key-Pocket-For-Women/18775764842"
+        }
+      ]
     }
   ],
   cautions: [
