@@ -458,24 +458,6 @@ items.addOns.push(
     ]
   },
   {
-    id: "johnsons-baby-care-essentials-gift-set",
-    name: "Johnson's Baby Care Essentials Gift Set",
-    category: "Bath",
-    priority: "Must",
-    price: 20,
-    purchased: false,
-    image: "https://images.ctfassets.net/3vnc73o2e0fb/79B9wyp2M21iIC12j3UYW6/babe0d0be5d2ada7e5c156beb44e62ed/JNB_USA_US_381371197569_771197561_622705_Care_Essentials_Gift_Set_00000.webp?fm=webp&w=1920",
-    why: "Replaces the laundry starter bundle with a simple newborn bath/skin-care bundle.",
-    notes: "Official set includes Head-to-Toe wash and shampoo, baby body lotion, and Desitin diaper rash paste in travel sizes. Displayed checkout estimate uses a $20 retail placeholder plus 8.625% San Francisco sales tax because Johnson's official product page does not sell direct.",
-    url: "https://www.johnsonsbaby.com/baby-products/baby-care-essentials-gift-set",
-    links: [
-      {
-        label: "Johnson's Baby Care Essentials Gift Set",
-        url: "https://www.johnsonsbaby.com/baby-products/baby-care-essentials-gift-set"
-      }
-    ]
-  },
-  {
     id: "noodle-boo-newborn-2-in-1-wash",
     name: "Noodle & Boo Newborn 2-in-1 Hair & Body Wash - 16 fl oz",
     category: "Bath",
@@ -617,18 +599,6 @@ items.parentWellness.push(
         url: "https://lansinoh.com/products/stay-dry-disposable-nursing-pads"
       }
     ]
-  },
-  {
-    id: "feeding-night-station-cart",
-    name: "Feeding / Night Station Cart",
-    category: "Parent Wellness",
-    priority: "Must",
-    price: 80,
-    purchased: false,
-    image: "https://www.ikea.com/global/assets/range-categorisation/images/side-tables-10717.jpeg",
-    why: "The tracker calls for a shared night-feeding station so diapers, burp cloths, pump parts, snacks, and water are in one place.",
-    notes: "Use one rolling cart or caddy only; avoid duplicating stations unless the apartment layout requires it.",
-    url: "https://www.ikea.com/us/en/p/raskog-utility-cart-white-20382932/"
   }
 );
 
@@ -746,7 +716,6 @@ const babyGroupByItemId = {
   "keekaroo-peanut-changer": "poop",
   "amazon-b0dws9xw57-portable-changing-table": "poop",
   "angelcare-baby-bath-support-grey": "poop",
-  "johnsons-baby-care-essentials-gift-set": "poop",
   "noodle-boo-newborn-2-in-1-wash": "poop",
   "infant-health-sick-day-kit": "poop",
 
