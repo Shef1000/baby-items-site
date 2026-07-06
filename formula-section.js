@@ -30,17 +30,24 @@ items.formulaFeeding = [
     ]
   },
   {
-    id: "dr-browns-options-narrow-glass-4oz",
-    name: "Dr. Brown's Options+ Narrow Glass 4 oz Bottles",
+    id: "philips-avent-glass-natural-response-bottles-six",
+    name: "Philips Avent Glass Natural Response Bottles x6 + Nipples",
     category: "Bottle Feeding",
     priority: "Must",
-    price: 40,
-    purchased: false,
+    price: 60,
+    checkoutPrice: 65,
+    purchased: true,
     image:
-      "https://drbrownsbaby.com/cdn/shop/files/SB41001_Product_OptionsPLUS_GLASS_Narrow_4oz_120ml_1-pack.jpg?v=1750791091&width=1080",
-    why: "Premium glass newborn bottle system with a strong anti-colic vent design and easy-to-find replacement nipples.",
-    notes: "Use as the main washable bottle system. Start with 6 bottles plus newborn/slow-flow nipples and a few preemie nipples if flow is too fast.",
-    url: "https://www.drbrownsbaby.com/product/dr-browns-options-glass-baby-bottle/"
+      "https://images.philips.com/is/image/philipsconsumer/66ef8930dbe64ee78c09aca701489ad9?$pnglarge$",
+    why: "Purchased six glass Philips Avent bottles with included nipples as the main washable bottle system.",
+    notes: "Purchased six bottles with nipples. Philips lists the SCY910/01 glass Natural Response bottle as 4 oz / 120 ml with a slow-flow silicone nipple for 0-3 months, BPA-free glass and nipple materials, no-drip design, and an anti-colic valve. Checkout estimate uses a recent public retail signal of about $40 per 4-pack scaled to six bottles plus 8.625% San Francisco sales tax; replace with receipt total if different.",
+    url: "https://www.usa.philips.com/c-p/SCY910_01/glass-natural-response-baby-bottle",
+    links: [
+      {
+        label: "Philips Avent Glass Natural Response Baby Bottle",
+        url: "https://www.usa.philips.com/c-p/SCY910_01/glass-natural-response-baby-bottle"
+      }
+    ]
   },
   {
     id: "evenflo-balance-glass-bottles",
@@ -51,7 +58,7 @@ items.formulaFeeding = [
     purchased: false,
     image:
       "https://www.evenflofeeding.com/cdn/shop/files/ISO-WIDE-GLASS-PRODUCT-3PK.png?v=1769815856",
-    why: "Good second bottle shape for combo feeding if baby rejects the main Dr. Brown's narrow nipple.",
+    why: "Good second bottle shape for combo feeding if baby rejects the main Philips Avent Natural Response nipple.",
     notes: "Buy only 2-4 as a test set. Do not buy many bottle brands before seeing what baby accepts.",
     url: "https://www.evenflofeeding.com/products/balance-bottles-glass-wide-neck"
   },
