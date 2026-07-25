@@ -360,6 +360,14 @@ section + section {
   transition: width 180ms ease;
 }
 
+.section-intro {
+  max-width: 780px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
 .essentials-sleep .section-progress span {
   background: #2f74df;
 }

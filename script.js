@@ -587,26 +587,110 @@ items.addOns.push(
 items.parentWellness.push(
   {
     id: "frida-mom-postpartum-kit",
-    name: "Frida Mom Postpartum Recovery Kit",
-    category: "Parent Wellness",
+    name: "Vaginal-Birth Bathroom Recovery Kit",
+    category: "Vaginal Recovery",
     priority: "Must",
-    price: 100,
+    price: 49.99,
+    checkoutPrice: 54,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/files/FM_RecoveryEssentialsKit_Thumbnail_700x.jpg?v=1714489405",
+    why: "Peri bottle, disposable underwear, instant cold pads, witch-hazel liners, healing foam, and a bathroom caddy for the first days after a vaginal birth.",
+    notes: "Set it up before the due date, but ask the hospital what it sends home so you do not overbuy. ACOG supports cold packs, witch hazel, a squeeze bottle, and sitz baths for perineal discomfort.",
+    url: "https://frida.com/products/postpartum-recovery-essentials-kit-peri-bottle",
+    links: [
+      {
+        label: "Frida Mom recovery kit",
+        url: "https://frida.com/products/postpartum-recovery-essentials-kit-peri-bottle"
+      },
+      {
+        label: "ACOG postpartum pain guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
+  },
+  {
+    id: "postpartum-pads-underwear-refill",
+    name: "Postpartum Pads + Disposable Underwear Refill",
+    category: "Bleeding Care",
+    priority: "Must",
+    price: 19.88,
+    checkoutPrice: 22,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/files/FM_RecoveryEssentialsKit_Thumbnail_700x.jpg?v=1714489405",
+    why: "A recovery kit only includes a few changes; one extra pack of long maternity pads and one 8-pack of soft disposable underwear gives practical coverage after either delivery type.",
+    notes: "Current estimate uses Target's listed $7.99 pads plus $11.89 underwear, before San Francisco tax. Use external pads rather than tampons or menstrual cups while healing, and seek care for unusually heavy bleeding.",
+    url: "https://www.target.com/p/-/A-86847731",
+    links: [
+      {
+        label: "Frida Mom postpartum pads - 18 count",
+        url: "https://www.target.com/p/-/A-86847731"
+      },
+      {
+        label: "Frida Mom disposable underwear - 8 count",
+        url: "https://www.target.com/p/-/A-76199076"
+      },
+      {
+        label: "ACOG postpartum warning signs",
+        url: "https://www.acog.org/giving/programs/quality-and-safety/resources"
+      }
+    ]
+  },
+  {
+    id: "c-section-recovery-kit-conditional",
+    name: "C-Section Recovery Kit - Only If Needed",
+    category: "C-Section Recovery",
+    priority: "Conditional",
+    price: 99.99,
+    checkoutPrice: 109,
     purchased: false,
     image: "https://frida.com/cdn/shop/files/social-sharing-image.png?v=1736467122",
-    why: "The tracker adds a postpartum recovery kit before delivery so bathroom supplies are ready at home.",
-    notes: "Complements hospital supplies; keep the kit in the primary bathroom before due date.",
-    url: "https://frida.com/products/postpartum-recovery-essentials-kit"
+    why: "High-waist disposable underwear, a peri bottle, wipes, abdominal support, and scar patches are packaged for post-operative comfort.",
+    notes: "Do not buy this in addition to the vaginal-birth kit unless a C-section is planned or becomes likely. Confirm binder and scar-patch timing with your OB; keep the incision clean and dry and wear loose clothing.",
+    url: "https://frida.com/products/c-section-recovery-kit",
+    links: [
+      {
+        label: "Frida Mom C-section recovery kit",
+        url: "https://frida.com/products/c-section-recovery-kit"
+      },
+      {
+        label: "NHS C-section recovery guidance",
+        url: "https://www.nhs.uk/tests-and-treatments/caesarean-section/recovery/"
+      }
+    ]
+  },
+  {
+    id: "breastfeeding-comfort-kit",
+    name: "Breastfeeding / Pumping Comfort Kit",
+    category: "Feeding Recovery",
+    priority: "Conditional",
+    price: 34.99,
+    checkoutPrice: 38,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/files/social-sharing-image.png?v=1736467122",
+    why: "Hot/cold breast packs, hydrogel pads, nipple balm, saline spray, and a few nursing pads cover common early comfort needs.",
+    notes: "Useful if nursing or pumping; skip if not part of the feeding plan. Persistent pain, damaged skin, fever, or worsening breast symptoms need a clinician or lactation consultant, not just products.",
+    url: "https://frida.com/products/breastfeeding-survival-kit",
+    links: [
+      {
+        label: "Frida Mom breastfeeding comfort kit",
+        url: "https://frida.com/products/breastfeeding-survival-kit"
+      },
+      {
+        label: "CDC - what to expect while breastfeeding",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/what-to-expect-while-breastfeeding.html"
+      }
+    ]
   },
   {
     id: "nursing-bras-pads-bundle",
     name: "Nursing Bras / Tanks + Pads Bundle",
-    category: "Parent Wellness",
-    priority: "Must",
+    category: "Feeding Recovery",
+    priority: "Conditional",
     price: 220,
     purchased: false,
     image: "https://www.kindredbravely.com/cdn/shop/files/sublime-hands-free-pumping-nursing-bra-evryday-lounge-jogger-black-Ionna-k5-21536-1500x1875-3808281.png?v=1766515155&width=1200",
-    why: "The tracker adds nursing bras or tanks plus disposable or washable nursing pads before delivery.",
-    notes: "Start with a few comfortable sizes; adjust after supply and postpartum fit settle.",
+    why: "A few soft bras or tanks and leak pads make frequent feeding or pumping easier without committing to a full postpartum wardrobe.",
+    notes: "Useful if nursing or pumping. Start with two or three flexible sizes, then add more after milk supply and postpartum fit settle; the separate comfort kit already includes six disposable pads.",
     url: "https://www.kindredbravely.com/collections/nursing-bras",
     links: [
       {
@@ -622,10 +706,46 @@ items.parentWellness.push(
         url: "https://lansinoh.com/products/stay-dry-disposable-nursing-pads"
       }
     ]
+  },
+  {
+    id: "postpartum-recovery-station",
+    name: "Bedside Recovery Station: Cart + Heating Pad",
+    category: "Daily Comfort",
+    priority: "Must",
+    price: 40.99,
+    checkoutPrice: 45,
+    purchased: false,
+    image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
+    why: "A small rolling cart keeps a large water bottle, one-hand snacks, burp cloths, feeding supplies, and a long phone cable within reach; a heating pad can help with cramping when your clinician says it is appropriate.",
+    notes: "Estimate uses the $16 Brightroom cart and $24.99 up&up XL heating pad, before tax. Reuse a bottle and charger you own. Never sleep on a heating pad, and store all medicines securely away from children.",
+    url: "https://www.target.com/p/-/A-94948929",
+    links: [
+      {
+        label: "Brightroom 3-tier utility cart",
+        url: "https://www.target.com/p/-/A-94948929"
+      },
+      {
+        label: "Target postpartum heating-pad options",
+        url: "https://www.target.com/s/heating%2Bpad%2Bpostpartum"
+      },
+      {
+        label: "ACOG postpartum pain guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
   }
 );
 
 items.freeBenefits.push(
+  {
+    id: "postpartum-care-safety-plan",
+    name: "Postpartum Medication + Warning-Sign Plan",
+    category: "Postpartum Health",
+    status: "Plan",
+    why: "Before discharge, write down the pain-control and bowel-care plan, who to call day or night, follow-up dates, and urgent maternal warning signs.",
+    notes: "Buy medicines only from the hospital/OB discharge plan. Save the OB, Labor & Delivery, lactation, and nearest emergency numbers in both parents' phones; review the warning signs together.",
+    url: "https://www.acog.org/womens-health/health-tools/my-postpartum-care-checklist"
+  },
   {
     id: "infant-cpr-choking-class",
     name: "Infant CPR / Choking Class",
