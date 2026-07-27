@@ -453,6 +453,7 @@ h2 {
 }
 
 .category,
+.item-priority,
 .benefit-status {
   font-size: 0.74rem;
   font-weight: 800;
@@ -463,6 +464,27 @@ h2 {
 .category {
   background: var(--accent-soft);
   color: #084797;
+}
+
+.item-priority {
+  background: #e8eef7;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.item-priority[data-priority="must"] {
+  background: #dff7e8;
+  color: #17643a;
+}
+
+.item-priority[data-priority="conditional"] {
+  background: #fff0bf;
+  color: #604300;
+}
+
+.item-priority[data-priority="skip"] {
+  background: var(--warn-soft);
+  color: var(--warn);
 }
 
 .benefit-status {

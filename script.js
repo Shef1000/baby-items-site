@@ -232,6 +232,28 @@ const items = {
   ],
   cautions: [
     {
+      id: "infrared-postpartum-heat-lamp",
+      name: "150W Infrared Heat Lamp for Postpartum Recovery",
+      category: "Postpartum Safety",
+      priority: "Skip",
+      price: 0,
+      purchased: false,
+      image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80",
+      why: "Skip the social-media heat-lamp setup: it is not a standard U.S. postpartum recovery recommendation and creates avoidable burn risk near healing tissue.",
+      notes: "Do not aim an infrared lamp at the perineum, breasts, or a C-section incision. If heat is part of your clinician's plan for cramps or general comfort, use a regular heating pad with a cover, low setting, timer, and awake supervision.",
+      url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management",
+      links: [
+        {
+          label: "ACOG postpartum pain guidance",
+          url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+        },
+        {
+          label: "FDA product classification: infrared lamp",
+          url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=ILY"
+        }
+      ]
+    },
+    {
       id: "boppy-lounger",
       name: "Boppy Newborn Lounger",
       category: "Safety",
@@ -586,21 +608,98 @@ items.addOns.push(
 
 items.parentWellness.push(
   {
-    id: "frida-mom-postpartum-kit",
-    name: "Vaginal-Birth Bathroom Recovery Kit",
+    id: "postpartum-bathroom-basics",
+    name: "Peri Bottle + Witch Hazel Bathroom Basics",
     category: "Vaginal Recovery",
     priority: "Must",
-    price: 49.99,
-    checkoutPrice: 54,
+    price: 19.98,
+    checkoutPrice: 22,
     purchased: false,
-    image: "https://frida.com/cdn/shop/files/FM_RecoveryEssentialsKit_Thumbnail_700x.jpg?v=1714489405",
-    why: "Peri bottle, disposable underwear, instant cold pads, witch-hazel liners, healing foam, and a bathroom caddy for the first days after a vaginal birth.",
-    notes: "Set it up before the due date, but ask the hospital what it sends home so you do not overbuy. ACOG supports cold packs, witch hazel, a squeeze bottle, and sitz baths for perineal discomfort.",
-    url: "https://frida.com/products/postpartum-recovery-essentials-kit-peri-bottle",
+    image: "https://frida.com/cdn/shop/files/100000139_992x.jpg?v=1720804918",
+    why: "A peri bottle makes bathroom trips gentler, while cool witch-hazel liners can soothe soreness after a vaginal birth.",
+    notes: "Ask what the hospital sends home before buying. ACOG recommends a squeeze bottle with warm water and says cool witch hazel may help; skip fragranced extras if they sting or irritate.",
+    url: "https://frida.com/products/upside-down-peri-bottle",
     links: [
       {
-        label: "Frida Mom recovery kit",
-        url: "https://frida.com/products/postpartum-recovery-essentials-kit-peri-bottle"
+        label: "Frida Mom Upside Down Peri Bottle",
+        url: "https://frida.com/products/upside-down-peri-bottle"
+      },
+      {
+        label: "Frida Mom Witch Hazel Pad Liners",
+        url: "https://frida.com/products/witch-hazel-perineal-cooling-pad-liners"
+      },
+      {
+        label: "ACOG postpartum pain guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
+  },
+  {
+    id: "frida-instant-ice-maxi-pads",
+    name: "Frida Mom Instant Ice Maxi Pads - 8 Count",
+    category: "Vaginal Recovery",
+    priority: "Must",
+    price: 19.99,
+    checkoutPrice: 22,
+    purchased: false,
+    image: "https://frida.com/cdn/shop/files/100000149_992x.jpg?v=1720804946",
+    why: "The pictured 2-in-1 pads combine an absorbent maxi pad with instant cold therapy for early perineal swelling and soreness.",
+    notes: "Best for a planned vaginal birth. ACOG recommends wrapped ice or a cold gel pack for 10-20 minutes at a time, especially during the first 24-72 hours. Check what the hospital provides before buying multiples.",
+    url: "https://frida.com/products/instant-ice-maxi-pads",
+    links: [
+      {
+        label: "Frida Mom Instant Ice Maxi Pads",
+        url: "https://frida.com/products/instant-ice-maxi-pads"
+      },
+      {
+        label: "ACOG postpartum pain guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
+  },
+  {
+    id: "dermoplast-postpartum-spray",
+    name: "Dermoplast Postpartum Pain Relief Spray",
+    category: "Vaginal Recovery",
+    priority: "Conditional",
+    price: 8.28,
+    checkoutPrice: 9,
+    purchased: false,
+    image: "https://i5.walmartimages.com/seo/Dermoplast-Postpartum-Perianal-Pain-Relief-Spray-Unscented-2-75-oz_be1b9b5a-6cce-4cbf-884a-0aa89dc60804.1486150fec1fb6cdf209848cd7150626.png",
+    why: "The pictured blue-cap postpartum spray can provide temporary external numbing relief if the hospital or OB includes it in the recovery plan.",
+    notes: "Buy only the postpartum/perianal version and follow its label; ask your OB before use on stitches or broken skin. This is optional because hospitals often send a can home and not everyone needs it.",
+    url: "https://dermoplast.com/products/postpartum",
+    links: [
+      {
+        label: "Dermoplast Postpartum Spray",
+        url: "https://dermoplast.com/products/postpartum"
+      },
+      {
+        label: "Walmart U.S. listing",
+        url: "https://www.walmart.com/ip/5197822025"
+      },
+      {
+        label: "ACOG postpartum pain guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
+  },
+  {
+    id: "lansinoh-sitz-bath-salts",
+    name: "Lansinoh Sitz Bath Salts",
+    category: "Vaginal Recovery",
+    priority: "Conditional",
+    price: 15.99,
+    checkoutPrice: 17,
+    purchased: false,
+    image: "https://lansinoh.com/cdn/shop/files/44_1100x.jpg?v=1711669568",
+    why: "The pictured salts are an optional add-on for a warm sitz bath, which can soothe perineal soreness after a vaginal birth.",
+    notes: "Plain warm water is sufficient and is the simpler default. These salts contain lavender oil and other botanicals, so ask your OB first and skip them if you have sensitive skin, irritation, or instructions to avoid bath additives.",
+    url: "https://lansinoh.com/products/sitz-bath-salts",
+    links: [
+      {
+        label: "Lansinoh Sitz Bath Salts",
+        url: "https://lansinoh.com/products/sitz-bath-salts"
       },
       {
         label: "ACOG postpartum pain guidance",
@@ -636,6 +735,33 @@ items.parentWellness.push(
     ]
   },
   {
+    id: "colace-2-in-1-postpartum",
+    name: "Colace 2-in-1 Stool Softener + Stimulant Laxative",
+    category: "Bowel Care",
+    priority: "Conditional",
+    price: 19.2,
+    checkoutPrice: 21,
+    purchased: false,
+    image: "https://colacecapsules.com/wp-content/uploads/2023/04/colace_2in1-trimmed.png",
+    why: "The pictured U.S. product combines docusate 50 mg with sennosides 8.6 mg and may be part of a clinician-directed plan for short-term postpartum constipation.",
+    notes: "Do not pre-start this just because it appeared in a social post. Confirm the exact bowel plan at discharge, especially if breastfeeding or taking other medicines. The label warns against use longer than one week unless directed and says to stop for rectal bleeding or no bowel movement.",
+    url: "https://colacecapsules.com/Products/Colace-2-in-1/",
+    links: [
+      {
+        label: "Colace 2-in-1 product page",
+        url: "https://colacecapsules.com/Products/Colace-2-in-1/"
+      },
+      {
+        label: "DailyMed U.S. drug label",
+        url: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9fce5c4b-1e2e-47ef-13e5-c3bd5320d41b&version=8"
+      },
+      {
+        label: "ACOG constipation guidance",
+        url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+      }
+    ]
+  },
+  {
     id: "c-section-recovery-kit-conditional",
     name: "C-Section Recovery Kit - Only If Needed",
     category: "C-Section Recovery",
@@ -659,25 +785,52 @@ items.parentWellness.push(
     ]
   },
   {
-    id: "breastfeeding-comfort-kit",
-    name: "Breastfeeding / Pumping Comfort Kit",
+    id: "avent-hot-cold-breast-pads",
+    name: "Philips Avent 2-in-1 Hot / Cold Breast Pads",
     category: "Feeding Recovery",
     priority: "Conditional",
-    price: 34.99,
-    checkoutPrice: 38,
+    price: 12.99,
+    checkoutPrice: 14,
     purchased: false,
-    image: "https://frida.com/cdn/shop/files/social-sharing-image.png?v=1736467122",
-    why: "Hot/cold breast packs, hydrogel pads, nipple balm, saline spray, and a few nursing pads cover common early comfort needs.",
-    notes: "Useful if nursing or pumping; skip if not part of the feeding plan. Persistent pain, damaged skin, fever, or worsening breast symptoms need a clinician or lactation consultant, not just products.",
-    url: "https://frida.com/products/breastfeeding-survival-kit",
+    image: "https://images.philips.com/is/image/philipsconsumer/5d72497d00d94b99b7f2ac56001fce23?$png$&fit=constrain&hei=650&wid=650",
+    why: "The pictured reusable breast pads can be chilled to soothe engorgement or briefly warmed before a feed for comfort.",
+    notes: "Only needed if nursing or pumping. For swelling, favor cold use with the supplied sleeves; avoid prolonged heat and deep massage. Fever, a worsening red area, severe pain, or flu-like symptoms need prompt clinical advice.",
+    url: "https://www.usa.philips.com/c-p/SCF258_02/avent-breast-care",
     links: [
       {
-        label: "Frida Mom breastfeeding comfort kit",
-        url: "https://frida.com/products/breastfeeding-survival-kit"
+        label: "Philips Avent 2-in-1 Thermo Pads",
+        url: "https://www.usa.philips.com/c-p/SCF258_02/avent-breast-care"
       },
       {
-        label: "CDC - what to expect while breastfeeding",
-        url: "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/what-to-expect-while-breastfeeding.html"
+        label: "Academy of Breastfeeding Medicine mastitis protocol",
+        url: "https://www.bfmed.org/assets/ABM%20Protocol%20%2336.pdf"
+      }
+    ]
+  },
+  {
+    id: "legendairy-sunflower-lecithin",
+    name: "Legendairy Milk Sunflower Lecithin - 200 Softgels",
+    category: "Feeding Recovery",
+    priority: "Conditional",
+    price: 26.99,
+    checkoutPrice: 29,
+    purchased: false,
+    image: "https://www.legendairymilk.com/cdn/shop/files/sunflower-lecithin-1-month-supply-7907387.png?v=1771382347",
+    why: "The pictured supplement is sometimes suggested for recurrent plugged ducts, but it is not a routine postpartum must-have.",
+    notes: "Add only after discussing recurrent clogs with an IBCLC or clinician. LactMed says lecithin is recommended for plugged ducts but notes there are no scientifically valid clinical studies proving high-dose safety and effectiveness in nursing parents or infants.",
+    url: "https://www.legendairymilk.com/products/organic-sunflower-lecithin",
+    links: [
+      {
+        label: "Legendairy Milk Sunflower Lecithin",
+        url: "https://www.legendairymilk.com/products/organic-sunflower-lecithin"
+      },
+      {
+        label: "NIH LactMed: Lecithin",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK501772/"
+      },
+      {
+        label: "Academy of Breastfeeding Medicine mastitis protocol",
+        url: "https://www.bfmed.org/assets/ABM%20Protocol%20%2336.pdf"
       }
     ]
   },
@@ -958,8 +1111,14 @@ function isPurchased(item) {
 
 function renderItems(sectionName, targetId, caution = false, group = "baby") {
   const template = document.getElementById("itemTemplate");
+  const priorityRank = { Must: 0, Conditional: 1, Nice: 2, Optional: 3, Skip: 4 };
+  const sectionItems = sectionName === "parentWellness"
+    ? [...items[sectionName]].sort(
+      (a, b) => (priorityRank[a.priority] ?? 99) - (priorityRank[b.priority] ?? 99)
+    )
+    : items[sectionName];
 
-  items[sectionName].forEach((item, index) => {
+  sectionItems.forEach((item, index) => {
     const resolvedTargetId = typeof targetId === "function" ? targetId(item) : targetId;
     const target = document.getElementById(resolvedTargetId);
 
@@ -987,6 +1146,9 @@ function renderItems(sectionName, targetId, caution = false, group = "baby") {
     };
 
     clone.querySelector(".category").textContent = item.category;
+    const priority = clone.querySelector(".item-priority");
+    priority.textContent = item.priority || (caution ? "Skip" : "");
+    priority.dataset.priority = (item.priority || "").toLowerCase();
 
     clone.querySelector("h3").textContent = item.name;
     clone.querySelector(".why").textContent = item.why;
