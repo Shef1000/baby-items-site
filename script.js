@@ -109,7 +109,7 @@ const items = {
       image:
         "https://target.scene7.com/is/image/Target//GUEST_3f7b4a8b-e3da-426c-9824-e6c248c0abdc?wid=800&qlt=85",
       why: "Firm wraparound support, an adjustable waist strap, and a backrest make this the stronger choice for maintaining a stable feeding position.",
-      notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $66.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use only for awake, supervised feeding support—never as an infant sleep surface.",
+      notes: "Purchased from Target, quantity 1. Receipt unit price was $66.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use only for awake, supervised feeding support—never as an infant sleep surface.",
       url: "https://www.target.com/p/my-brest-friend-super-deluxe-nursing-pillow---platinum--no-aasa/-/A-82618840"
     }
   ],
@@ -176,7 +176,7 @@ const items = {
       image:
         "https://target.scene7.com/is/image/Target//GUEST_28743cbe-59f0-43ac-ba04-d256379c08c6?wid=800&qlt=85",
       why: "A washable silicone applicator keeps thick barrier cream off hands and helps spread an even layer during diaper changes.",
-      notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $4.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Wash and dry it after use and do not share it between children with active rashes.",
+      notes: "Purchased from Target, quantity 1. Receipt unit price was $4.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Wash and dry it after use and do not share it between children with active rashes.",
       url: "https://www.target.com/p/diaper-cream-brush---up-up---no-aasa/-/A-92623290"
     },
     {
@@ -686,7 +686,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_48964878-3763-4094-8a80-7b9778aada28?wid=800&qlt=85",
     why: "The kit establishes the core vaginal-birth recovery station: peri rinsing, early cold therapy, disposable underwear, witch-hazel liners, healing foam, gown, socks, and a caddy.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $69.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. It includes 1 peri bottle, 4 disposable underwear, 4 instant ice maxi pads, 24 witch-hazel liners, 5 oz healing foam, 1 gown, and 1 pair of socks. The four underwear are only a starter quantity.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $69.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. It includes 1 peri bottle, 4 disposable underwear, 4 instant ice maxi pads, 24 witch-hazel liners, 5 oz healing foam, 1 gown, and 1 pair of socks. The four underwear are only a starter quantity.",
     url: "https://www.target.com/p/frida-mom-labor-and-delivery---postpartum-recovery-kit---postpartum-must-haves---babyshower-gift-for-mom--no-aasa/-/A-77295089",
     links: [
       {
@@ -710,7 +710,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_57d352d4-5531-4e84-9997-a490bf2fa0b3?wid=800&qlt=85",
     why: "The 2-in-1 pads combine an absorbent maxi pad with instant cold therapy for early perineal swelling and soreness.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $18.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Together with the four in the recovery kit, this gives 12 ice pads—adequate for short 10–20 minute cold sessions during the first 24–72 hours. Regular maternity pads are still needed afterward.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $18.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Together with the four in the recovery kit, this gives 12 ice pads—adequate for short 10–20 minute cold sessions during the first 24–72 hours. Regular maternity pads are still needed afterward.",
     url: "https://www.target.com/p/frida-mom-instant-ice-maxi-pad---8ct--no-aasa/-/A-76199077",
     links: [
       {
@@ -734,7 +734,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_f144c671-c946-4f19-9386-e206659060d3?wid=800&qlt=85",
     why: "Full-length cooling liners can cover a pad more evenly than small round pads and provide an easy refill for the recovery bathroom.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $9.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. With the 24 liners in the kit, this gives 48 Frida liners; the two Tucks packs add 80 more witch-hazel pads, so no additional witch-hazel product is needed.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $9.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. With the 24 liners in the kit, this gives 48 Frida liners; the two Tucks packs add 80 more witch-hazel pads, so no additional witch-hazel product is needed.",
     url: "https://www.target.com/p/frida-mom-perineal-witch-hazel-cooling-pad-liners-genital-irritation-treatment---24ct--no-aasa/-/A-76199078"
   },
   {
@@ -748,7 +748,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_d85571c3-d838-498c-a33e-e2181cd869f5?wid=800&qlt=85",
     why: "The upside-down can is convenient for temporary external numbing relief without difficult positioning during early recovery.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $9.89; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use externally and follow the label and discharge plan; ask the OB before applying it to stitches or broken skin. The kit's healing foam is a separate soothing product, so no second spray is needed.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $9.89; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use externally and follow the label and discharge plan; ask the OB before applying it to stitches or broken skin. The kit's healing foam is a separate soothing product, so no second spray is needed.",
     url: "https://www.target.com/p/frida-mom-upside-down-pain-relief-spray-hospital-strength-for-instant-relief-and-healing---3-5-oz--no-aasa/-/A-94647169",
     links: [
       {
@@ -795,7 +795,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_1791af6c-3bf3-419f-a986-68223d4fae4a?wid=800&qlt=85",
     why: "Small witch-hazel pads are convenient for external cooling and hemorrhoid discomfort after delivery.",
-    notes: "Purchased from Target, quantity 2, in order #102003630025423. Receipt unit price was $4.99 ($9.98 combined); checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use externally and do not flush. Together with the Frida liners, the purchase has 128 witch-hazel pads/liners, so this category is fully stocked.",
+    notes: "Purchased from Target, quantity 2. Receipt unit price was $4.99 ($9.98 combined); checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Use externally and do not flush. Together with the Frida liners, the purchase has 128 witch-hazel pads/liners, so this category is fully stocked.",
     url: "https://www.target.com/p/tucks-medicated-pads-set---40pc--for-groin-area--includes-instructions--feminine-care--no-aasa/-/A-93550537",
     links: [
       {
@@ -900,7 +900,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_492919a4-5946-4585-b1ee-2073bbfb6aae?wid=800&qlt=85",
     why: "The contoured reusable packs can be chilled to soothe engorgement or briefly warmed before feeding or pumping for comfort.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $11.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. For swelling, favor cold use with a cover; avoid prolonged heat and deep massage. Fever, a worsening red area, severe pain, or flu-like symptoms need prompt clinical advice.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $11.99; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. For swelling, favor cold use with a cover; avoid prolonged heat and deep massage. Fever, a worsening red area, severe pain, or flu-like symptoms need prompt clinical advice.",
     url: "https://www.target.com/p/lansinoh-hot---cold-breast-therapy-packs-for-breastfeeding---pumping---2pk--contoured-fit--6-inch-diameter--no-aasa/-/A-14386190",
     links: [
       {
@@ -924,7 +924,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_c7463541-405b-4878-80a9-d99c4b84627f?wid=800&qlt=85",
     why: "This supplement is sometimes suggested for recurrent plugged ducts, but it is not a routine postpartum must-have.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $13.79; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Keep it available but do not start it automatically. LactMed's July 2026 review says no scientifically valid clinical studies establish the safety and effectiveness of high-dose lecithin supplementation in nursing parents or infants.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $13.79; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Keep it available but do not start it automatically. LactMed's July 2026 review says no scientifically valid clinical studies establish the safety and effectiveness of high-dose lecithin supplementation in nursing parents or infants.",
     url: "https://www.target.com/p/legendairy-milk-sunflower-lecithin---60ct--dietary-supplements--sugar-free--gluten-free--1200mg-softgel--no-aasa/-/A-83751626",
     links: [
       {
@@ -952,7 +952,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_da85208c-e6cb-47c8-ac42-ae87d5a042e3?wid=800&qlt=85",
     why: "A full 100-count starter supply provides practical leak coverage while milk supply and feeding routines settle.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $11.49; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. This is an appropriate starter quantity if nursing or pumping; change pads when damp and stop if the material irritates the skin.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $11.49; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. This is an appropriate starter quantity if nursing or pumping; change pads when damp and stop if the material irritates the skin.",
     url: "https://www.target.com/p/lansinoh-stay-dry-disposable-nursing-pads-for-breastfeeding--leakproof---100ct--bpa-free--leakproof-lining--4-5-inch-diameter--no-aasa/-/A-14009931"
   },
   {
@@ -966,7 +966,7 @@ items.parentWellness.push(
     image:
       "https://target.scene7.com/is/image/Target//GUEST_b3137bad-3e4b-4e14-b068-04f345bfd072?wid=800&qlt=85",
     why: "Purified lanolin is a durable barrier option for dry or sore nipples during nursing or pumping.",
-    notes: "Purchased from Target, quantity 1, in order #102003630025423. Receipt unit price was $9.49; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Together with the purchased 2 oz Lansinoh Organic Nipple Butter, the total amount is adequate; choose the product your skin tolerates rather than layering both by default.",
+    notes: "Purchased from Target, quantity 1. Receipt unit price was $9.49; checkout share reflects the order's 10% discount, free shipping, and $229.90 total including tax. Together with the purchased 2 oz Lansinoh Organic Nipple Butter, the total amount is adequate; choose the product your skin tolerates rather than layering both by default.",
     url: "https://www.target.com/p/lansinoh-lanolin-nipple-cream-for-breastfeeding---1-41oz--no-aasa/-/A-92544"
   },
   {
