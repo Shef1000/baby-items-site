@@ -99,17 +99,17 @@ const items = {
       url: "https://www.stokke.com/USA/en-us/high-chairs/tripp-trapp/"
     },
     {
-      id: "boppy-nursing",
-      name: "Boppy Nursing Pillow",
-      category: "Feeding",
-      priority: "Nice",
-      price: 45,
+      id: "my-brest-friend-super-deluxe-platinum",
+      name: "My Brest Friend Super Deluxe Nursing Pillow - Platinum",
+      category: "Feeding Support",
+      priority: "Conditional",
+      price: 60.29,
       purchased: false,
       image:
-        "https://www.boppy.com/cdn/shop/files/boppy-nursing-pillow-luxe00066352210490-5912279.webp?v=1776861435&width=800",
-      why: "Practical for feeding support and postpartum comfort.",
-      notes: "Supervised feeding use only, never for sleep.",
-      url: "https://www.boppy.com/products/original-support"
+        "https://target.scene7.com/is/image/Target//GUEST_3f7b4a8b-e3da-426c-9824-e6c248c0abdc?wid=800&qlt=85",
+      why: "Firm wraparound support, an adjustable waist strap, and a backrest make this the stronger choice for maintaining a stable feeding position.",
+      notes: "In the Target cart, quantity 1; current cart price is $60.29 as of July 28, 2026. Use only for awake, supervised feeding support—never as an infant sleep surface.",
+      url: "https://www.target.com/p/my-brest-friend-super-deluxe-nursing-pillow---platinum--no-aasa/-/A-82618840"
     }
   ],
   addOns: [
@@ -163,6 +163,19 @@ const items = {
           url: "https://www.desitin.com/diaper-rash-products/maximum-strength-original-zinc-oxide-paste"
         }
       ]
+    },
+    {
+      id: "up-up-diaper-cream-brush",
+      name: "up&up Diaper Cream Brush",
+      category: "Diapering",
+      priority: "Nice",
+      price: 4.49,
+      purchased: false,
+      image:
+        "https://target.scene7.com/is/image/Target//GUEST_28743cbe-59f0-43ac-ba04-d256379c08c6?wid=800&qlt=85",
+      why: "A washable silicone applicator keeps thick barrier cream off hands and helps spread an even layer during diaper changes.",
+      notes: "In the Target cart, quantity 1; current cart price is $4.49 as of July 28, 2026. Wash and dry it after use and do not share it between children with active rashes.",
+      url: "https://www.target.com/p/diaper-cream-brush---up-up---no-aasa/-/A-92623290"
     },
     {
       id: "tide-pods-free-gentle-152",
@@ -634,25 +647,21 @@ items.parentWellness.push(
     url: "https://www.amazon.com/dp/B07X53WM1H"
   },
   {
-    id: "postpartum-bathroom-basics",
-    name: "Peri Bottle + Witch Hazel Bathroom Basics",
+    id: "frida-labor-delivery-postpartum-recovery-kit",
+    name: "Frida Mom Labor & Delivery + Postpartum Recovery Kit",
     category: "Vaginal Recovery",
     priority: "Must",
-    price: 19.98,
-    checkoutPrice: 22,
+    price: 63,
     purchased: false,
-    image: "https://frida.com/cdn/shop/files/PINKhero_992x.jpg?v=1715175863",
-    why: "A peri bottle makes bathroom trips gentler, while cool witch-hazel liners can soothe soreness after a vaginal birth.",
-    notes: "Ask what the hospital sends home before buying. ACOG recommends a squeeze bottle with warm water and says cool witch hazel may help; skip fragranced extras if they sting or irritate.",
-    url: "https://frida.com/products/upside-down-peri-bottle",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_48964878-3763-4094-8a80-7b9778aada28?wid=800&qlt=85",
+    why: "The kit establishes the core vaginal-birth recovery station: peri rinsing, early cold therapy, disposable underwear, witch-hazel liners, healing foam, gown, socks, and a caddy.",
+    notes: "In the Target cart, quantity 1; current cart price is $63.00 as of July 28, 2026. It includes 1 peri bottle, 4 disposable underwear, 4 instant ice maxi pads, 24 witch-hazel liners, 5 oz healing foam, 1 gown, and 1 pair of socks. The four underwear are only a starter quantity.",
+    url: "https://www.target.com/p/frida-mom-labor-and-delivery---postpartum-recovery-kit---postpartum-must-haves---babyshower-gift-for-mom--no-aasa/-/A-77295089",
     links: [
       {
-        label: "Frida Mom Upside Down Peri Bottle",
-        url: "https://frida.com/products/upside-down-peri-bottle"
-      },
-      {
-        label: "Frida Mom Witch Hazel Pad Liners",
-        url: "https://frida.com/products/witch-hazel-perineal-cooling-pad-liners"
+        label: "Target - Frida Mom Labor & Delivery + Postpartum Recovery Kit",
+        url: "https://www.target.com/p/frida-mom-labor-and-delivery---postpartum-recovery-kit---postpartum-must-haves---babyshower-gift-for-mom--no-aasa/-/A-77295089"
       },
       {
         label: "ACOG postpartum pain guidance",
@@ -665,17 +674,17 @@ items.parentWellness.push(
     name: "Frida Mom Instant Ice Maxi Pads - 8 Count",
     category: "Vaginal Recovery",
     priority: "Must",
-    price: 19.99,
-    checkoutPrice: 22,
+    price: 17.09,
     purchased: false,
-    image: "https://frida.com/cdn/shop/files/100000149_992x.jpg?v=1720804946",
-    why: "The pictured 2-in-1 pads combine an absorbent maxi pad with instant cold therapy for early perineal swelling and soreness.",
-    notes: "Best for a planned vaginal birth. ACOG recommends wrapped ice or a cold gel pack for 10-20 minutes at a time, especially during the first 24-72 hours. Check what the hospital provides before buying multiples.",
-    url: "https://frida.com/products/instant-ice-maxi-pads",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_57d352d4-5531-4e84-9997-a490bf2fa0b3?wid=800&qlt=85",
+    why: "The 2-in-1 pads combine an absorbent maxi pad with instant cold therapy for early perineal swelling and soreness.",
+    notes: "In the Target cart, quantity 1; current cart price is $17.09 as of July 28, 2026. Together with the four in the recovery kit, this gives 12 ice pads—adequate for short 10–20 minute cold sessions during the first 24–72 hours. Regular maternity pads are still needed afterward.",
+    url: "https://www.target.com/p/frida-mom-instant-ice-maxi-pad---8ct--no-aasa/-/A-76199077",
     links: [
       {
-        label: "Frida Mom Instant Ice Maxi Pads",
-        url: "https://frida.com/products/instant-ice-maxi-pads"
+        label: "Target - Frida Mom Instant Ice Maxi Pads",
+        url: "https://www.target.com/p/frida-mom-instant-ice-maxi-pad---8ct--no-aasa/-/A-76199077"
       },
       {
         label: "ACOG postpartum pain guidance",
@@ -684,25 +693,34 @@ items.parentWellness.push(
     ]
   },
   {
-    id: "dermoplast-postpartum-spray",
-    name: "Dermoplast Postpartum Pain Relief Spray",
+    id: "frida-witch-hazel-cooling-liners-24",
+    name: "Frida Mom Witch Hazel Cooling Pad Liners - 24 Count",
     category: "Vaginal Recovery",
     priority: "Conditional",
-    price: 8.28,
-    checkoutPrice: 9,
+    price: 8.99,
     purchased: false,
-    image: "https://i5.walmartimages.com/seo/Dermoplast-Postpartum-Perianal-Pain-Relief-Spray-Unscented-2-75-oz_be1b9b5a-6cce-4cbf-884a-0aa89dc60804.1486150fec1fb6cdf209848cd7150626.png",
-    why: "The pictured blue-cap postpartum spray can provide temporary external numbing relief if the hospital or OB includes it in the recovery plan.",
-    notes: "Buy only the postpartum/perianal version and follow its label; ask your OB before use on stitches or broken skin. This is optional because hospitals often send a can home and not everyone needs it.",
-    url: "https://dermoplast.com/products/postpartum",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_f144c671-c946-4f19-9386-e206659060d3?wid=800&qlt=85",
+    why: "Full-length cooling liners can cover a pad more evenly than small round pads and provide an easy refill for the recovery bathroom.",
+    notes: "In the Target cart, quantity 1; current cart price is $8.99 as of July 28, 2026. With the 24 liners in the kit, this gives 48 Frida liners; the two Tucks packs add 80 more witch-hazel pads, so no additional witch-hazel product is needed.",
+    url: "https://www.target.com/p/frida-mom-perineal-witch-hazel-cooling-pad-liners-genital-irritation-treatment---24ct--no-aasa/-/A-76199078"
+  },
+  {
+    id: "frida-upside-down-pain-relief-spray",
+    name: "Frida Mom Upside Down Pain Relief Spray - 3.5 oz",
+    category: "Vaginal Recovery",
+    priority: "Conditional",
+    price: 8.9,
+    purchased: false,
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_d85571c3-d838-498c-a33e-e2181cd869f5?wid=800&qlt=85",
+    why: "The upside-down can is convenient for temporary external numbing relief without difficult positioning during early recovery.",
+    notes: "In the Target cart, quantity 1; current cart price is $8.90 as of July 28, 2026. Use externally and follow the label and discharge plan; ask the OB before applying it to stitches or broken skin. The kit's healing foam is a separate soothing product, so no second spray is needed.",
+    url: "https://www.target.com/p/frida-mom-upside-down-pain-relief-spray-hospital-strength-for-instant-relief-and-healing---3-5-oz--no-aasa/-/A-94647169",
     links: [
       {
-        label: "Dermoplast Postpartum Spray",
-        url: "https://dermoplast.com/products/postpartum"
-      },
-      {
-        label: "Walmart U.S. listing",
-        url: "https://www.walmart.com/ip/5197822025"
+        label: "Target - Frida Mom Upside Down Pain Relief Spray",
+        url: "https://www.target.com/p/frida-mom-upside-down-pain-relief-spray-hospital-strength-for-instant-relief-and-healing---3-5-oz--no-aasa/-/A-94647169"
       },
       {
         label: "ACOG postpartum pain guidance",
@@ -735,46 +753,38 @@ items.parentWellness.push(
   },
   {
     id: "tucks-postpartum-hemorrhoid-care",
-    name: "Tucks Medicated Cooling Pads; Preparation H If Needed",
+    name: "Tucks Medicated Cooling Pads - 2 x 40 Count",
     category: "Hemorrhoid Care",
     priority: "Conditional",
-    price: 7.89,
-    checkoutPrice: 9,
+    price: 8.98,
     purchased: false,
-    image: "https://tucks.com/wp-content/uploads/2022/08/tucks-pads-1.png",
-    why: "U.S.-based REDnote postpartum checklists repeatedly include Tucks witch-hazel pads for external cooling and hemorrhoid discomfort after delivery.",
-    notes: "First check what the hospital sends home. Tucks contains 50% witch hazel, is for external use, and should not be flushed. Add Preparation H only if hemorrhoids are actually a problem and your clinician or discharge plan says it is appropriate; seek care for rectal bleeding, worsening symptoms, or no improvement within seven days.",
-    url: "https://www.target.com/p/-/A-14013778",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_1791af6c-3bf3-419f-a986-68223d4fae4a?wid=800&qlt=85",
+    why: "Small witch-hazel pads are convenient for external cooling and hemorrhoid discomfort after delivery.",
+    notes: "In the Target cart, quantity 2; current combined cart price is $8.98 as of July 28, 2026, for 80 pads total. Use externally and do not flush. Together with the Frida liners, the cart has 128 witch-hazel pads/liners, so this category is fully stocked.",
+    url: "https://www.target.com/p/tucks-medicated-pads-set---40pc--for-groin-area--includes-instructions--feminine-care--no-aasa/-/A-93550537",
     links: [
       {
-        label: "Target - Tucks Medicated Cooling Pads, 100 count",
-        url: "https://www.target.com/p/-/A-14013778"
+        label: "Target - Tucks Medicated Pads, 40 count",
+        url: "https://www.target.com/p/tucks-medicated-pads-set---40pc--for-groin-area--includes-instructions--feminine-care--no-aasa/-/A-93550537"
       },
       {
         label: "Tucks official directions and warnings",
         url: "https://tucks.com/product/tucks-medicated-cooling-pads/"
-      },
-      {
-        label: "Preparation H ointment - only if needed",
-        url: "https://www.target.com/p/-/A-89790960"
-      },
-      {
-        label: "Preparation H official product information",
-        url: "https://www.preparationh.com/products/ointment/"
       }
     ]
   },
   {
     id: "postpartum-pads-underwear-refill",
-    name: "Postpartum Pads + Disposable Underwear Refill",
+    name: "Postpartum Pads x36 + Disposable Underwear Refill",
     category: "Bleeding Care",
     priority: "Must",
-    price: 19.88,
-    checkoutPrice: 22,
+    price: 27.87,
+    checkoutPrice: 31,
     purchased: false,
     image: "https://frida.com/cdn/shop/files/FM_RecoveryEssentialsKit_Thumbnail_700x.jpg?v=1714489405",
-    why: "A recovery kit only includes a few changes; one extra pack of long maternity pads and one 8-pack of soft disposable underwear gives practical coverage after either delivery type.",
-    notes: "Current estimate uses Target's listed $7.99 pads plus $11.89 underwear, before San Francisco tax. Use external pads rather than tampons or menstrual cups while healing, and seek care for unusually heavy bleeding.",
+    why: "Ice pads are for the first 24–72 hours; two 18-count packs of long maternity pads and one 8-pack of soft disposable underwear cover the longer bleeding phase much more realistically.",
+    notes: "This is the most important cart gap. The kit has only four underwear and no regular maternity-pad supply. Estimate uses 2 x $7.99 pads plus $11.89 underwear before tax. Use external pads rather than tampons or menstrual cups while healing, and seek urgent care for unusually heavy bleeding.",
     url: "https://www.target.com/p/-/A-86847731",
     links: [
       {
@@ -846,21 +856,21 @@ items.parentWellness.push(
     ]
   },
   {
-    id: "avent-hot-cold-breast-pads",
-    name: "Philips Avent 2-in-1 Hot / Cold Breast Pads",
+    id: "lansinoh-hot-cold-breast-therapy-2pk",
+    name: "Lansinoh Hot & Cold Breast Therapy Packs - 2 Pack",
     category: "Feeding Recovery",
     priority: "Conditional",
-    price: 12.99,
-    checkoutPrice: 14,
+    price: 10.79,
     purchased: false,
-    image: "https://images.philips.com/is/image/philipsconsumer/5d72497d00d94b99b7f2ac56001fce23?$png$&fit=constrain&hei=650&wid=650",
-    why: "The pictured reusable breast pads can be chilled to soothe engorgement or briefly warmed before a feed for comfort.",
-    notes: "Only needed if nursing or pumping. For swelling, favor cold use with the supplied sleeves; avoid prolonged heat and deep massage. Fever, a worsening red area, severe pain, or flu-like symptoms need prompt clinical advice.",
-    url: "https://www.usa.philips.com/c-p/SCF258_02/avent-breast-care",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_492919a4-5946-4585-b1ee-2073bbfb6aae?wid=800&qlt=85",
+    why: "The contoured reusable packs can be chilled to soothe engorgement or briefly warmed before feeding or pumping for comfort.",
+    notes: "In the Target cart, quantity 1; current cart price is $10.79 as of July 28, 2026. For swelling, favor cold use with a cover; avoid prolonged heat and deep massage. Fever, a worsening red area, severe pain, or flu-like symptoms need prompt clinical advice.",
+    url: "https://www.target.com/p/lansinoh-hot---cold-breast-therapy-packs-for-breastfeeding---pumping---2pk--contoured-fit--6-inch-diameter--no-aasa/-/A-14386190",
     links: [
       {
-        label: "Philips Avent 2-in-1 Thermo Pads",
-        url: "https://www.usa.philips.com/c-p/SCF258_02/avent-breast-care"
+        label: "Target - Lansinoh Hot & Cold Breast Therapy Packs",
+        url: "https://www.target.com/p/lansinoh-hot---cold-breast-therapy-packs-for-breastfeeding---pumping---2pk--contoured-fit--6-inch-diameter--no-aasa/-/A-14386190"
       },
       {
         label: "Academy of Breastfeeding Medicine mastitis protocol",
@@ -870,20 +880,20 @@ items.parentWellness.push(
   },
   {
     id: "legendairy-sunflower-lecithin",
-    name: "Legendairy Milk Sunflower Lecithin - 200 Softgels",
+    name: "Legendairy Milk Sunflower Lecithin - 60 Softgels",
     category: "Feeding Recovery",
     priority: "Conditional",
-    price: 26.99,
-    checkoutPrice: 29,
+    price: 12.41,
     purchased: false,
-    image: "https://www.legendairymilk.com/cdn/shop/files/sunflower-lecithin-1-month-supply-7907387.png?v=1771382347",
-    why: "The pictured supplement is sometimes suggested for recurrent plugged ducts, but it is not a routine postpartum must-have.",
-    notes: "Add only after discussing recurrent clogs with an IBCLC or clinician. LactMed says lecithin is recommended for plugged ducts but notes there are no scientifically valid clinical studies proving high-dose safety and effectiveness in nursing parents or infants.",
-    url: "https://www.legendairymilk.com/products/organic-sunflower-lecithin",
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_c7463541-405b-4878-80a9-d99c4b84627f?wid=800&qlt=85",
+    why: "This supplement is sometimes suggested for recurrent plugged ducts, but it is not a routine postpartum must-have.",
+    notes: "In the Target cart, quantity 1; current cart price is $12.41 as of July 28, 2026. Keep it available but do not start it automatically. LactMed's July 2026 review says no scientifically valid clinical studies establish the safety and effectiveness of high-dose lecithin supplementation in nursing parents or infants.",
+    url: "https://www.target.com/p/legendairy-milk-sunflower-lecithin---60ct--dietary-supplements--sugar-free--gluten-free--1200mg-softgel--no-aasa/-/A-83751626",
     links: [
       {
-        label: "Legendairy Milk Sunflower Lecithin",
-        url: "https://www.legendairymilk.com/products/organic-sunflower-lecithin"
+        label: "Target - Legendairy Milk Sunflower Lecithin, 60 count",
+        url: "https://www.target.com/p/legendairy-milk-sunflower-lecithin---60ct--dietary-supplements--sugar-free--gluten-free--1200mg-softgel--no-aasa/-/A-83751626"
       },
       {
         label: "NIH LactMed: Lecithin",
@@ -896,15 +906,41 @@ items.parentWellness.push(
     ]
   },
   {
-    id: "nursing-bras-pads-bundle",
-    name: "Nursing Bras / Tanks + Pads Bundle",
+    id: "lansinoh-stay-dry-nursing-pads-100",
+    name: "Lansinoh Stay Dry Disposable Nursing Pads - 100 Count",
     category: "Feeding Recovery",
     priority: "Conditional",
-    price: 220,
+    price: 10.34,
+    purchased: false,
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_da85208c-e6cb-47c8-ac42-ae87d5a042e3?wid=800&qlt=85",
+    why: "A full 100-count starter supply provides practical leak coverage while milk supply and feeding routines settle.",
+    notes: "In the Target cart, quantity 1; current cart price is $10.34 as of July 28, 2026. This is an appropriate starter quantity if nursing or pumping; change pads when damp and stop if the material irritates the skin.",
+    url: "https://www.target.com/p/lansinoh-stay-dry-disposable-nursing-pads-for-breastfeeding--leakproof---100ct--bpa-free--leakproof-lining--4-5-inch-diameter--no-aasa/-/A-14009931"
+  },
+  {
+    id: "lansinoh-lanolin-nipple-cream-1-41oz",
+    name: "Lansinoh Lanolin Nipple Cream - 1.41 oz",
+    category: "Feeding Recovery",
+    priority: "Conditional",
+    price: 8.54,
+    purchased: false,
+    image:
+      "https://target.scene7.com/is/image/Target//GUEST_b3137bad-3e4b-4e14-b068-04f345bfd072?wid=800&qlt=85",
+    why: "Purified lanolin is a durable barrier option for dry or sore nipples during nursing or pumping.",
+    notes: "In the Target cart, quantity 1; current cart price is $8.54 as of July 28, 2026. Together with the purchased 2 oz Lansinoh Organic Nipple Butter, the total amount is adequate; choose the product your skin tolerates rather than layering both by default.",
+    url: "https://www.target.com/p/lansinoh-lanolin-nipple-cream-for-breastfeeding---1-41oz--no-aasa/-/A-92544"
+  },
+  {
+    id: "nursing-bras-pads-bundle",
+    name: "Supportive Wire-Free Nursing Bras / Tanks - 2 to 3",
+    category: "Feeding Recovery",
+    priority: "Conditional",
+    price: 200,
     purchased: false,
     image: "https://www.kindredbravely.com/cdn/shop/files/sublime-hands-free-pumping-nursing-bra-evryday-lounge-jogger-black-Ionna-k5-21536-1500x1875-3808281.png?v=1766515155&width=1200",
-    why: "A few soft bras or tanks and leak pads make frequent feeding or pumping easier without committing to a full postpartum wardrobe.",
-    notes: "Useful if nursing or pumping. Start with two or three flexible sizes, then add more after milk supply and postpartum fit settle; the separate comfort kit already includes six disposable pads.",
+    why: "Two or three soft, supportive, wire-free bras or tanks make frequent feeding or pumping easier while postpartum size changes settle.",
+    notes: "Still needed if nursing or pumping. Start with flexible sizing and avoid tight bands that compress breast tissue; the separate 100-count Lansinoh pad supply already covers leaks.",
     url: "https://www.kindredbravely.com/collections/nursing-bras",
     links: [
       {
@@ -914,10 +950,6 @@ items.parentWellness.push(
       {
         label: "Bodily nursing bras",
         url: "https://itsbodily.com/collections/breastfeeding"
-      },
-      {
-        label: "Lansinoh nursing pads",
-        url: "https://lansinoh.com/products/stay-dry-disposable-nursing-pads"
       }
     ]
   },
@@ -1010,8 +1042,28 @@ items.freeBenefits.push(
 const stateKey = "babyRegistryChecked.v1";
 const selected = new Set(loadState());
 const renderedCards = [];
-const legacyWipeBundleIds = ["waterwipes-12-pack", "wipe-warmer-machine"];
-const wipeBundleId = "momcozy-wipe-warmer";
+const legacySelectionMigrations = [
+  {
+    from: ["waterwipes-12-pack", "wipe-warmer-machine"],
+    to: "momcozy-wipe-warmer"
+  },
+  {
+    from: ["boppy-nursing"],
+    to: "my-brest-friend-super-deluxe-platinum"
+  },
+  {
+    from: ["postpartum-bathroom-basics"],
+    to: "frida-labor-delivery-postpartum-recovery-kit"
+  },
+  {
+    from: ["dermoplast-postpartum-spray"],
+    to: "frida-upside-down-pain-relief-spray"
+  },
+  {
+    from: ["avent-hot-cold-breast-pads"],
+    to: "lansinoh-hot-cold-breast-therapy-2pk"
+  }
+];
 
 function loadState() {
   try {
@@ -1027,17 +1079,18 @@ function saveState() {
 }
 
 function migrateLegacySelections() {
-  let shouldSelectBundle = false;
+  let changed = false;
 
-  legacyWipeBundleIds.forEach((id) => {
-    if (selected.has(id)) {
-      selected.delete(id);
-      shouldSelectBundle = true;
+  legacySelectionMigrations.forEach(({ from, to }) => {
+    const hadLegacySelection = from.some((id) => selected.has(id));
+    from.forEach((id) => selected.delete(id));
+    if (hadLegacySelection) {
+      selected.add(to);
+      changed = true;
     }
   });
 
-  if (shouldSelectBundle) {
-    selected.add(wipeBundleId);
+  if (changed) {
     saveState();
   }
 }
@@ -1063,11 +1116,12 @@ const babyGroupByItemId = {
   "newborn-play-development-starter": "play",
 
   "tripp-trapp": "eat",
-  "boppy-nursing": "eat",
+  "my-brest-friend-super-deluxe-platinum": "eat",
   "later-solids-teething-bundle": "eat",
 
   "momcozy-wipe-warmer": "poop",
   "clean-butt-bundle": "poop",
+  "up-up-diaper-cream-brush": "poop",
   "tide-pods-free-gentle-152": "poop",
   "costco-huggies-plus-newborn-diapers": "poop",
   "keekaroo-peanut-changer": "poop",
