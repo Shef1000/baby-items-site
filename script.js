@@ -608,6 +608,32 @@ items.addOns.push(
 
 items.parentWellness.push(
   {
+    id: "amazon-sitz-bath-soak-10oz",
+    name: "Sitz Bath Soak for Postpartum Care & Hemorrhoids - 10 oz",
+    category: "Vaginal Recovery",
+    priority: "Conditional",
+    price: 14.95,
+    checkoutPrice: 16.24,
+    purchased: true,
+    image: "https://m.media-amazon.com/images/I/71k-tGU-mNL._SS284_.jpg",
+    why: "Purchased for an optional warm sitz bath to help with postpartum perineal or hemorrhoid discomfort.",
+    notes: "Purchased from Amazon for $16.24 including tax, with free shipping. Ask your OB before using bath additives after delivery; plain warm water is the simpler default if skin is irritated or sensitive.",
+    url: "https://www.amazon.com/dp/B07HY7R9J4"
+  },
+  {
+    id: "lansinoh-organic-nipple-butter-2oz",
+    name: "Lansinoh Organic Nipple Butter - 2 oz",
+    category: "Feeding Recovery",
+    priority: "Conditional",
+    price: 12.25,
+    checkoutPrice: 13.31,
+    purchased: true,
+    image: "https://m.media-amazon.com/images/I/71B2iO07S4L._SS284_.jpg",
+    why: "Purchased plant-based nipple balm for moisturizing and soothing dry skin during nursing or pumping.",
+    notes: "Purchased from Amazon for $13.31 including tax, with free shipping. Use only if nursing or pumping, and stop if it causes irritation.",
+    url: "https://www.amazon.com/dp/B07X53WM1H"
+  },
+  {
     id: "postpartum-bathroom-basics",
     name: "Peri Bottle + Witch Hazel Bathroom Basics",
     category: "Vaginal Recovery",
