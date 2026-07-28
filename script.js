@@ -708,6 +708,37 @@ items.parentWellness.push(
     ]
   },
   {
+    id: "tucks-postpartum-hemorrhoid-care",
+    name: "Tucks Medicated Cooling Pads; Preparation H If Needed",
+    category: "Hemorrhoid Care",
+    priority: "Conditional",
+    price: 7.89,
+    checkoutPrice: 9,
+    purchased: false,
+    image: "https://tucks.com/wp-content/uploads/2022/08/tucks-pads-1.png",
+    why: "U.S.-based REDnote postpartum checklists repeatedly include Tucks witch-hazel pads for external cooling and hemorrhoid discomfort after delivery.",
+    notes: "First check what the hospital sends home. Tucks contains 50% witch hazel, is for external use, and should not be flushed. Add Preparation H only if hemorrhoids are actually a problem and your clinician or discharge plan says it is appropriate; seek care for rectal bleeding, worsening symptoms, or no improvement within seven days.",
+    url: "https://www.target.com/p/-/A-14013778",
+    links: [
+      {
+        label: "Target - Tucks Medicated Cooling Pads, 100 count",
+        url: "https://www.target.com/p/-/A-14013778"
+      },
+      {
+        label: "Tucks official directions and warnings",
+        url: "https://tucks.com/product/tucks-medicated-cooling-pads/"
+      },
+      {
+        label: "Preparation H ointment - only if needed",
+        url: "https://www.target.com/p/-/A-89790960"
+      },
+      {
+        label: "Preparation H official product information",
+        url: "https://www.preparationh.com/products/ointment/"
+      }
+    ]
+  },
+  {
     id: "postpartum-pads-underwear-refill",
     name: "Postpartum Pads + Disposable Underwear Refill",
     category: "Bleeding Care",
@@ -736,19 +767,23 @@ items.parentWellness.push(
   },
   {
     id: "colace-2-in-1-postpartum",
-    name: "Colace 2-in-1 Stool Softener + Stimulant Laxative",
+    name: "Colace Bowel-Plan Options: Regular Strength or 2-in-1",
     category: "Bowel Care",
     priority: "Conditional",
     price: 19.2,
     checkoutPrice: 21,
     purchased: false,
     image: "https://colacecapsules.com/wp-content/uploads/2024/04/colace_2in1-trimmed-1.png",
-    why: "The pictured U.S. product combines docusate 50 mg with sennosides 8.6 mg and may be part of a clinician-directed plan for short-term postpartum constipation.",
-    notes: "Do not pre-start this just because it appeared in a social post. Confirm the exact bowel plan at discharge, especially if breastfeeding or taking other medicines. The label warns against use longer than one week unless directed and says to stop for rectal bleeding or no bowel movement.",
+    why: "U.S.-based REDnote recovery lists more often show regular-strength docusate 100 mg, while the pictured 2-in-1 combines docusate 50 mg with 8.6 mg sennosides, a stimulant laxative.",
+    notes: "These are not interchangeable. Buy only the exact product and dose listed in the hospital or OB bowel plan, especially if breastfeeding or taking other medicines. The 2-in-1 label warns against use longer than one week unless directed and says to stop for rectal bleeding or no bowel movement.",
     url: "https://colacecapsules.com/Products/Colace-2-in-1/",
     links: [
       {
-        label: "Colace 2-in-1 product page",
+        label: "Colace Regular Strength product page",
+        url: "https://colacecapsules.com/Products/Colace-Regular-Strength/"
+      },
+      {
+        label: "Pictured Colace 2-in-1 product page",
         url: "https://colacecapsules.com/Products/Colace-2-in-1/"
       },
       {
