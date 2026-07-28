@@ -267,6 +267,33 @@ const items = {
       ]
     },
     {
+      id: "ergonomic-innovations-donut-pillow",
+      name: "Ergonomic Innovations QHL Original Donut Pillow",
+      category: "Postpartum Seating",
+      priority: "Skip",
+      price: 0,
+      priceLabel: "Recent $40; verify",
+      purchased: false,
+      image: "https://m.media-amazon.com/images/I/818L8LVrtkL._AC_SL1500_.jpg",
+      why: "The exact screenshot cushion has strong consumer ratings, but a ring cushion is not the best default for recovery after a vaginal birth.",
+      notes: "This is the medium-firm 17.5 x 14 x 2.75 in memory-foam model rated for up to 240 lb. Several hospital postpartum guides advise against ring cushions because they can increase pressure or interfere with blood flow around a healing perineum. Use it only if your OB, midwife, or pelvic-health physical therapist recommends it for your specific coccyx or hemorrhoid symptoms; otherwise favor side-lying, frequent position changes, or a flat pressure-relieving cushion.",
+      url: "https://ergonomicinnovations.com/ergonomic-innovations-donut-cushion/",
+      links: [
+        {
+          label: "Exact Ergonomic Innovations cushion",
+          url: "https://ergonomicinnovations.com/ergonomic-innovations-donut-cushion/"
+        },
+        {
+          label: "Oxford University Hospitals postpartum recovery guidance",
+          url: "https://www.ouh.nhs.uk/media/uq3fs4fr/100782recovery.pdf"
+        },
+        {
+          label: "ACOG postpartum pain guidance",
+          url: "https://www.acog.org/womens-health/faqs/postpartum-pain-management"
+        }
+      ]
+    },
+    {
       id: "boppy-lounger",
       name: "Boppy Newborn Lounger",
       category: "Safety",
@@ -952,6 +979,32 @@ items.parentWellness.push(
         url: "https://itsbodily.com/collections/breastfeeding"
       }
     ]
+  },
+  {
+    id: "freestyle-libre-3-rx-cgm",
+    name: "FreeStyle Libre 3 Sensor (Rx CGM - Transition to 3 Plus)",
+    category: "Maternal Health",
+    priority: "Conditional",
+    price: 0,
+    priceLabel: "Rx / coverage varies",
+    purchased: false,
+    image: "https://www.freestyle.abbott/content/dam/adc/freestyle/countries/us-en/images/rebranding/fsl3-product/FSL3-Mobile-Hero.png",
+    why: "A continuous glucose monitor can support clinician-directed diabetes or gestational-diabetes care, but it is not a routine postpartum-recovery purchase.",
+    notes: "The screenshot shows the prescription-only 14-day Libre 3 sensor. Abbott is discontinuing Libre 3 and says users need a new prescription for the 15-day Libre 3 Plus, so ask your clinician which system and postpartum glucose plan are appropriate before buying. The screenshot's $99.99 price is not verified and coverage varies. FDA also announced a correction for certain Libre 3 and 3 Plus sensors that may report falsely low readings; check affected serial numbers and confirm readings that do not match symptoms with a blood glucose meter.",
+    url: "https://www.freestyle.abbott/us-en/transition.html"
+  },
+  {
+    id: "kirkland-womens-protective-underwear-92",
+    name: "Kirkland Signature Women's Protective Underwear - S/M, 92 Count",
+    category: "Bladder-Leak Backup",
+    priority: "Optional",
+    price: 0,
+    priceLabel: "CA$44 / Canada only",
+    purchased: false,
+    image: "https://bfasset.costco-static.com/U447IH35/as/rmrpmqjvpjbfxrgvbhjpzfh/100776718-894_smallmedium_1?auto=webp&canvas=1024%2C1024&fit=bounds&format=jpg&height=1024&width=1024",
+    why: "Highly absorbent adult briefs can be an overflow or bladder-leak backup, but they are not the primary choice for monitoring normal postpartum bleeding.",
+    notes: "This is the exact Costco Canada item 5357952: S/M, 92 count, for a listed 31-37 in waist and/or 115-190 lb. The screenshot shows a mixed 3.7/5 rating from 71 reviews. No current U.S. Costco listing was found, and 92 briefs is more than most uncomplicated short-term recoveries need. Confirm fit before buying and use maternity pads or postpartum underwear for lochia so bleeding remains easier to monitor.",
+    url: "https://www.costco.ca/p/-/kirkland-signature-womens-protective-underwear/100776718"
   },
   {
     id: "postpartum-recovery-station",
