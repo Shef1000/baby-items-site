@@ -1046,6 +1046,92 @@ items.parentWellness.push(
   }
 );
 
+items.addOns.push(
+  {
+    id: "little-remedies-gas-relief-drops-1oz",
+    name: "Little Remedies Gas Relief Drops - 1 fl oz",
+    category: "Health",
+    priority: "Conditional",
+    price: 6.89,
+    checkoutPrice: 7.48,
+    purchased: true,
+    image:
+      "https://i5.walmartimages.com/seo/Little-Remedies-Gas-Relief-Drops-Natural-Berry-Flavor-Safe-for-Newborns-Children-s-Health-1-fl-oz_072f817d-1574-4357-ae62-0f0c27367599.7bfbe34e629092e6c1d1de10ffbd279b.jpeg",
+    why: "Purchased simethicone gas drops as an optional newborn comfort item to keep with the existing sick-day supplies.",
+    notes: "Purchased from Walmart on July 30, 2026, quantity 1. Receipt price was $6.89 after the associate discount; its allocated final-order share is $7.48 including tax. Ask the pediatrician before giving any medicine to a newborn and follow the product label exactly.",
+    url: "https://www.walmart.com/ip/20684153"
+  }
+);
+
+items.parentWellness.push(
+  {
+    id: "techforma-knee-pillow-white",
+    name: "TechForma Memory-Foam Knee Pillow - White",
+    category: "Pregnancy Comfort",
+    priority: "Nice",
+    price: 15.99,
+    checkoutPrice: 17.37,
+    purchased: true,
+    image:
+      "https://i5.walmartimages.com/seo/TechForma-Knee-Pillow-Memory-Foam-Leg-Positioner-Wedge-Pillow-Leg-Lumbar-for-Side-Sleepers-Pregnant-Women-Sciatica-Knee-Back-Leg-Hip-Pain-Relief_04924b1c-9d95-411a-99bb-c16a12b39754.27d5f69062f5f3ed105a2cc2d5f1a45b.jpeg",
+    why: "Purchased to support side-sleeping alignment and reduce pressure between the knees during late pregnancy.",
+    notes: "Purchased from Walmart on July 30, 2026, quantity 1. Sale price was $15.99, reduced from $27.99; its allocated final-order share is $17.37 including tax. Together with the gas drops, the order totaled $24.85 after savings, associate discount, and tax.",
+    url: "https://www.walmart.com/ip/9899311731"
+  },
+  {
+    id: "amazon-cart-trideer-pregnancy-birthing-ball",
+    name: "Trideer Pregnancy Birthing Ball - Lavender, 23-26 in",
+    category: "Labor Prep",
+    priority: "Conditional",
+    price: 26.99,
+    checkoutPrice: 29.32,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/710QCqdIhqL.jpg",
+    why: "A properly sized stability ball can support comfortable movement, posture changes, and clinician-approved labor positions.",
+    notes: "In the Amazon cart on July 30, 2026, quantity 1, at $26.99 before tax. Confirm that the selected 23-26 in size fits your height and use it on a non-slip surface near stable support.",
+    url: "https://www.amazon.com/dp/B0C5R1S9D1"
+  },
+  {
+    id: "amazon-cart-sacred-weapon-perineal-massage-tool",
+    name: "Sacred Weapon Perineal Massage Tool",
+    category: "Labor Prep",
+    priority: "Conditional",
+    price: 39.99,
+    checkoutPrice: 43.44,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/71YpeqsMz-L.jpg",
+    why: "In-cart option for clinician-approved antenatal perineal massage during the final weeks before an anticipated vaginal birth.",
+    notes: "In the Amazon cart on July 30, 2026, quantity 1, at $39.99 before tax. The kit includes a trial-size water-based lubricant. Ask your OB or pelvic-floor therapist whether it is appropriate for you; do not start before 34-35 weeks, and stop for pain or bleeding.",
+    url: "https://www.amazon.com/dp/B0FWDVHMN4"
+  },
+  {
+    id: "amazon-cart-uberlube-55ml",
+    name: "Uberlube Premium Silicone Lubricant - 55 mL",
+    category: "Postpartum Intimacy",
+    priority: "Optional",
+    price: 21.99,
+    checkoutPrice: 23.89,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/616oxQRj+NL.jpg",
+    why: "Long-lasting lubricant can reduce friction when intimacy is comfortable and medically cleared after birth.",
+    notes: "In the Amazon cart on July 30, 2026, quantity 1, at $21.99 before tax. This is silicone-based: do not use it with the silicone perineal tool unless the tool maker confirms compatibility. Use only after postpartum clearance and stop if it causes irritation.",
+    url: "https://www.amazon.com/dp/B00KDHS8PO"
+  },
+  {
+    id: "amazon-cart-frida-witch-hazel-healing-foam-5oz",
+    name: "Frida Mom Witch Hazel Perineal Healing Foam - 5 fl oz",
+    category: "Vaginal Recovery",
+    priority: "Optional",
+    price: 10.89,
+    checkoutPrice: 11.83,
+    purchased: false,
+    image: "https://m.media-amazon.com/images/I/51gxlsy7DnL.jpg",
+    why: "An extra bottle could serve as a bathroom or bedside backup during early vaginal-birth recovery.",
+    notes: "In the Amazon cart on July 30, 2026, quantity 1, at $10.89 before tax; it was not selected for checkout. This duplicates the 5 oz healing foam already purchased inside the Frida Mom recovery kit, so buy it only if you intentionally want a second station or backup.",
+    url: "https://www.amazon.com/dp/B07THDSJKT"
+  }
+);
+
 items.freeBenefits.push(
   {
     id: "postpartum-care-safety-plan",
@@ -1100,6 +1186,24 @@ items.freeBenefits.push(
     why: "The tracker includes pediatrician selection, insurance enrollment, leave paperwork, birth certificate/SSN, urgent-care plan, and gift/returns tracking.",
     notes: "Keep this outside the purchase budget; it is a before-birth execution list, not gear.",
     url: "https://www.usa.gov/birth-certificate"
+  },
+  {
+    id: "amazon-baby-registry-welcome-box-2026",
+    name: "Amazon Baby Registry Welcome Box",
+    category: "Registry Gift",
+    status: "Claimed",
+    why: "The latest account-visible Amazon baby order is the free registry welcome box.",
+    notes: "Ordered July 28, 2026 for $0 and verified in Amazon order history on July 30. Amazon currently shows it as shipped and arriving Wednesday.",
+    url: "https://www.amazon.com/dp/B00N1NBOV2"
+  },
+  {
+    id: "walmart-life-with-baby-275-pump-benefit",
+    name: "Walmart Life with Baby - $275 Pump eGift Card",
+    category: "Breastfeeding",
+    status: "Expected Sep 4",
+    why: "Walmart's Life with Baby benefit provides a $275 e-gift card for a breast pump and related supplies.",
+    notes: "Due date is October 2, 2026, so four weeks before is September 4. Quality-first plan: try to apply all $275 to the eufy S1 Pro wearable pump at Walmart. At the July 30 live price, estimated checkout is $380.18 including San Francisco tax, with about $105.18 left to pay. The eufy SKU is sold by Walmart but is not currently shown in the curated Life with Baby filter, and split tender with IQPay is not documented. Verify both card acceptance and split payment before placing the order; if either fails, stop and contact benefits instead of substituting a lower-quality pump. Do not add duplicate bottles, therapy packs, pads, or other already-purchased supplies.",
+    url: "https://www.walmart.com/browse/baby/life-with-baby/5427_6835963?affinityOverride=default"
   }
 );
 
@@ -1193,6 +1297,7 @@ const babyGroupByItemId = {
   "angelcare-baby-bath-support-grey": "poop",
   "noodle-boo-newborn-2-in-1-wash": "poop",
   "infant-health-sick-day-kit": "poop",
+  "little-remedies-gas-relief-drops-1oz": "poop",
 
   "nuna-trvl-lx-pipa-urbn-travel-system": "travel",
   "ergobaby-embrace-newborn-carrier": "travel"

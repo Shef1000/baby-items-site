@@ -94,26 +94,17 @@ items.formulaFeeding = [
 items.formulaFeeding.push(
   {
     id: "eufy-s1-pro-lavie-massage-pump-bundle",
-    name: "eufy S1 Pro Heated Pump + LaVie Massage Pads",
+    name: "eufy S1 Pro Heated Wearable Pump - Walmart Gift Card Plan",
     category: "Pumping",
     priority: "Must",
-    price: 419.98,
+    price: 349.99,
+    checkoutPrice: 380.18,
     purchased: false,
     image:
-      "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/2e5838e978c539a89958f42a59e3a0db.png?v=1782118674",
-    why: "Primary pumping setup with heat plus massage support: eufy provides HeatFlow heated wearable pumping, and LaVie pads add warming vibration massage during pumping.",
-    notes: "Displayed checkout estimate uses eufy S1 Pro at $349.99 plus LaVie warming massage pads at $69.99, before 8.625% San Francisco sales tax. Confirm flange size and ask a lactation consultant if pumping is painful or output drops.",
-    url: "https://www.eufy.com/products/t8d04121",
-    links: [
-      {
-        label: "eufy Wearable Breast Pump S1 Pro",
-        url: "https://www.eufy.com/products/t8d04121"
-      },
-      {
-        label: "LaVie Warming Lactation Massage Pads",
-        url: "https://www.laviemom.com/collections/lactation-massagers/products/warming-lactation-massage-pads"
-      }
-    ]
+      "https://i5.walmartimages.com/seo/Eufy-S1-Pro-Breast-pump_32598fa1-a94b-41bc-b376-867bca4c2c4f.089cb9a4e26992b1a77e1a08a5861c75.jpeg",
+    why: "Quality-first fully wearable choice: independent 2026 testing ranks the S1 Pro as the best wearable pump for effective milk removal, comfort, built-in warming, useful app controls, and its charging case.",
+    notes: "Use the full $275 Walmart Life with Baby e-gift card on this pump only. Walmart's live price on July 30 was $349.99, sold and shipped by Walmart.com with free shipping. Estimated San Francisco checkout is $380.18 including 8.625% tax, leaving about $105.18 out of pocket after the gift card. The eufy SKU is not currently shown in Walmart's curated Life with Baby filter, and split tender with the IQPay card is not documented, so test both acceptance and split payment at checkout; stop and contact benefits rather than substituting if either fails. No LaVie pads or duplicate feeding supplies are included: HeatFlow is already built in. Its cups hold 5 oz and are not position-proof, so confirm alignment and stay upright. Confirm flange size with a lactation consultant before buying inserts; stop and get help if pumping is painful or output drops.",
+    url: "https://www.walmart.com/ip/13406214163"
   },
   {
     id: "pump-parts-flanges-milk-bags",
