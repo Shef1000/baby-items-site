@@ -93,8 +93,40 @@ items.formulaFeeding = [
 
 items.formulaFeeding.push(
   {
+    id: "babybuddha-2-express-cups-primary",
+    name: "BabyBuddha 2.0 + Express Cups Plus - Primary Hands-Free System",
+    category: "Pumping",
+    priority: "Must",
+    price: 239.98,
+    checkoutPrice: 260.68,
+    purchased: false,
+    image:
+      "https://babybuddhaproducts.com/cdn/shop/files/BB2.0EZFitFlanges.png?v=1779266206&width=2048",
+    why: "Extraction-first primary system: a compact rechargeable motor drives in-bra cups, giving stronger and more reliable milk removal than a fully integrated wearable for many experienced exclusive pumpers.",
+    notes: "This is hands-free, but not tubeless: the Express Cups sit inside the bra and connect by tubing to the small wearable motor. Use it as the primary pump only if a comfort-and-output test confirms the fit. BabyBuddha suction can feel unusually strong, so begin with the gentler 2.0 stimulation pattern and the lowest comfortable vacuum; more suction is not better. Pain, pinching, swelling, nipple whitening, clogs, or falling output are stop-and-refit signals. Get an IBCLC flange fitting before ordering the cup size: on July 30 the 28/26mm cup was available, the 24/22mm cup was unavailable, and 17/19/21mm inserts were sold separately. If even low settings feel aggressive, the quality-first gentler alternative is Pumpables Genie Advanced with properly fitted in-bra cups. Official stores generally do not accept opened breast-pump returns, so fit planning matters before unsealing.",
+    url: "https://babybuddhaproducts.com/products/babybuddha%C2%AE-2-0-primary-portable-breast-pump",
+    links: [
+      {
+        label: "BabyBuddha 2.0 pump",
+        url: "https://babybuddhaproducts.com/products/babybuddha%C2%AE-2-0-primary-portable-breast-pump"
+      },
+      {
+        label: "BabyBuddha Express Cups Plus",
+        url: "https://babybuddhaproducts.com/products/hands-free-collection-cups"
+      },
+      {
+        label: "Gentler fallback: Pumpables Genie Advanced",
+        url: "https://pumpables.co/products/genie-advanced"
+      },
+      {
+        label: "Performance-focused BabyBuddha owner comparison",
+        url: "https://www.reddit.com/r/ExclusivelyPumping/comments/1tboiji/eufy_s1_vs_baby_buddha/"
+      }
+    ]
+  },
+  {
     id: "eufy-s1-pro-lavie-massage-pump-bundle",
-    name: "eufy S1 Pro Heated Wearable Pump - Walmart Gift Card Plan",
+    name: "eufy S1 Pro Heated Wearable Pump - Walmart Tubeless System",
     category: "Pumping",
     priority: "Must",
     price: 349.99,
@@ -102,9 +134,19 @@ items.formulaFeeding.push(
     purchased: false,
     image:
       "https://i5.walmartimages.com/seo/Eufy-S1-Pro-Breast-pump_32598fa1-a94b-41bc-b376-867bca4c2c4f.089cb9a4e26992b1a77e1a08a5861c75.jpeg",
-    why: "Quality-first fully wearable choice: independent 2026 testing ranks the S1 Pro as the best wearable pump for effective milk removal, comfort, built-in warming, useful app controls, and its charging case.",
-    notes: "Use the full $275 Walmart Life with Baby e-gift card on this pump only. Walmart's live price on July 30 was $349.99, sold and shipped by Walmart.com with free shipping. Estimated San Francisco checkout is $380.18 including 8.625% tax, leaving about $105.18 out of pocket after the gift card. The eufy SKU is not currently shown in Walmart's curated Life with Baby filter, and split tender with the IQPay card is not documented, so test both acceptance and split payment at checkout; stop and contact benefits rather than substituting if either fails. No LaVie pads or duplicate feeding supplies are included: HeatFlow is already built in. Its cups hold 5 oz and are not position-proof, so confirm alignment and stay upright. Confirm flange size with a lactation consultant before buying inserts; stop and get help if pumping is painful or output drops.",
-    url: "https://www.walmart.com/ip/13406214163"
+    why: "Best-proven fully in-bra, zero-tube companion after comparing current specifications with performance-focused Reddit and Rednote owner reports: strong milk removal for many users, built-in warming, useful app controls, and a charging case.",
+    notes: "Use the $275 Walmart Life with Baby benefit here. Included Health directly confirmed that you may choose any breast pump sold and shipped by Walmart, and this exact Walmart SKU met that condition on July 30. The live price was $349.99 with free shipping; estimated San Francisco checkout is $380.18 including 8.625% tax, leaving about $105.18 out of pocket after the gift card. Split payment is allowed, unused benefit can be used on other eligible sold-and-shipped-by-Walmart items, and the card works online or in store. Recheck the seller at checkout because marketplace offers can change. Treat the S1 Pro as the truly tubeless companion until repeated matched sessions show that it empties you as well as the primary pump. The S2 Pro remains a watchlist item because early owner reports are mixed; Willow Go is the comfort/geometry fallback if eufy's cups do not fit. HeatFlow is built in, so do not add separate warming pads. The 5 oz cups are not position-proof: assemble every seal carefully, confirm alignment, and stay upright. Confirm flange size with an IBCLC; stop and get help if pumping is painful, causes clogs, or output drops.",
+    url: "https://www.walmart.com/ip/13406214163",
+    links: [
+      {
+        label: "eufy S1 Pro official details",
+        url: "https://www.eufy.com/us/products/t8d04121"
+      },
+      {
+        label: "Multi-pump controlled owner comparison",
+        url: "https://www.reddit.com/r/ExclusivelyPumping/comments/1udrhi7/my_experience_with_the_eufy_s1_pro_spectra_s1/"
+      }
+    ]
   },
   {
     id: "pump-parts-flanges-milk-bags",
