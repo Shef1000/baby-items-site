@@ -77,6 +77,20 @@ items.formulaFeeding = [
     url: "https://babybrezza.com/products/bottle-washer-pro"
   },
   {
+    id: "baby-brezza-smart-bottle-breastmilk-warmer",
+    name: "Baby Brezza Smart Bottle + Breast Milk Warmer",
+    category: "Bottle Feeding",
+    priority: "Must",
+    price: 71.99,
+    checkoutPrice: 78,
+    purchased: false,
+    image:
+      "https://babybrezza.com/cdn/shop/files/1771953306299_BRZ00139_SBW_CAR_Latest_01.webp?v=1771966292",
+    why: "Daily home-use warmer for breast milk, formula, storage bags, and baby-food jars with separate warm-water-bath and steam modes.",
+    notes: "Add for daily home use. Baby Brezza lists warm water bath for breast milk, steam heat for formula or baby food, Bluetooth app controls, auto shut-off, and fit for virtually all bottle types and sizes. Checkout estimate uses the current Baby Brezza sale price plus 8.625% San Francisco sales tax.",
+    url: "https://babybrezza.com/products/safe-smart-bottle-warmer"
+  },
+  {
     id: "baby-brezza-formula-pro-advanced",
     name: "Baby Brezza Formula Pro Advanced",
     category: "Formula Prep",
